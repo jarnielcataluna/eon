@@ -556,6 +556,8 @@ header {
 		position: absolute;
 		top: 0;
 		left: 0;
+		display: block;
+		@include transition(all 0s linear);
 
 		@include breakpoint(desktop) {
 			font-size: 65px;

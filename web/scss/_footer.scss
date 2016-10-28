@@ -127,5 +127,9 @@ footer {
 		font-size: 14px;
 		line-height: 33px;
 	}
+
+	@include breakpoint(phablet) {
+		line-height: 30px;
+	}
 }
 
