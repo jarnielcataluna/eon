@@ -42,19 +42,24 @@ win.load(function() {
     			animationSpeed: 400, 
 				prevText: "&nbsp;",
 				nextText: "&nbsp;",
-				start: function(){
+				start: function(slider){
 					doCoverImage();
 
 					$('.home-slide').addClass('is-animated');
 					setTimeout(function(){
 						$('.home-slide-item').addClass('is-animated');
 						$('.digital-me').addClass('is-animated');
+
+						$(slider).find("img[data-src]").each(function () {
+				          var src = $(this).attr("data-src");
+				          $(this).attr("src", src).removeAttr("data-src");
+				       });
 					}, 300);
 					
 					setTimeout(function(){
 						$('footer').css({'display' : 'block'});
 					}, 1200);
-				}, 
+				}
 			});
 		}, 500);
 	});
