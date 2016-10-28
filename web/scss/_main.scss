@@ -4,6 +4,11 @@ body {
 	font-weight: 300;
 	font-size: $fontSmall;
 
+	&.is-fixed {
+		position: fixed;
+		overflow: hidden;
+	}
+
 }
 
 * {

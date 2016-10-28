@@ -15,6 +15,7 @@ $(document).ready(function() {
 
         $('header').toggleClass('is-open')
         $('.head-wrap').toggleClass('active');
+        $('body').addClass('fixed');
         setTimeout(function() {
             _this.toggleClass('active');
         }, 300);
