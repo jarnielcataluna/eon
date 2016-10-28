@@ -1,0 +1,36 @@
+// include all your new classess here that is intended for mobile. Only if necessary but please use breakpoints mixins
+
+
+@media only screen and (max-height: 600px) and (min-width: 1025px) {
+	  
+	.home-slide-text  {
+
+		h2 {
+			font-size: 10vh;
+			margin-bottom: 3vh;
+		}
+	  	
+	  	p {
+	  		font-size: 4vh;
+	  		line-height: 4.2vh
+	  	}
+	}
+
+	.home-slide .btn-more {
+		line-height: 10vh;
+		margin-top: 4vh;
+	}
+
+	
+
+	.digital-me {
+		top: 10vh;
+	}
+}
+
+@media only screen and (max-height: 680px) and (min-width: 1025px) {
+
+	.home-slide .flexslider .flex-control-nav {
+		display: none;
+	}
+}

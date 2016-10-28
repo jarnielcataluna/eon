@@ -1,0 +1,78 @@
+ // this is area is for reserved class
+body {
+	font-family: $fontA;
+	font-weight: 300;
+	font-size: $fontSmall;
+
+}
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+#main-wrapper { position: relative; overflow: hidden; z-index: 97; }
+.fl { float:left; }
+.fr { float:right; }
+.clr { display: block; float:none; clear:both; }
+.bp-box { @include box-sizing(border-box); }
+.bp-rel { position:relative; }
+.bp-ab { position:absolute; }
+.co-black { color: $coBlack; }
+.co-white { color: $coWhite; }
+.preloader { 
+	position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: 9999;
+    background: linear-gradient(233deg, #ff4053, #562A8A, #bf0c70, #5e0694, #341A54, #ef0085);
+	background-size: 1000% 1000%;
+	-webkit-animation: gradientAnimate 25s ease infinite;
+	-moz-animation: gradientAnimate 25s ease infinite;
+	animation: gradientAnimate 25s ease infinite;
+}
+
+.home {
+	background: $coViolet;
+}
+.spinner { position: absolute; width:80px; height:80px; top: 50%; left: 50%; margin-left:-40px; margin-top:-40px; @include animation(rotatee 2.0s infinite linear); }
+.s-dot { display: inline-block; position: absolute; width:60%; height:60%;  top: 0; background-color: rgba($coWhite, 0.8); @include border-radius(100%); @include animation(bouncee 2.0s infinite ease-in-out); }
+.s-dot2 { top: auto; bottom: 0px; @include animation-delay( -1.0s); }
+@include keyframes(rotatee) { 100% { @include transform(rotate(360deg)); } }
+@include keyframes(bouncee) { 0%, 100% { @include transform(scale(0.0)); } 50% { @include transform(scale(1.0)); } }
+.explorer .preloader { background:#fff url('../images/page_template/loading.gif') no-repeat center; }
+.explorer .preloader .spinner { display:none; }
+// this is area is for reserved class
+
+// you can include here the rest of your class name eg. home page
+
+.gradient-animate {
+	background: linear-gradient(233deg, #fb5f65, #f7c66d, #6fce6f, #49a5ea, #9b6de3);
+	background-size: 1000% 1000%;
+	-webkit-animation: gradientAnimate 25s ease infinite;
+	-moz-animation: gradientAnimate 25s ease infinite;
+	animation: gradientAnimate 25s ease infinite;
+}
+
+@-webkit-keyframes gradientAnimate {
+    0%{background-position:0% 90%}
+    50%{background-position:100% 11%}
+    100%{background-position:0% 90%}
+}
+@-moz-keyframes gradientAnimate {
+    0%{background-position:0% 90%}
+    50%{background-position:100% 11%}
+    100%{background-position:0% 90%}
+}
+@keyframes gradientAnimate { 
+    0%{background-position:0% 90%}
+    50%{background-position:100% 11%}
+    100%{background-position:0% 90%}
+}
+

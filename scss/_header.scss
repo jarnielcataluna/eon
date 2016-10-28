@@ -1,0 +1,68 @@
+// ionclude all your related style here in the header, you can leave it empty if the page has no header
+html, body { height:100%; min-height:100%; }
+.hide { position:relative;}
+.ease,a,input[type="submit"],button { @include transition(all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1)); }
+.loader { position:relative; overflow:hidden; background:#fff url('../images/page_template/loading.gif') no-repeat center; }
+.auto { max-width:$maxWidth; margin: 0 auto; }
+#main-container { height:100%; height: auto !important; min-height:100%; }
+
+.header-hamburger {
+	display: none;
+	float: left;
+	position: fixed;
+	cursor: pointer;
+	z-index: 1001;
+	width: 25px;
+	height: 25px;
+	cursor: pointer;
+	background-color: transparent;
+	margin: 15px 0 10px 15px;
+	left:0; 
+	@include transition(all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1));
+
+	@include breakpoint(tablet2) {
+		display: block;
+	}
+}
+
+.header-hamburger span, .header-hamburger span:after, .header-hamburger span:before {
+	content: '';
+	cursor: pointer;
+	height: 2px;
+	width: 20px;
+	background: $coPink;
+	position: absolute;
+	display: block;
+	@include transition(all 0.2s ease-in-out);
+	@include transform(rotate(0deg));
+}
+
+.header-hamburger span {
+	  right: 0px;
+	  top: 12px;
+}
+
+.header-hamburger span:before {
+  	top: -7px;
+}
+
+.header-hamburger span:after {
+  	top: 7px;
+}
+
+.header-hamburger.active span {
+  	background: transparent !important;
+}
+
+.header-hamburger.active span:before, .header-hamburger.active span:after {
+  	top: 0;
+  	background: $coWhite;
+}
+
+.header-hamburger.active span:before {
+  	@include transform(rotate(45deg));
+}
+
+.header-hamburger.active span:after {
+ 	@include transform(rotate(-45deg));
+}
