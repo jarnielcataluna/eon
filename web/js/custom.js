@@ -32,12 +32,13 @@ win.load(function() {
 			$('.pace-inactive').hide();
 			$('header').addClass('is-anim');
 			
-
 			$('.flexslider').flexslider({
 				animation: "fade",
 				directionNav: true,
 				controlNav: true,
-				slideshow: false,
+				slideshow: true,
+				slideshowSpeed: 8000,           //Integer: Set the speed of the slideshow cycling, in milliseconds
+    			animationSpeed: 400, 
 				prevText: "&nbsp;",
 				nextText: "&nbsp;",
 				start: function(){
