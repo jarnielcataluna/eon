@@ -488,6 +488,7 @@ header {
 	min-height: 600px;
 	width: 100%;
 	overflow: hidden;
+	background: $coViolet;
 	
 
 	img {
@@ -898,7 +899,7 @@ header {
 			width: 45px;
 			height: 45px;
 			border: 1px solid $coWhite;
-			margin-right: 10px;
+			margin-right: 8px;
 		}
 
 		&.hm-green {
