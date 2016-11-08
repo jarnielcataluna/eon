@@ -1,17 +1,32 @@
 // includes all tags for paragraphs and titles such as header, p, span
-h1 { font-size: 2em; }
-h2 { font-size: 1.5em; }
-h3 { font-size: 1.17em; }
-h4 { font-size: 1em; }
-h5 { font-size: 0.83em; }
-h6 { font-size: 0.67em; }
-.par p { padding:10px 0px; }
-.par2 p { padding:5px 0px; }
+h1 { font-size: 4.1vw; font-family: $defaultFont; 
+
+	@include breakpoint(desktop) {
+		font-size: 48px;
+	}
+}
+h2 { font-size: 1.5em; font-family: $defaultFont; }
+h3 { font-size: 1.17em; font-family: $defaultFont; }
+h4 { font-size: 1em; font-family: $defaultFont; }
+h5 { font-size: 0.83em; font-family: $defaultFont; }
+h6 { font-size: 0.67em; font-family: $defaultFont; }
+.par p { padding: 10px 0px 0px 0px; }
+.par2 p { padding: 5px 0px 0px 0px; }
 .bp-center { text-align:center; }
 .bp-left { text-align:left; }
 .bp-right { text-align:right; }
 .bp-justify { text-align:justify; }
 .bp-tt { text-transform:uppercase; }
+
+p {
+	font-size: 1.1vw;
+	line-height: 1.2vw;
+
+	@include breakpoint(desktop) {
+		font-size: 16px;
+		line-height: 19px;
+	}
+}
 
 a {
 	text-decoration:none;

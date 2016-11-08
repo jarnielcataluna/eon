@@ -1,0 +1,434 @@
+.news-sec-title {
+	font-size: 1.3vw;
+	color: $coDarkViolet;
+	font-weight: 700;
+	margin-bottom: 15px;
+
+	@include breakpoint(desktop) {
+		font-size: 16px;
+	}
+}
+
+.lifehack-from-you {
+
+	ul {
+		margin: 0px -15px;
+
+		&:after, &:before {
+			content:'';
+			display: block;
+			float: none;
+			clear: both;
+		}
+
+		li {
+			width: 50%;
+			float: left;
+			padding: 0px 15px 25px;
+
+			&:nth-child(2n+1) {
+				clear: left;
+			}
+
+			@include breakpoint(tablet) {
+				width: 33.33%;
+				padding: 0px 10px 25px;
+
+				&:nth-child(3n+1) {
+					clear: left;
+
+				}
+
+				&:nth-child(2n+1) {
+					clear: none;
+					
+				}
+			}
+		}
+	}
+}
+
+.lifehack-from-eon {
+
+	ul {
+		margin: 0 -10px;
+
+		li {
+			clear: both;
+			padding: 0 10px 15px;
+			width: 100%;
+			
+			&:first-child {
+				.lifehack-item {
+
+					padding-top: 0;
+					border-top: 0;
+				}
+			}
+		}
+	}
+
+	.lifehack-item {
+		border-top: 1px solid #333;
+		padding-top: 25px;
+	}
+}
+
+.lifehack-item {
+
+	.lk-video-holder {
+		position: relative;
+
+		a {
+			display: block;
+			text-align: center;
+
+			&:before {
+				content:'';
+				background: url('../images/news/play.png') no-repeat 50% 50%;
+				position: absolute;
+				background-size: 8vw 8vw;
+				top: 50%;
+				left: 50%;
+				@include transform(translate(-50%, -50%));
+				z-index: 99;
+				width: 8vw;
+				height: 8vw;
+			}
+
+			&:after {
+				content: '';
+				width: 100%;
+				height: 100%;
+				background: rgba($coBlack, 0.5);
+				top: 0;
+				left: 0;
+				position: absolute;
+			}
+		}
+	}
+
+	.lk-item-title {
+		display: inline-block;
+		color: $coDarkViolet;
+		font-size: 1.3vw;
+		line-height: 1.6vw;
+		padding-top: 1.5px;
+		font-weight: 700;
+		margin-bottom: 10px;
+
+
+		@include breakpoint(desktop) {
+			font-size: 20px;
+			padding-top: 10px;
+			line-height: 22px;
+
+		}
+	}
+}
+
+.lk-img-holder {
+	margin-bottom: 20px;
+	position: relative;
+
+	@include breakpoint(desktop) {
+		margin-bottom: 8px;
+	}
+
+	img {
+		width: 100%;
+		height: auto;
+		display: block;
+	}
+}
+
+.lk-content {
+
+	p {
+		font-size: 1.1vw;
+		line-height: 1.2vw;
+
+		@include breakpoint(desktop) {
+			font-size: 16px;
+			line-height: 19px;
+		}
+	}
+
+	.submitted-by {
+		padding-bottom: 0.5vw;
+
+		@include breakpoint(desktop) {
+			font-size: 14px;
+		}
+
+		span {
+			color: $coPink;
+			display: inline-block;
+			vertical-align: middle;
+
+			&.author-datepost, &.author-name {
+				display: block;
+			}
+
+			&.author-datepost {
+				font-weight: 300;
+				font-size: 0.9vw;
+				color: $defaultColor;
+
+				@include breakpoint(desktop) {
+					font-size: 13px;
+				}
+			}
+
+			&.author-name {
+				font-weight: 500;
+			}
+
+		}
+	}
+}
+
+.read-more {
+	color: $coPink;
+	font-size: 1.1vw;
+	text-transform: uppercase;
+	font-weight: 700;
+	display: inline-block;
+	text-align: right;
+	margin-top: 20px;
+
+	@include breakpoint(desktop) {
+		font-size: 16px;
+	}
+
+	&:hover {
+
+		.fa {
+			right: 0;
+		}
+	}
+
+
+	.fa {
+		font-size: 1.2vw;
+		margin-left: 10px;
+		position: relative;
+		right: 5px;
+		@include transition(all 0.3s ease);
+
+		@include breakpoint(desktop) {
+			font-size: 16px;
+		}
+	}
+}
+
+.load-more-wrap {
+
+	padding-top: 20px;
+	margin-top: 15px;
+	border-top: 2px solid #333;
+
+	a {
+		color: $coPink;
+		font-size: 1.1vw;
+		text-transform: uppercase;
+		font-weight: 700;
+		display: inline-block;
+		text-align: right;
+
+		@include breakpoint(desktop) {
+			font-size: 16px;
+		}
+	}
+}
+
+.send-us-lifehack {
+	background: $coRed;
+	padding: 1.2vw 1vw;
+	color: $coWhite;
+
+	h2 {
+		font-size: 2vw;
+		font-weight: 700;
+		margin-bottom: 1vw;
+	}
+
+	.btn-default {
+		display: block;
+		width: 100%;
+		margin-top: 2vw;
+		margin-bottom: 1vw;
+
+		@include breakpoint(desktop) {
+			font-size: 16px;
+			line-height: 40px;
+			display: inline-block;
+		}
+	}
+}
+
+.sidebar-news {
+}
+
+.categ-list-wrap {
+	margin-top: 2vw;
+	padding-top: 1.5vw;
+	border-top: 1px solid #333;
+	padding: 1.2vw 1vw;
+
+}
+
+.categ-list {
+
+	li {
+		padding: 0.4vw 0;
+
+		@include breakpoint(desktop) {
+			padding: 8px 0;
+		}
+	}
+
+	a {
+		display: inline-block;
+		color: $coPink;
+		font-size: 1.1vw;
+		font-weight: 500;
+
+		@include breakpoint(desktop) {
+			font-size: 16px;
+		}
+	}
+}
+
+.author-wrap {
+	width: 3vw;
+	height: 3vw;
+	position: relative;
+	border-radius: 50%;
+	overflow: hidden;
+	display: inline-block;
+	margin-right: 0.3vw;
+	background: $coWhite;
+
+
+	@include breakpoint(desktop) {
+		width: 40px;
+		height: 40px;
+	}
+
+	img {
+		width: 100%;
+		height: auto;
+		display: block;
+	}
+}
+
+.featured-lifehack {
+	margin-bottom: 1.8vw;
+	background: $coDarkViolet;
+	position: relative;
+
+	@include breakpoint(desktop) {
+		max-width: 100%;
+		margin: 0 auto 25px;
+	}
+
+	.flex-control-nav {
+		bottom: 20px;
+		left: 1.2vw;
+		z-index: 99;
+		text-align: left;
+
+		li a {
+			width: 1.1vH;
+			height: 1.1vH;
+			background: $coWhite;
+			text-indent: -999999px;
+			text-align: left;
+			position: relative;
+
+			@include breakpoint(tablet) {
+				width: 12px;
+				height: 12px;
+			}
+
+			&.flex-active {
+				background: $coPink;
+			}
+
+			
+
+			&.flex-active {
+
+			}
+		}
+	}
+}
+
+.featured-item {
+	clear: both;
+	position: relative;
+	height: 0;
+	padding-bottom: 42%;
+	overflow: hidden;
+
+	&:before, &:after {
+		content:'';
+		display: block;
+		float: none;
+		clear: both;
+	}
+
+	.news-sec-title {
+		color: $coWhite;
+		font-weight: 700;
+		margin-bottom: 1.5vw;
+	}
+
+	.lk-img-holder {
+		width: calc(50% + 15px);
+		float: right;
+		margin-bottom: 0;
+
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+
+	.lk-content {
+		width: calc(50% - 15px);
+		float: left;
+		background: $coDarkViolet;
+		color: $coWhite;
+		padding: 20px 1.2vw 20px;
+
+		@include breakpoint(desktop) {
+			padding: 20px 15px 20px;
+		}
+
+		.lk-item-title {
+			font-size: 2.3vw;
+			font-weight: 700;
+
+			a {
+				color: $coWhite;
+			}
+		}
+
+		.submitted-by {
+
+			span {
+
+				&.author-datepost {
+					color: $coWhite;
+				}
+			}
+		}
+	}
+
+}
+
+
+
+

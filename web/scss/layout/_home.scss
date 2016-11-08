@@ -57,7 +57,7 @@ header {
 		padding-top: 1vW;
 
 		@include breakpoint(desktop) {
-			padding-top: 25px;
+			padding-top: 15px;
 		}
 
 		@include breakpoint(tablet2) {
@@ -499,6 +499,7 @@ header {
 
 .menu-right {
 	float: right;
+	padding-bottom: 0.8vw;
 
 	.footer-wrap {
 		display: none;
@@ -561,7 +562,7 @@ header {
 		@include transition(all 0s linear);
 
 		@include breakpoint(desktop) {
-			font-size: 65px;
+			font-size: 35px;
 		}
 
 		@include breakpoint(tablet) {
@@ -854,6 +855,7 @@ header {
 	}
 
 	&:hover {
+
 		.expanded-info {
 			@include transform(translateY(0));
 			opacity: 1;

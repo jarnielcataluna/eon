@@ -123,8 +123,24 @@ footer {
 	letter-spacing: 0.03vw;
 	line-height: 1.8vw;
 
+	span {
+		font-weight: 300;
+		margin-right: 0.5vw;
+		font-size: 0.8vw;
+		display: inline-block;
+		vertical-align: middle;
+
+		@include breakpoint(desktop) {
+			font-size: 12px;
+		}
+
+		@include breakpoint(phablet) {
+			font-size: 12px;
+		}
+	}
+
 	@include breakpoint(desktop) {
-		font-size: 14px;
+		font-size: 13px;
 		line-height: 33px;
 	}
 

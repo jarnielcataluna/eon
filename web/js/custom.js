@@ -1,12 +1,12 @@
 var isScrollingAllowed = true;
 var win = $(window);
+var doc = $(document);
 
 win.resize(function() {
 	resize();
-	doCoverImage();
 });
 
-$(document).ready(function() {
+doc.ready(function() {
 	smoothScroll();
 	
 	$('.header-hamburger').click(function(){
@@ -19,9 +19,18 @@ $(document).ready(function() {
         setTimeout(function() {
             _this.toggleClass('active');
         }, 300);
-        
-        
     });
+
+    $('.featured-lifehack .flexlslider').flexslider({
+		animation: "fade",
+		directionNav: true,
+		controlNav: true,
+		slideshow: true,
+		slideshowSpeed: 8000,
+		animationSpeed: 400, 
+		prevText: "&nbsp;",
+		nextText: "&nbsp;"
+	});
 });
 
 win.load(function() {
@@ -32,42 +41,9 @@ win.load(function() {
 		setTimeout(function() {
 			$('.pace-inactive').hide();
 			$('header').addClass('is-anim');
-			
-			$('.flexslider').flexslider({
-				animation: "fade",
-				directionNav: true,
-				controlNav: true,
-				slideshow: true,
-				slideshowSpeed: 8000,           //Integer: Set the speed of the slideshow cycling, in milliseconds
-    			animationSpeed: 400, 
-				prevText: "&nbsp;",
-				nextText: "&nbsp;",
-				start: function(slider){
-					doCoverImage();
-
-					$('.home-slide').addClass('is-animated');
-					setTimeout(function(){
-						$('.home-slide-item').addClass('is-animated');
-						$('.digital-me').addClass('is-animated');
-
-						$(slider).find("img[data-src]").each(function () {
-				          var src = $(this).attr("data-src");
-				          $(this).attr("src", src).removeAttr("data-src");
-				       });
-					}, 300);
-					
-					setTimeout(function(){
-						$('footer').css({'display' : 'block'});
-					}, 1200);
-				}
-			});
 		}, 500);
 	});
 
-	setTimeout(function(){
-		$('.home-menu').addClass('is-anim');
-		$('.home').css({'background' : '#ffffff'});
-	}, 2000);
 
 });
 
@@ -105,13 +81,6 @@ function resize() {
   	$('.classname').css({minHeight: ClassName});
 
   	$('.home-slide').css({'height' :  windowHeight});
-}
-
-function doCoverImage() {	
-	$('.coverimage img').each(function() {
-		coverImage( $(this) );
-	});
-	
 }
 
 function coverImage( image ) {
