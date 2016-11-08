@@ -50,7 +50,8 @@ footer {
 		}
 
 		@include breakpoint(tablet2) {
-			margin-bottom: 7px;
+			margin-bottom: 0px;
+			line-height: 30px;
 		}
 
 	}
@@ -132,6 +133,7 @@ footer {
 
 		@include breakpoint(desktop) {
 			font-size: 12px;
+			margin-right: 7px;
 		}
 
 		@include breakpoint(phablet) {

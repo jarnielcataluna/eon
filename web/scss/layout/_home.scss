@@ -567,6 +567,9 @@ header {
 
 		@include breakpoint(tablet) {
 			font-size: 44px;
+			position: absolute;
+			-webkit-backface-visibility: hidden;
+			backface-visibility: hidden;
 		}
 	}
 

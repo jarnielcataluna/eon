@@ -2,7 +2,11 @@
 h1 { font-size: 4.1vw; font-family: $defaultFont; 
 
 	@include breakpoint(desktop) {
-		font-size: 48px;
+		font-size: 50px;
+	}
+
+	@include breakpoint(tablet2) {
+		font-size: 36px;
 	}
 }
 h2 { font-size: 1.5em; font-family: $defaultFont; }

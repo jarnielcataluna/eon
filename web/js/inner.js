@@ -1,5 +1,6 @@
 win.resize(function() {
 	doCoverImage();
+	innerMenu();
 });
 
 $(document).ready(function() {
@@ -24,6 +25,7 @@ win.load(function() {
 		// totally hide the preloader especially for IE
 		setTimeout(function() {
 			$('.pace-inactive').hide();
+			innerMenu();
 		}, 500);
 	});
 
@@ -31,6 +33,13 @@ win.load(function() {
 		$('.home-menu').addClass('is-anim');
 	}, 2000);
 });
+
+function innerMenu() {
+
+	var hH = $('header').outerHeight(false);
+
+	$('.home-menu').css({'top' : hH});
+}
 
 function doCoverImage() {	
 	$('.inner-banner img').each(function() {

@@ -73,11 +73,37 @@ body {
 
 	header {
 		background: rgba($coDarkViolet, 0.9);
+
+		@include breakpoint(tablet2) {
+			-moz-transition: opacity 1s cubic-bezier(0.19, 1, 0.22, 1);
+		    -webkit-transition: opacity 1s cubic-bezier(0.19, 1, 0.22, 1);
+		    transition: opacity 1s cubic-bezier(0.19, 1, 0.22, 1);
+		    background: linear-gradient(233deg, #ff4053, #562A8A, #bf0c70, #5e0694, #341A54, #ef0085);
+		    background-size: 1000% 1000%;
+		    -webkit-animation: gradientAnimate 25s ease infinite;
+		    -moz-animation: gradientAnimate 25s ease infinite;
+		    animation: gradientAnimate 25s ease infinite;
+		}
 	}
 
 	.home-menu {
-		position: relative;
+		position: fixed;
 		bottom: inherit;
+		top: 0;
+		max-height: 5.3vw;
+		z-index: 1001;
+		-webkit-backface-visibility: hidden;
+
+		@include breakpoint(desktop) {
+			max-height: 65px;
+		}
+
+		@include breakpoint(tablet2) {
+			margin-top: 20px;
+			position: relative;
+			max-height: 100%;
+			top: 0 !important;
+		}
 	}
 
 	.hm-link:hover .expanded-info {
@@ -88,6 +114,12 @@ body {
 		bottom: inherit;
 		top: -0.72vw;
 		@include transform(translateY(-40px));
+
+		@include breakpoint(tablet2) {
+			top: 0;
+			@include transform(translateY(0px));
+
+		}
 	}
 }
 
@@ -128,6 +160,7 @@ body {
 		width: 100%;
 		text-align: center;
 		padding-top: 10vW;
+		padding: 0px 15px;
 
 		@include breakpoint(tablet) {
 			padding-top: 100px;
@@ -161,13 +194,33 @@ body {
 		line-height: 1.3vw;
 
 		@include breakpoint(desktop) {
+			font-size: 22px;
+			line-height: 26px;
+		}
+
+		@include breakpoint(tablet) {
+			font-size: 22px;
+			line-height: 26px;
+		}
+
+		@include breakpoint(mobile) {
 			font-size: 16px;
+			line-height: 22px;
 		}
 	}
 }
 
 .inner-wrapper {
-	margin: 2vw 0px 3vw 0;
+	padding: 2vw 0px 3vw 0;
+	background: $coWhite;
+
+	@include breakpoint(desktop) {
+		padding: 20px 0px 30px 0;
+	}
+
+	@include breakpoint(tablet) {
+		padding: 15px 0px 15px 0;
+	}
 }
 
 .btn-default {
@@ -179,6 +232,10 @@ body {
     font-size: 1.2vw;
 	line-height: 3vw;
 	padding: 0px 1.1vw;
+
+	@include breakpoint(desktop) {
+		line-height: 40px;
+	}
 }
 
 @-webkit-keyframes gradientAnimate {
