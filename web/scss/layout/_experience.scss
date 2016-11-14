@@ -1,0 +1,179 @@
+.expe-testimonials {
+
+	.btn-default {
+		padding-left: 2.5vw;
+		padding-right: 2.5vw;
+		line-height: 3.5vw;
+		text-transform: uppercase;
+
+		&:hover {
+			background: $coRed;
+			border: 0.15vw solid $coRed;
+			color: $coWhite;
+		}
+	}
+}
+
+.expe-devices-feature {
+	
+	ul {
+		margin: 2vw -2vw 0;
+
+		&:after, &:before {
+			content:'';
+			display: block;
+			float: none;
+			clear: both;
+		}
+
+		li {
+			width: 33.33%;
+			padding: 0px 2vw;
+			float: left;
+
+		}
+	}
+}
+
+.ed-f-img {
+
+	width: 12vw;
+	height: 12vw;
+	line-height: 12vw;
+	text-align: center;
+	margin: 0 auto 1.2vw;
+	border: 0.12vw solid $coRed;
+	border-radius: 50%;
+
+	span {
+		font-size: 7.2vw;
+		line-height: 12vw;
+		color: $coRed;
+
+	}
+
+	&.ed-f-phone {
+
+		span {
+			font-size: 6.5vw;
+		}
+		
+	}
+
+	&.ed-f-desktop {
+
+		span {
+			font-size: 8.5vw;
+		}
+		
+	}
+}
+
+.ed-f-text {
+	padding: 1vw 0;
+
+	p {
+		font-size: 1.2vw;
+		text-align: center;
+		line-height: 1.3vw;
+	}
+}
+
+.get-app {
+	margin: 3vw auto 0;
+
+	h4 {
+		font-size: 2.8vw;
+		text-transform: uppercase;
+		font-weight: 700;
+		margin-bottom: 2vw;
+		color: $coDarkViolet;
+	}
+
+	ul {
+		text-align: center;
+	}
+
+	li {
+
+		width: 12vw;
+		display: inline-block;
+		text-align: center;
+		margin: 0px 0.10vw;
+
+		a {
+			&:hover {
+				opacity: 0.8;
+			}
+		}
+
+		img {
+			max-width: 100%;
+			height: auto;
+		}
+	}
+}
+
+.testi-content {
+	margin-bottom: 2vw;
+}
+
+.testi-item {
+	color: $coWhite;
+	font-size: 1.2vw;
+	line-height: 1.3vw;
+	max-width: 60%;
+	margin: 0 auto;
+
+	p {
+		font-weight: 300;
+		font-family: $fontA;
+		line-height: 1.4vw;
+	}
+
+	.testi-pos {
+		font-size: 1vw;
+		padding-top: 5px;
+	}
+}
+
+
+
+.p-star {
+	font-size: 2vw;
+	margin-bottom: 1.5vw;
+}
+
+.testi-flex {
+
+	position: relative;
+	padding-bottom: 2.5vw;
+
+	.flex-control-nav {
+		bottom: 0px;
+
+		li {
+			margin: 0px 0.3vw;
+		}
+	}
+}
+
+.dyk-wrap {
+	background: $coRed;
+	padding: 1.5vw 2vw;
+	color: $coWhite;
+
+	.dyk-text {
+		font-size: 3vw;
+	}
+
+	p {
+		font-size: 1.5vw;
+		line-height: 1.8vw;
+	}
+}
+
+
+
+
+

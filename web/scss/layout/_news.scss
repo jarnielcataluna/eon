@@ -147,7 +147,7 @@
 		display: inline-block;
 		color: $coDarkViolet;
 		font-size: 1.3vw;
-		line-height: 1.6vw;
+		line-height: 1.6;
 		padding-top: 1.5px;
 		font-weight: 700;
 		margin-bottom: 10px;
@@ -179,47 +179,52 @@
 
 .lk-content {
 
+	h1 {
+		font-weight: 700;
+	}
+
 	p {
 		font-size: 1.1vw;
-		line-height: 1.2vw;
+		line-height: 1.2;
 
 		@include breakpoint(desktop) {
 			font-size: 16px;
 			line-height: 19px;
 		}
 	}
+}
 
-	.submitted-by {
-		padding-bottom: 0.5vw;
+.submitted-by {
+	padding-bottom: 0.5vw;
 
-		@include breakpoint(desktop) {
-			font-size: 14px;
+	@include breakpoint(largedesktop) {
+		font-size: 14px;
+		padding-bottom: 10px;
+	}
+
+	span {
+		color: $coPink;
+		display: inline-block;
+		vertical-align: middle;
+
+		&.author-datepost, &.author-name {
+			display: block;
 		}
 
-		span {
-			color: $coPink;
-			display: inline-block;
-			vertical-align: middle;
+		&.author-datepost {
+			font-weight: 300;
+			font-size: 0.9vw;
+			color: $defaultColor;
 
-			&.author-datepost, &.author-name {
-				display: block;
+			@include breakpoint(desktop) {
+				font-size: 13px;
 			}
-
-			&.author-datepost {
-				font-weight: 300;
-				font-size: 0.9vw;
-				color: $defaultColor;
-
-				@include breakpoint(desktop) {
-					font-size: 13px;
-				}
-			}
-
-			&.author-name {
-				font-weight: 500;
-			}
-
 		}
+
+		&.author-name {
+			font-weight: 500;
+		}
+
 	}
 }
 
@@ -231,6 +236,10 @@
 	display: inline-block;
 	text-align: right;
 	margin-top: 20px;
+
+	&:hover {
+		color: darken($coPink, 10%);
+	}
 
 	@include breakpoint(desktop) {
 		font-size: 16px;
@@ -275,6 +284,10 @@
 		display: inline-block;
 		text-align: right;
 
+		&:hover {
+			color: darken($coPink, 10%);
+		}
+
 		@include breakpoint(desktop) {
 			font-size: 16px;
 		}
@@ -285,6 +298,14 @@
 	background: $coRed;
 	padding: 1.2vw 1vw;
 	color: $coWhite;
+
+	&.sl-mobile {
+		display: none;
+
+		@include breakpoint(tablet) {
+			display: block;
+		}
+	}
 
 	@include breakpoint(desktop) {
 		padding: 25px 15px;
@@ -320,8 +341,12 @@
 
 	.send-us-lifehack {
 
-		@include breakpoint(tablet2) {
+		@include breakpoint(tablet) {
 			display: none;
+
+			&.sl-mobile {
+				display: block;
+			}
 		}
 	}
 }
@@ -392,7 +417,7 @@
 	background: $coWhite;
 
 
-	@include breakpoint(desktop) {
+	@include breakpoint(largedesktop) {
 		width: 40px;
 		height: 40px;
 	}
@@ -414,11 +439,9 @@
 		margin: 0 auto 25px;
 	}
 
-	
-
 	.flex-control-nav {
 		bottom: 20px;
-		left: 1.2vw;
+		right: 1.2vw;
 		z-index: 99;
 		text-align: right;
 
@@ -429,30 +452,6 @@
 		@include breakpoint(tablet2) {
 			text-align: left;
 			left: 15px;
-		}
-
-		li a {
-			width: 1.1vH;
-			height: 1.1vH;
-			background: $coWhite;
-			text-indent: -999999px;
-			text-align: left;
-			position: relative;
-
-			@include breakpoint(tablet) {
-				width: 12px;
-				height: 12px;
-			}
-
-			&.flex-active {
-				background: $coPink;
-			}
-
-			
-
-			&.flex-active {
-
-			}
 		}
 	}
 }
@@ -481,6 +480,10 @@
 		color: $coWhite;
 		font-weight: 700;
 		margin-bottom: 1.5vw;
+
+		@include breakpoint(tablet2) {
+			display: none;
+		}
 	}
 
 	.lk-img-holder {
@@ -525,6 +528,10 @@
 			font-size: 2.3vw;
 			font-weight: 700;
 
+			@include breakpoint(desktop) {
+				font-size: 18px;
+			}
+
 			a {
 				color: $coWhite;
 			}
@@ -541,6 +548,78 @@
 		}
 	}
 
+}
+
+.lifehack-single {
+
+	font-size: 1vw;
+	line-height: 1;
+
+	@include breakpoint(largedesktop) {
+		font-size: 16px;
+		line-height: 22px;
+	}
+
+	.lk-content {
+		padding-bottom: 1.5vw;
+
+		@include breakpoint(largedesktop) {
+			padding-bottom: 25px;
+		}
+	}
+
+	.follow-us a .fa {
+		color: $coWhite;
+	}
+
+	&.par p {
+		font-size: 1vw;
+		line-height: 1.2;
+
+		@include breakpoint(largedesktop) {
+			font-size: 16px;
+			line-height: 22px;
+		}
+	}
+
+	> ul, > ol {
+		padding-top: 0.8vw; 
+
+		@include breakpoint(largedesktop) {
+			margin-top: 15px;
+			margin-bottom: 15px;
+		}
+
+		li {
+			line-height: 1.2;
+		}
+	}
+
+	> ul {
+		padding-left: 20px;
+		list-style-type: disc;
+	}
+
+	> ol {
+		padding-left: 20px;
+		list-style-type: decimal;
+	}
+
+	img {
+		max-width: 100%;
+		display: inline-block;
+		text-align: center;
+
+		&.img-full {
+			margin-bottom: 1vw;
+			margin-top: 1vw;
+
+			@include breakpoint(largedesktop) {
+				margin-bottom: 15px;
+				margin-top: 15px;
+			}
+		}
+	}
 }
 
 

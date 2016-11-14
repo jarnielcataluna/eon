@@ -21,16 +21,7 @@ doc.ready(function() {
         }, 300);
     });
 
-    $('.featured-lifehack .flexlslider').flexslider({
-		animation: "fade",
-		directionNav: true,
-		controlNav: true,
-		slideshow: true,
-		slideshowSpeed: 8000,
-		animationSpeed: 400, 
-		prevText: "&nbsp;",
-		nextText: "&nbsp;"
-	});
+    
 });
 
 win.load(function() {

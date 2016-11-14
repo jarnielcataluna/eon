@@ -32,7 +32,7 @@ header {
 		&.is-open {
     		visibility: visible;
     		opacity: 1;
-    		z-index: 999;
+    		z-index: 1002;
 		}
 	}
 
@@ -76,15 +76,16 @@ header {
 	}
 
 	.logo {
-		width: 7.2vw;
+		width: 20vw;
 
 		@include breakpoint(desktop) {
-			width: 100px;
+			width: 180px;
 		}
 
 		@include breakpoint(tablet2) {
 			float: right;
 			clear: both;
+			display: none;
 		}
 
 		@include breakpoint(phablet) {
@@ -125,6 +126,28 @@ header {
 
 		@include breakpoint(phablet) {
 			min-height: 480px;
+		}
+
+		.slides {
+			.coverimage-desktop {
+				@include breakpoint(desktop) {
+					display: block;
+				}
+				@include breakpoint(tablet) {
+					display: none;
+				}
+			}
+
+			.coverimage-mobile {
+				display: none;
+
+				@include breakpoint(desktop) {
+					display: none;
+				}
+				@include breakpoint(tablet) {
+					display: block;
+				}
+			}
 		}
 
 		.slides > li {
@@ -404,6 +427,10 @@ header {
 	@include transition(transform 0.2s 0s cubic-bezier(0.55, 0.055, 0.675, 0.19));
 	@include transform(translateY(50%));
 	opacity: 0;
+
+	@include breakpoint(tablet2) {
+		padding: 0px 15px;
+	}
 	
 	h2 {
 		font-size: 4.5vw;
@@ -539,7 +566,7 @@ header {
 	padding: 0px 1.8vw;
 	xborder: 0.15vw solid $coWhite;
 	font-weight: 700;
-	line-height: 2.4vw;
+	line-height: 3vw;
 	padding-top: 0.2vw;
 	color: $coWhite;
 	font-size: 1.1vw;
@@ -554,7 +581,7 @@ header {
 	}
 
 	.icon-write-a-review {
-		font-size: 3.46vw;
+		font-size: 4.3vw;
 		position: absolute;
 		top: 0;
 		left: 0;
@@ -562,11 +589,11 @@ header {
 		@include transition(all 0s linear);
 
 		@include breakpoint(desktop) {
-			font-size: 35px;
+			font-size: 44px;
 		}
 
 		@include breakpoint(tablet) {
-			font-size: 44px;
+			font-size: 56px;
 			position: absolute;
 			-webkit-backface-visibility: hidden;
 			backface-visibility: hidden;
@@ -576,7 +603,7 @@ header {
 	@include breakpoint(tablet) {
 		margin-right: 15px;
 		font-size: 16px;
-		line-height: 34px;
+		line-height: 46px;
 		padding: 0px 15px;
 		display: inline-block;
 	}
@@ -1034,6 +1061,7 @@ header {
 	z-index: 99;
 	@include transition(all 1.5s cubic-bezier(1, 0, 0, 1));
 	@include transform(scale3d(1.2, 1.2, 1.2));
+	display: none;
 
 	&.is-animated {
 		@include transform(scale3d(1, 1, 1));
@@ -1047,11 +1075,12 @@ header {
 	}
 
 	@include breakpoint(tablet2) {
-		width: 100px;
+		width: 120px;
 		top: 10px;
 		margin-left: 0;
 		left: inherit;
 		right: 15px;
+		display: block;
 	}
 
 	img {
@@ -1060,5 +1089,7 @@ header {
 		display: block;
 	}
 }
+
+
 
 /*** Home End ***/

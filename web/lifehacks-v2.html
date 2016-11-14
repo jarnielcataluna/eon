@@ -24,12 +24,12 @@
 	<header>
 		<div class="head-wrap">
 			<div class="container-fluid">
-				<div class="logo fl"><a href="index.html"><img src="images/page_template/logo.svg" alt=""></a></div>
+				<div class="logo fl"><a href="index.html"><img src="images/page_template/digital-me.svg" alt=""></a></div>
 				<div class="menu-right">
-					<a href="#" class="write-review"><i class="ico icon-write-a-review"></i>Write Review</a>
+					<a href="#" class="write-review"><i class="ico icon-write-a-review"></i>share experience</a>
 					<div class="menu">
 						<ul>
-							<li><a href="#"> <span class="menu-icons"><i class="ico icon-submit-post"></i></span><span class="menu-labels">Submit Post</span></a></li>
+							<!-- <li><a href="#"> <span class="menu-icons"><i class="ico icon-submit-post"></i></span><span class="menu-labels">Submit Post</span></a></li> -->
 							<li><a href="#"> <span class="menu-icons"><i class="ico icon-login"></i></span><span class="menu-labels">Login</span></a></li>
 							<li><a href="#"> <span class="menu-icons"><i class="ico icon-FAQ"></i></span><span class="menu-labels">FAQ<i>s</i></span></a></li>
 							<li><a href="#"> <span class="menu-icons"><i class="ico icon-contact"></i></span><span class="menu-labels">Contact</span></a></li>
@@ -66,6 +66,11 @@
 		</div>
 	</header>
 	<section id="main-wrapper">
+		<!-- Mobile Logo -->
+		<div class="digital-me">
+			<img src="images/page_template/digital-me.svg" alt="">
+		</div>
+		<!-- Mobile Logo End -->
 		<div class="inner-banner">
 			<img src="images/banner/banner-news.jpg" width="1600" height="541" alt="">
 			<div class="table-wrap">
@@ -228,8 +233,51 @@
 			</div>
 		</div>
 
+		<div class="send-us-lifehack sl-mobile">
+			<h2>Send Us Your Lifehack!</h2>
+			<p>Show us how you use EON and all the benefits you get from it. Tell the world how you hack your life with EON!</p>
+			<a href="#" class="btn-default text-center">SUBMIT A LIFEHACK</a>
+		</div>
+
 		<div class="home-menu">
-			<ul>
+			<!-- Sticky Menu Mobile -->
+			<ul class="hm-mobile-list">
+				<li>
+					<a href="#" class="hm-mobile-link">
+						<span class="hm-link">
+							<span class="hm-icons hm-red"><i class="ico icon-co-create"></i></span>
+							<span class="hm-label">Co-Create</span>
+						</span>
+					</a>
+				</li>
+				<li class="active">
+					<a href="lifehacks-v2.html" class="hm-mobile-link">
+						<span class="hm-link">
+							<span class="hm-icons hm-pink"><i class="ico icon-lifehacks"></i></span>
+							<span class="hm-label">LIFEHACKS</span>
+						</span>
+					</a>
+				</li>
+				<li>
+					<a href="#" class="hm-mobile-link">
+						<span class="hm-link">
+							<span class="hm-icons hm-green"><i class="ico icon-experience"></i></span>
+							<span class="hm-label">EXPERIENCE </span>
+						</span>
+					</a>
+				</li>
+				<li>
+					<a href="express.html" class="hm-mobile-link">
+						<span class="hm-link">
+							<span class="hm-icons hm-blue"><i class="ico icon-express"></i></span>
+							<span class="hm-label">EXPRESS</span>
+						</span>
+					</a>
+				</li>
+			</ul>
+			<!-- Sticky Menu Mobile End -->
+
+			<ul class="hm-desktop-list">
 				<li>
 					<span class="hm-link">
 						<span class="hm-icons hm-red"><i class="ico icon-co-create"></i></span>
@@ -294,10 +342,14 @@
 	<div class="footer-wrap">
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-md-3 col-sm-3 col-xs-6 fr">
-					<p class="unionbank text-right"><span>Powered by</span>UNIONBANK</p>
+				<div class="col-lg-4 col-md-3 col-sm-6 col-xs-6 fr">
+					<p class="unionbank text-right"><label>Powered by</label>
+					UNIONBANK
+					<span><img class="c-visa" src="images/page_template/visa.png" alt=""></span>
+					<span><img class="c-bancnet" src="images/page_template/bancnet.png" alt=""></span>
+					</p>
 				</div>
-				<div class="col-md-3 col-sm-3 col-xs-6">
+				<div class="col-lg-4 col-md-3 col-sm-6 col-xs-6">
 					<div class="follow-us">
 						<label> Follow Us :</label>
 						<ul>
@@ -306,7 +358,7 @@
 						</ul>
 					</div>
 				</div>
-				<div class="col-md-6 col-sm-6 col-xs-12">
+				<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
 					<p class="copyrights text-center">&copy; COPYRIGHT 2016 EON</p>
 				</div>
 				

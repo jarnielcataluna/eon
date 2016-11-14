@@ -1,0 +1,441 @@
+
+.express-wrap {
+	background: $coViolet;
+	padding: 0;
+	color: $coWhite;
+}
+
+.sect-tagline {
+
+	h3 {
+		font-weight: 700;
+		margin-bottom: 0.6vw;
+
+		@include breakpoint(largedesktop) {
+			font-size: 35px;
+			margin-bottom: 15px;
+		}
+
+		@include breakpoint(tablet2) {
+			font-size: 24px;
+			margin-bottom: 15px;
+		}
+	}
+
+	p {
+		font-size: 1.2vw;
+
+		@include breakpoint(largedesktop) {
+			font-size: 20px;
+		}
+		@include breakpoint(tablet2) {
+			font-size: 18px;
+		}
+	}
+
+	.btn {
+		margin-top: 2vw;
+
+		@include breakpoint(largedesktop) {
+			margin-top: 25px;
+		}
+	}
+}
+
+.grid-sizer { 
+	width:25%;
+	padding: 5px;
+}
+
+.grid-item { 
+	width:25%;
+	padding: 0px 0.5vw 1.5vw;
+
+	@include breakpoint(largedesktop) {
+		padding: 0px 7px 15px;
+	}
+}
+
+.gi-wrap {
+	background: $coWhite;
+	border-radius: 0.44vw;
+	position: relative;
+	overflow: hidden;
+	box-shadow: 0 6px 3px 0 rgba(0,0,0,0.05),0 10px 16px 0 rgba(0,0,0,0.16),0 3px 4px -8px rgba(0,0,0,0.5);
+
+	.submitted-by {
+		padding: 0.5vw 6vw 0.5vw 0vw;
+
+		@include breakpoint(largedesktop) {
+			padding-right: 55px;
+			padding-bottom: 10px;
+			padding-top: 10px;
+		}
+
+		.author-name {
+			color: #414042;
+			font-weight: 700;
+			margin-bottom: 0.33vw;
+			font-size: 1vw;
+
+			@include breakpoint(largedesktop) {
+				font-size: 16px;
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	p {
+		color: #414042;
+		font-size: 1vw;
+		line-height: 1.2vw;
+		padding-top: 1vw;
+		font-weight: 300;
+		-webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+
+        @include breakpoint(largedesktop) {
+        	font-size: 16px;
+        	line-height: 20px;
+        	padding-top: 10px;
+        }
+
+
+	}
+}
+
+.gi-text {
+	padding: 0px 1vw 1vw;
+
+	@include breakpoint(largedesktop) {
+		padding: 0px 15px 15px;
+	}
+}
+
+.gi-holder {
+
+	a {
+		display: block;
+		position: relative;
+
+		img {
+			-webkit-backface-visibility: hidden;
+			backface-visibility: hidden;
+		}
+
+		&.gi-play {
+
+			&:before {
+				content:'';
+				background: url('../images/news/play.png') no-repeat 50% 50%;
+				position: absolute;
+				background-size: 8vw 8vw;
+				top: 50%;
+				left: 50%;
+				@include transform(translate(-50%, -50%));
+				z-index: 99;
+				width: 8vw;
+				height: 8vw;
+
+				@include breakpoint(tablet2) {
+					width: 90px;
+					height: 90px;
+					background-size: 90px 90px;
+				}
+			}
+
+			&:after {
+				content:'';
+				display: block;
+				background: rgba(0, 0, 0, 0.60);
+				width: 100%;
+				height: 100%;
+				z-index: 1;
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+		}
+	}
+
+	img {
+		width: 100%;
+		height: auto;
+		display: block;
+	}
+}
+
+.masonry-wrap {
+	padding: 0px 1vw;
+	margin-top: 2.5vw;
+
+	margin-left: auto;
+	margin-right: auto;
+
+	@include breakpoint(largedesktop) {
+		margin-top: 40px;
+		padding: 0px 10px;
+	}
+
+
+}
+
+.gi-action {
+	border-top: 0.22vw solid #eaeaea;
+	margin: 0px 0.33vw;
+	padding: 0px 0.77vw;
+	position: relative;
+
+	@include breakpoint(largedesktop) {
+		margin: 0px 5px;
+		padding: 0px 10px;
+		border-top: 2px solid #eaeaea;
+	}
+
+	.gi-action-btn {
+		position: absolute;
+		bottom: 0.5vw;
+		right: 0.5vw;
+
+		@include breakpoint(largedesktop) {
+			bottom: 10px;
+			right: 10px;
+		}
+		
+
+		a {
+			color: #808285;
+			font-size: 1.5vw;
+			display: inline-block;
+			margin: 0 0.33vw;
+
+			@include breakpoint(largedesktop) {
+				font-size: 20px;
+			}
+
+			&:hover {
+				color: $coPink;
+			}
+		}
+	}
+
+	.author-wrap {
+		margin-right: 0.6vw;
+	}
+
+	.author-sm {
+		width: 1.4vw;
+		height: 1.4vw;
+		display: inline-block;
+		vertical-align: middle;
+		line-height: 1.4vw;
+		background: $coBlue;
+		color: $coWhite;
+		text-align: center;
+		border-radius: 50%;
+
+		@include breakpoint(largedesktop) {
+			width: 25px;
+			height: 25px;
+			line-height: 25px;
+			margin-right: 5px;
+
+		}
+
+		&.a-sm-pinterest {
+			background: #CB2128;
+		}
+
+		&.a-sm-twitter {
+			background: #2BA8E0; 
+
+			i {
+				top: 3px;
+			}
+		}
+
+		&.a-sm-instagram {
+			background: #5280A4; 
+
+			i {
+				top: 3px;
+
+				@include breakpoint(largedesktop) {
+					top: 2px;
+				}
+			}
+		}
+
+		&.a-sm-linkedin {
+			background: #007BB6; 
+		}
+
+		i {
+			position: relative;
+			top: 2px;
+			color: $coWhite;
+
+			@include breakpoint(largedesktop) {
+				font-size: 16px;
+				top: 1px;
+			}
+		}
+	}
+
+	.author-datepost {
+
+		span {
+			color: #808285;
+
+			@include breakpoint(largedesktop) {
+				font-size: 12px;
+			}
+		}
+		
+	}
+}
+
+.btn-load {
+	margin-top: 2vw;
+}
+
+#express-form {
+	max-width: 27vw;
+	margin: 2vw auto 0;
+	min-width: 400px;
+
+	@include breakpoint(phablet) {
+		margin: 25px 0 10px;
+		min-width: 318px;
+		width: 100%;
+		max-width: 100%;
+		padding: 0px 10px;
+	}
+
+	.p-ad-info {
+		color: $coRed;
+		font-size: 0.9vw;
+
+		@include breakpoint(largedesktop) {
+			font-size: 14px;
+		}
+	}
+
+	hr {
+		width: 150%;
+		margin-left: -25%;
+		margin-top: 1vw;
+		margin-bottom: 1vw;
+		border: 1px dashed $coDarkViolet;
+
+		@include breakpoint(tablet2) {
+			margin-top: 15px;
+			margin-bottom: 15px;
+		}
+	}
+
+	input[type="submit"] {
+		padding: 0px 2vw;
+	}
+}
+
+.p-add-media {
+	ul {
+		margin: 10px -10px 0;
+
+		@include breakpoint(tablet2) {
+			margin: 10px -12px 0px;
+		}
+
+		&:after {
+			content:'';
+			display: block;
+			float: none;
+			clear: both;
+		}
+
+		li {
+			width: 50%;
+			padding: 0px 10px 10px;
+			float: left;
+
+			@include breakpoint(tablet2) {
+				padding: 0px 3px 8px;
+			}
+		}
+	}
+
+	.btn-secondary {
+		display: block;
+		padding: 0px 10px;
+		text-align: left;
+
+		@include breakpoint(tablet2) {
+			padding: 0px 5px;
+			font-size: 12px;
+		}
+
+		.ico {
+			display: inline-block;
+			vertical-align: middle;
+			font-size: 1.6vw;
+			margin-right: 6px;
+			text-align: center;
+			line-height: 3vw;
+			min-width: 2.8vw;
+
+
+			@include breakpoint(largedesktop) {
+				font-size: 22px;
+				line-height: 40px;
+				min-width: 30px;
+			}
+
+			@include breakpoint(tablet2) {
+				min-width: 22px;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 1200px) {
+
+	.grid-sizer{ 
+		width:33.33%;
+	}
+
+	.grid-item { 
+		width: 33.33%;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+
+	.grid-sizer{ 
+		width:50%;
+	}
+
+	.grid-item { 
+		width: 50%
+		
+	}
+}
+
+@media only screen and (max-width: 480px) {
+
+	.grid-sizer{ 
+		width:100%;
+	}
+
+	.grid-item { 
+		width: 100%
+		
+	}
+
+	.masonry-wrap  {
+
+		p {
+			font-size: 16px;
+		}
+	}
+}

@@ -1,0 +1,9 @@
+.expe-devices-feature ul {
+  margin: 0 -2vw;
+}
+
+.expe-devices-feature ul li {
+  width: 33.33%;
+  padding: 0px 2vw;
+  float: left;
+}

@@ -3,7 +3,6 @@ body {
 	font-family: $fontA;
 	font-weight: 300;
 	
-
 	@include breakpoint(tablet) {
 		font-size: 16px;
 	}
@@ -21,6 +20,10 @@ body {
 	box-sizing: border-box;
 	-webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+em {
+	font-style: italic;
 }
 
 #main-wrapper { position: relative; overflow: hidden; z-index: 97; }
@@ -84,6 +87,36 @@ body {
 		    -moz-animation: gradientAnimate 25s ease infinite;
 		    animation: gradientAnimate 25s ease infinite;
 		}
+
+		.logo {
+			width: 12vw;
+			position: relative;
+			top: -0.4vw;
+
+			@include breakpoint(tablet) {
+				xtop: 0;
+			}
+
+			@include breakpoint(desktop) {
+				width: 180px;
+			}
+
+			@include breakpoint(tablet2) {
+				float: right;
+				clear: both;
+				display: none;
+			}
+
+			@include breakpoint(phablet) {
+				width: 80px;
+			}
+
+			img {
+				width: 100%;
+				height: auto;
+				display: block;
+			}
+		}
 	}
 
 	.home-menu {
@@ -98,16 +131,91 @@ body {
 			max-height: 65px;
 		}
 
+		ul.hm-mobile-list {
+			display: none;
+			visibility: hidden;
+			box-shadow: 6px 1px 3px 0 rgba(0,0,0,0.05),10px 0px 16px 0 rgba(0,0,0,0.16),3px -1px 4px -8px rgba(0,0,0,0.5);
+		}
+
 		@include breakpoint(tablet2) {
-			margin-top: 20px;
-			position: relative;
+			margin-top: 0px;
 			max-height: 100%;
-			top: 0 !important;
+			top: inherit !important;
+			bottom: 0 !important;
+			padding: 0;
+
+			ul.hm-desktop-list {
+				display: none;
+			}
+
+			ul.hm-mobile-list {
+				display: block;
+				visibility: visible;
+			}
+
+			&:before {
+				display: none;
+			}
+
+			li {
+				width: 25%;
+				margin-bottom: 0;
+				padding: 0;
+
+				&.active {
+					.hm-mobile-link {
+						background: #783ABF;
+					}
+				}
+			}
+
+			.hm-mobile-link {
+				padding: 8px 10px 5px 10px;
+				display: block;
+				
+			}
+		}
+
+		ul li:after {
+			display: none;
 		}
 	}
 
-	.hm-link:hover .expanded-info {
+	.hm-link:hover .expanded-info {}
 
+	.hm-link {
+
+		.hm-icons {
+
+			@include breakpoint(tablet2) {
+				margin-right: 0;
+			}
+		}
+
+		.hm-label {
+			@include breakpoint(tablet2) {
+				padding-top: 0;
+				font-weight: 300;
+				font-size: 9px;
+			}
+		}
+
+		.hm-icons {
+			@include breakpoint(tablet2) {
+				width: 35px;
+				height: 35px;
+
+				.ico {
+					line-height: 35px;
+					font-size: 18px;
+				}
+			}
+
+			@include breakpoint(mobile) {
+				display: block;
+				margin: 0 auto;
+			}
+		}
 	}
 
 	.expanded-info {
@@ -131,6 +239,10 @@ body {
 		height: 400px;
 	}
 
+	@include breakpoint(tablet2) {
+		height: 350px;
+	}
+
 	&:after {
 		content:'';
 		display: block;
@@ -139,7 +251,7 @@ body {
 		position: absolute;
 		top: 0;
 		left: 0;
-		background: rgba(35, 31, 32, 0.50);
+		background: rgba(35, 31, 32, 0.60);
 		z-index: 2;
 	}
 }
@@ -160,7 +272,8 @@ body {
 		width: 100%;
 		text-align: center;
 		padding-top: 10vW;
-		padding: 0px 15px;
+		padding-left: 15px;
+		padding-right: 15px;
 
 		@include breakpoint(tablet) {
 			padding-top: 100px;
@@ -168,6 +281,13 @@ body {
 
 		@include breakpoint(tablet2) {
 			padding-top: 40px;
+			padding-left: 0;
+			padding-right: 0;
+
+			.inner-page & {
+				padding-left: 15px;
+				padding-right: 15px;
+			}
 		}
 	}
 }
@@ -193,7 +313,7 @@ body {
 		color: $coWhite;
 		line-height: 1.3vw;
 
-		@include breakpoint(desktop) {
+		@include breakpoint(largedesktop) {
 			font-size: 22px;
 			line-height: 26px;
 		}
@@ -233,9 +353,631 @@ body {
 	line-height: 3vw;
 	padding: 0px 1.1vw;
 
-	@include breakpoint(desktop) {
-		line-height: 40px;
+	&.btn-primary {
+		background: $coRed;
+		border: 0.15vw solid $coRed;
+		font-weight: 700;
+		text-transform: uppercase; 
+
+		@include breakpoint(largedesktop) {
+			border: 1px solid $coRed;
+		}
+
+		&:hover {
+			background: darken($coRed, 5%);
+			color: $coWhite;
+			border: 0.15vw solid darken($coRed, 5%);
+
+			@include breakpoint(largedesktop) {
+				border: 1px solid darken($coRed, 5%);
+			}
+		}
 	}
+
+	&.btn-secondary {
+		background: $coViolet;
+		border: 0.15vw solid $coViolet;
+		font-weight: 300;
+		text-transform: uppercase; 
+		display: inline-block;
+		font-size: 0.9vw;
+
+		@include breakpoint(largedesktop) {
+			border: 1px solid $coViolet;
+			font-size: 14px;
+		}
+
+		&:hover {
+			background: darken($coViolet, 5%);
+			color: $coWhite;
+			border: 0.15vw solid darken($coViolet, 5%);
+
+			@include breakpoint(largedesktop) {
+				border: 1px solid darken($coViolet, 5%);
+			}
+		}
+	}
+
+	&:hover {
+		background: $coWhite;
+		color: $coRed;
+	}
+
+	@include breakpoint(largedesktop) {
+		line-height: 40px;
+		padding: 0px 15px;
+		border: 1px solid $coWhite;
+		font-size: 16px;
+		border-radius: 4px;
+	}
+}
+
+.btn-block {
+	display: block;
+	text-align: center;
+}
+
+.sec-title {
+	color: $coDarkViolet;
+	font-size: 4.1vw;
+	line-height: 4.3vw;
+	font-weight: 700;
+	margin-bottom: 2vw;
+}
+
+.sec-pad {
+	padding: 3vw 0;
+
+	@include breakpoint(largedesktop) {
+		padding: 30px 0;
+	}
+
+	@include breakpoint(tablet2) {
+		padding: 20px 0;
+	}
+}
+
+.bg-violet {
+	background: #271D76;
+}
+
+.flex-control-nav {
+
+	li a {
+		width: 1.1vH;
+		height: 1.1vH;
+		background: $coWhite;
+		text-indent: -999999px;
+		text-align: left;
+		position: relative;
+
+		@include breakpoint(tablet) {
+			width: 12px;
+			height: 12px;
+		}
+
+		&.flex-active, &:hover {
+			background: $coPink;
+		}
+
+		&.flex-active {
+
+		}
+	}
+}
+
+.null-pad {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.null-pt {
+	padding-top: 0;
+}
+
+.null-pb {
+	padding-bottom: 0;
+}
+
+
+.wavy-loader {
+	text-align:center;
+	background: transparent;
+	width:100%;
+	float:none;
+	display: none;
+	clear:both;
+	position:relative;
+	padding:1.5vw 0;
+}
+
+.wavy-loader span:first-child {
+	-webkit-animation:wavy-loader 1.1s .1s cubic-bezier(0.215,0.61,0.355,1) infinite;
+	-moz-animation:wavy-loader 1.1s .1s cubic-bezier(0.215,0.61,0.355,1) infinite;
+	animation:wavy-loader 1.1s .1s cubic-bezier(0.215,0.61,0.355,1) infinite;
+}
+
+.wavy-loader span:nth-child(2) {
+	-webkit-animation:wavy-loader 1.1s .2s cubic-bezier(0.215,0.61,0.355,1) infinite;
+	-moz-animation:wavy-loader 1.1s .2s cubic-bezier(0.215,0.61,0.355,1) infinite;
+	animation:wavy-loader 1.1s .2s cubic-bezier(0.215,0.61,0.355,1) infinite;
+}
+
+.wavy-loader span:nth-child(3) {
+	-webkit-animation:wavy-loader 1.1s .3s cubic-bezier(0.215,0.61,0.355,1) infinite;
+	-moz-animation:wavy-loader 1.1s .3s cubic-bezier(0.215,0.61,0.355,1) infinite;
+	animation:wavy-loader 1.1s .3s cubic-bezier(0.215,0.61,0.355,1) infinite;
+}
+
+.wavy-loader span {
+	display:inline-block;
+	position:relative;
+	border-radius:50%;
+	width:0.5vw;
+	height:0.5vw;
+	background-color: darken($coRed, 5%);
+	margin:0 5px;
+
+	@include breakpoint(largedesktop) {
+		width: 10px;
+		height: 10px;
+	}
+}
+
+
+.popup-wrap {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	visibility: hidden;
+	overflow: hidden;
+	opacity: 0;
+	@include transition(all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1));
+	z-index: 1;
+
+	&.active {
+		z-index: 1000;
+		opacity: 1;
+		visibility: visible;
+
+		.popup-content {
+			@include transform(translateY(0) scale(1));
+			opacity: 1;
+
+		}
+
+		&:after {
+			opacity: 1;
+		}
+
+		@include breakpoint(tablet2) {
+			position: fixed;
+		}
+		
+	}
+
+	.bg-close {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 200%;
+		background: transparent;
+		text-indent: -999px;
+		display: block;
+		z-index: 3;
+	}
+
+	.close-text {
+		position: absolute;
+		top: 0;
+		right: 0;
+		display: block;
+		z-index: 3;
+		background: $coBlack;
+		width: 35px;
+		height: 35px;
+		line-height: 35px;
+		color: $coWhite;
+		text-align: center;
+	}
+
+	&:after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 1000%;
+		width: 100%;
+		z-index: 2;
+		background: rgba(0, 0, 0, 0.80);
+		@include transition(all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1));
+		opacity: 0;
+	}
+}
+
+.pop-close {
+	color: $coWhite;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	position: absolute;
+	top: -20px;
+	right: -20px;
+	border-radius: 50%;
+	background: $coRed;
+	font-size: 18px;
+
+	@include breakpoint(tablet2) {
+		top: 0;
+		right: 0;
+		border-radius: 0;
+		font-size: 13px;
+	}
+
+	span {
+		position: relative;
+		top: 2px;
+	}
+
+}
+
+.popup-content {
+	width: 30%;
+	width: 70vw;
+	background: $coWhite;
+	position: absolute;
+	text-align: center;
+	left: 50%;
+	margin-left: -35vw;
+	padding: 0 1vw 2vw;
+	opacity: 0;
+	z-index: 9;
+	@include transform(translateY(150px) scale(0));
+	@include transition(all 0.4s 0.3s cubic-bezier(0.215, 0.61, 0.355, 1));
+
+	@include breakpoint(tablet2) {
+		width: 100%;
+		max-width: 100%;
+		top: 0 !important;
+		left: 0;
+		margin-left: 0;
+		height: 100%;
+		max-height: 100%;
+		min-width: 1px;
+		overflow-y: auto;
+		overflow-x: hidden;
+		padding-top: 0;
+	}
+
+	.popup-head {
+		background: $coViolet;
+		color: $coWhite;
+		margin: 0px -1vw;
+		padding: 1.5vw 1vw;
+
+		@include breakpoint(largedesktop) {
+			padding: 15px 50px;
+
+		}
+
+		@include breakpoint(tablet2) {
+			padding: 10px 50px;
+
+			h3 {
+				font-size: 19px;
+				line-height: 24px;
+			}
+			
+		}
+	}
+
+}
+
+.input-wrap {
+	position: relative;
+	margin-bottom: 20px;
+	padding: 0px;
+	width: 100%;
+
+	@include breakpoint(tablet2) {
+		margin-bottom: 15px;
+	}
+
+	&.error {
+
+		input[type="text"], input[type="email"], input[type="number"], input[type="tel"], input[type="password"] {
+			border: 1px solid red !important;
+		}
+
+		.required-tooltip {
+			
+			opacity: 1;
+
+			&.left, &.right {
+				@include transform(translateX(0));
+				z-index: 3;
+			}
+		}
+	}
+
+
+	input[type="text"], input[type="email"], input[type="number"], input[type="tel"], input[type="password"], textarea {
+		height: 2.3vw;
+		padding: 0.6vw 1vw 0 1vw;
+		width: 100%;
+		border: 1px solid $coViolet;
+		position: relative;
+		z-index: 1;
+		-webkit-appearance: none;
+		appearance: none;
+		_noFocusLine: expression(this.hideFocus=true);
+		outline: none;
+
+		@include breakpoint(largedekstop) {
+			height: 40px;
+			padding: 10px 15px 0px 15px;
+		}
+
+		@include breakpoint(tablet2) {
+	    	height: 35px;
+	    	padding: 8px 15px 0px 15px;
+	    }
+
+		&::-webkit-input-placeholder {
+		  	font-size: 0.8vw;
+		  	opacity: 0;
+		  	visibility: hidden;
+
+		  	@include breakpoint(largedekstop) {
+		  		font-size: 13px;
+		  	}
+		}
+		&::-moz-placeholder { 
+		  	font-size: 0.8vw;
+		  	opacity: 0;
+		  	visibility: hidden;
+
+		  	@include breakpoint(largedekstop) {
+		  		font-size: 13px;
+		  	}
+		}
+
+		&:-ms-input-placeholder { 
+		   	font-size: 0.8vw;
+		  	opacity: 0;
+		  	visibility: hidden;
+
+		  	@include breakpoint(largedekstop) {
+		  		font-size: 13px;
+		  	}
+		}
+
+		&:-moz-placeholder { 
+			font-size: 0.8vw;
+		  	opacity: 0;
+		  	visibility: hidden;
+
+		  	@include breakpoint(largedekstop) {
+		  		font-size: 13px;
+		  	}
+		}
+
+		&:focus {
+			border-bottom: 1px solid $coDarkViolet;
+
+			&::-webkit-input-placeholder {
+			  	opacity: 1;
+			  	visibility: visible;
+			}
+			&::-moz-placeholder { 
+			  	opacity: 1;
+			  	visibility: visible;
+			}
+
+			&:-ms-input-placeholder { 
+			   	opacity: 1;
+			  	visibility: visible;
+			}
+
+			&:-moz-placeholder { 
+				opacity: 1;
+			  	visibility: visible;
+			}
+		}
+	}
+
+	textarea {
+		min-height: 100px;
+	}
+
+	input[value=""] + label, input[value=""] + label, textarea[value=""] + label {
+	    color: #999;
+	    position: absolute;
+	    left: 13px; /* the negative of the input width */
+	    font-size: 0.8vw;
+	    bottom: 0.07vw;
+	    cursor: text;
+	    color: $coGrey;
+	    opacity: 1;
+	    visibility: visible;
+	    z-index: 3;
+	    @include transition(all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1));
+
+	    @include breakpoint(largedesktop) {
+	    	font-size: 16px;
+	    }
+
+	    @include breakpoint(tablet2) {
+	    	font-size: 14px;
+	    }
+
+	    span {
+	    	color: lighten($coGrey, 25%);
+	    	@include transition(all 0s linear);
+
+	    	@include breakpoint(tablet2) {
+		    	font-size: 12px;
+		    }
+	    }
+	}
+
+	textarea[value=""] + label {
+		bottom: 75%;
+	}
+
+	/*input[required] + label:after {
+	    content:'*';
+	    color: red;
+	    margin-left: 5px;
+	}*/
+
+	/* show the placeholder when input has no content (no content = invalid) */
+	
+
+	/* hide the placeholder when input has some text typed in */
+	input[required]:valid + label, input[required]:focus + label, input:not([value=""]) + label, textarea:focus + label{
+	    font-size: 13px;
+	    position: absolute;
+	    bottom: 101%;
+	    left: 0px;
+	    z-index: 1;
+	    outline: none;
+
+
+	    span {
+	    	opacity: 0;
+	    }
+	}
+}
+
+.custom-checkbox [type="checkbox"] {
+	display: none;
+}
+
+.custom-checkbox label {
+	position: relative !important;
+	font-size: 1vw;
+	color: $coDarkViolet;
+
+	@include breakpoint(largedesktop) {
+		font-size: 16px;
+	}
+}
+
+.custom-checkbox [type="checkbox"]:not(:checked) + label:before,
+.custom-checkbox [type="checkbox"]:checked + label:before {
+	content: '';
+	position: relative;
+	display: inline-block;
+	width: 17px; height: 17px;
+	border: 1px solid $coDarkViolet;
+	background: $coWhite;
+	vertical-align: middle;
+	margin-right: 10px;
+	top: -2px;
+}
+/* checked mark aspect */
+.custom-checkbox [type="checkbox"]:not(:checked) + label:after,
+.custom-checkbox [type="checkbox"]:checked + label:after {
+	content: "\f00c";
+	display: inline-block;
+	font: normal normal normal 14px/1 FontAwesome;
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	position: absolute;
+	top: 1px; left: 3px;
+	font-size: 13px;
+	line-height: 0.8;
+	color: $coDarkViolet;
+	transition: all .2s;
+}
+/* checked mark aspect changes */
+.custom-checkbox [type="checkbox"]:not(:checked) + label:after {
+	opacity: 0;
+	transform: scale(0);
+}
+.custom-checkbox [type="checkbox"]:checked + label:after {
+	opacity: 1;
+	transform: scale(1);
+}
+/* disabled checkbox */
+.custom-checkbox [type="checkbox"]:disabled:not(:checked) + label:before,
+.custom-checkbox [type="checkbox"]:disabled:checked + label:before {
+	box-shadow: none;
+	border-color: #bbb;
+	background-color: #ddd;
+}
+.custom-checkbox [type="checkbox"]:disabled:checked + label:after {
+ 	color: #999;
+}
+.custom-checkbox [type="checkbox"]:disabled + label {
+ 	color: #aaa;
+}
+
+@-webkit-keyframes wavy-loader{
+	0%{transform:translateY(2px)}
+	3%{transform:translateY(4px)}
+	6%{transform:translateY(6px)}
+	9%{transform:translateY(8px)}
+	12%{transform:translateY(10px)}
+	15%{transform:translateY(-2px)}
+	18%{transform:translateY(-4px)}
+	21%{transform:translateY(-6px)}
+	24%{transform:translateY(-8px)}
+	27%{transform:translateY(-10px)}
+	30%{transform:translateY(1px)}
+	33%{transform:translateY(2px)}
+	36%{transform:translateY(3px)}
+	39%{transform:translateY(-1px)}
+	42%{transform:translateY(-2px)}
+	45%{transform:translateY(-3px)}
+	48%{transform:translateY(0px)}
+	100%{transform:translateY(0px)}
+}
+
+@-moz-keyframes wavy-loader{
+	0%{transform:translateY(2px)}
+	3%{transform:translateY(4px)}
+	6%{transform:translateY(6px)}
+	9%{transform:translateY(8px)}
+	12%{transform:translateY(10px)}
+	15%{transform:translateY(-2px)}
+	18%{transform:translateY(-4px)}
+	21%{transform:translateY(-6px)}
+	24%{transform:translateY(-8px)}
+	27%{transform:translateY(-10px)}
+	30%{transform:translateY(1px)}
+	33%{transform:translateY(2px)}
+	36%{transform:translateY(3px)}
+	39%{transform:translateY(-1px)}
+	42%{transform:translateY(-2px)}
+	45%{transform:translateY(-3px)}
+	48%{transform:translateY(0px)}
+	100%{transform:translateY(0px)}
+}
+	
+@keyframes wavy-loader{
+	0%{transform:translateY(2px)}
+	3%{transform:translateY(4px)}
+	6%{transform:translateY(6px)}
+	9%{transform:translateY(8px)}
+	12%{transform:translateY(10px)}
+	15%{transform:translateY(-2px)}
+	18%{transform:translateY(-4px)}
+	21%{transform:translateY(-6px)}
+	24%{transform:translateY(-8px)}
+	27%{transform:translateY(-10px)}
+	30%{transform:translateY(1px)}
+	33%{transform:translateY(2px)}
+	36%{transform:translateY(3px)}
+	39%{transform:translateY(-1px)}
+	42%{transform:translateY(-2px)}
+	45%{transform:translateY(-3px)}
+	48%{transform:translateY(0px)}
+	100%{transform:translateY(0px)}
 }
 
 @-webkit-keyframes gradientAnimate {
