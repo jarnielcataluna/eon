@@ -807,7 +807,7 @@ em {
 	    position: absolute;
 	    left: 13px; /* the negative of the input width */
 	    font-size: 0.8vw;
-	    bottom: 0.07vw;
+	    bottom: 0.2vw;
 	    cursor: text;
 	    color: $coGrey;
 	    opacity: 1;
@@ -817,6 +817,7 @@ em {
 
 	    @include breakpoint(largedesktop) {
 	    	font-size: 16px;
+	    	bottom: 10px;
 	    }
 
 	    @include breakpoint(tablet2) {
