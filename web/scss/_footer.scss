@@ -124,6 +124,10 @@ footer {
 	letter-spacing: 0.03vw;
 	line-height: 1.8vw;
 
+	@include breakpoint(tablet2) {
+		text-align: left;
+	}
+
 	img {
 		max-width: 5vw;
 		display: inline-block;

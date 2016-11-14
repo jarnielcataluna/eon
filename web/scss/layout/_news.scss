@@ -349,6 +349,70 @@
 			}
 		}
 	}
+
+	.search-field {
+
+		button.sf-button {
+			position: absolute;
+			font-size: 1.5vw;
+			top: 0px;
+			right: 15px;
+			border: none;
+			background: none;
+			color: $coRed;
+			z-index: 9;
+			min-height: 40px;
+			height: 2.3vw;
+			line-height: 2.3vw;
+			outline: none;
+
+			@include breakpoint(largedesktop) {
+				line-height: 40px;
+				font-size: 18px;
+			}
+		}
+
+		input[type="text"] {
+			padding-right: 50px;
+			font-size: 1vw;
+
+			@include breakpoint(largedesktop) {
+				font-size: 16px;
+				color: $coGrey;
+			}
+
+			&::-webkit-input-placeholder {
+			  	font-size: 0.8vw;
+
+			  	@include breakpoint(largedesktop) {
+			  		font-size: 16px;
+			  	}
+			}
+			&::-moz-placeholder { 
+			  	font-size: 0.8vw;
+
+			  	@include breakpoint(largedesktop) {
+			  		font-size: 16px;
+			  	}
+			}
+
+			&:-ms-input-placeholder { 
+			   	font-size: 0.8vw;
+
+			  	@include breakpoint(largedesktop) {
+			  		font-size: 16px;
+			  	}
+			}
+
+			&:-moz-placeholder { 
+				font-size: 0.8vw;
+
+			  	@include breakpoint(largedesktop) {
+			  		font-size: 16px;
+			  	}
+			}
+		}
+	}
 }
 
 .categ-list-wrap {

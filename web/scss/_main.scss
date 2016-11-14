@@ -594,6 +594,71 @@ em {
 		@include transition(all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1));
 		opacity: 0;
 	}
+
+	input[type="text"], input[type="email"], input[type="number"], input[type="tel"], input[type="password"], textarea {
+		
+		&::-webkit-input-placeholder {
+		  	font-size: 0.8vw;
+		  	opacity: 0;
+		  	visibility: hidden;
+
+		  	@include breakpoint(largedesktop) {
+		  		font-size: 13px;
+		  	}
+		}
+		&::-moz-placeholder { 
+		  	font-size: 0.8vw;
+		  	opacity: 0;
+		  	visibility: hidden;
+
+		  	@include breakpoint(largedesktop) {
+		  		font-size: 13px;
+		  	}
+		}
+
+		&:-ms-input-placeholder { 
+		   	font-size: 0.8vw;
+		  	opacity: 0;
+		  	visibility: hidden;
+
+		  	@include breakpoint(largedesktop) {
+		  		font-size: 13px;
+		  	}
+		}
+
+		&:-moz-placeholder { 
+			font-size: 0.8vw;
+		  	opacity: 0;
+		  	visibility: hidden;
+
+		  	@include breakpoint(largedesktop) {
+		  		font-size: 13px;
+		  	}
+		}
+
+		&:focus {
+			border-bottom: 1px solid $coDarkViolet;
+
+			&::-webkit-input-placeholder {
+			  	opacity: 1;
+			  	visibility: visible;
+			}
+			&::-moz-placeholder { 
+			  	opacity: 1;
+			  	visibility: visible;
+			}
+
+			&:-ms-input-placeholder { 
+			   	opacity: 1;
+			  	visibility: visible;
+			}
+
+			&:-moz-placeholder { 
+				opacity: 1;
+			  	visibility: visible;
+			}
+		}
+	}
 }
 
 .pop-close {
@@ -715,7 +780,7 @@ em {
 		_noFocusLine: expression(this.hideFocus=true);
 		outline: none;
 
-		@include breakpoint(largedekstop) {
+		@include breakpoint(largedesktop) {
 			height: 40px;
 			padding: 10px 15px 0px 15px;
 		}
@@ -730,67 +795,7 @@ em {
 	    	padding: 8px 15px 0px 15px;
 	    }
 
-		&::-webkit-input-placeholder {
-		  	font-size: 0.8vw;
-		  	opacity: 0;
-		  	visibility: hidden;
-
-		  	@include breakpoint(largedekstop) {
-		  		font-size: 13px;
-		  	}
-		}
-		&::-moz-placeholder { 
-		  	font-size: 0.8vw;
-		  	opacity: 0;
-		  	visibility: hidden;
-
-		  	@include breakpoint(largedekstop) {
-		  		font-size: 13px;
-		  	}
-		}
-
-		&:-ms-input-placeholder { 
-		   	font-size: 0.8vw;
-		  	opacity: 0;
-		  	visibility: hidden;
-
-		  	@include breakpoint(largedekstop) {
-		  		font-size: 13px;
-		  	}
-		}
-
-		&:-moz-placeholder { 
-			font-size: 0.8vw;
-		  	opacity: 0;
-		  	visibility: hidden;
-
-		  	@include breakpoint(largedekstop) {
-		  		font-size: 13px;
-		  	}
-		}
-
-		&:focus {
-			border-bottom: 1px solid $coDarkViolet;
-
-			&::-webkit-input-placeholder {
-			  	opacity: 1;
-			  	visibility: visible;
-			}
-			&::-moz-placeholder { 
-			  	opacity: 1;
-			  	visibility: visible;
-			}
-
-			&:-ms-input-placeholder { 
-			   	opacity: 1;
-			  	visibility: visible;
-			}
-
-			&:-moz-placeholder { 
-				opacity: 1;
-			  	visibility: visible;
-			}
-		}
+		
 	}
 
 	textarea {
