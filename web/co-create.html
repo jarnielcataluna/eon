@@ -98,14 +98,20 @@
 									<label for="p-name">Your Name <span>(First Name, Last Name)</span></label>
 								</div>
 								<div class="input-wrap">
+									<input type="text" id="p-occupation" name="p-occupation" value="" placeholder="First Name, Last Name" required="required" onchange="this.setAttribute('value', this.value);">
+									<label for="p-occupation">Your Occupation</label>
+								</div>
+								<div class="input-wrap">
 						
-									<input type="email" id="p-email" name="p-name" value="" required="required" onchange="this.setAttribute('value', this.value);" placeholder="youremail@email.com">
+									<input type="email" id="p-email" name="p-email" value="" required="required" onchange="this.setAttribute('value', this.value);" placeholder="youremail@email.com">
 									<label for="p-email">Your Email <span>(youremail@email.com)</span></label>
 								</div>
 								<div class="input-wrap">
 									<textarea colspan="3" id="p-message" rowspan="4" value="" required="required" onchange="this.setAttribute('value', this.value);" placeholder="Please limit to 120 letters" name="limitedtextarea" onKeyDown="limitText(this.form.limitedtextarea,this.form.countdown,120);"  onKeyUp="limitText(this.form.limitedtextarea,this.form.countdown,120);"></textarea>
 									<label for="p-message">Write your suggestions here<span>(Please limit to 120 letters)</span></label>
 								</div>
+								
+								
 								<div class="input-wrap cc-photo-upload text-center">
 									<p>Upload Your Photo</p>
 									<span class="cc-max-size">We recommend using image sized 400x400 px</span>
@@ -120,6 +126,33 @@
 											<div class="file-path-wrapper">
 											<input class="file-path validate" type="text">
 										</div>
+									</div>
+								</div>
+								<div class="input-wrap custom-checkbox text-left">
+									<input type="checkbox" id="add-social-checkbox">
+			            			<label for="add-social-checkbox">Add your social media accounts</label>
+								</div>
+								<div class="cf-add-accounts">
+									
+									<div class="input-wrap">
+										<input type="text" id="p-facebook" name="p-facebook" value="" required="required" onchange="this.setAttribute('value', this.value);">
+										<label for="p-facebook">Facebook</span></label>
+									</div>
+									<div class="input-wrap">
+										<input type="text" id="p-twitter" name="p-twitter" value="" required="required" onchange="this.setAttribute('value', this.value);">
+										<label for="p-twitter">Twitter</span></label>
+									</div>
+									<div class="input-wrap">
+										<input type="text" id="p-linkedin" name="p-linkedin" value="" required="required" onchange="this.setAttribute('value', this.value);">
+										<label for="p-linkedin">Linkedin</span></label>
+									</div>
+									<div class="input-wrap">
+										<input type="text" id="p-instagram" name="p-instagram" value="" required="required" onchange="this.setAttribute('value', this.value);">
+										<label for="p-instagram">Instagram</span></label>
+									</div>
+									<div class="input-wrap">
+										<input type="text" id="p-pinterest" name="p-pinterest" value="" required="required" onchange="this.setAttribute('value', this.value);">
+										<label for="p-pinterest">Pinterest</span></label>
 									</div>
 								</div>
 								<div class="input-wrap">

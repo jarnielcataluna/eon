@@ -58,6 +58,7 @@ $(document).ready(function() {
 		$('.popup-wrap').addClass('active');
 	});	
 
+	// CO CREATE FORM
 	$('.btn-co-create').click(function(e){
 		e.preventDefault();
 		$(this).hide(300);
@@ -72,6 +73,19 @@ $(document).ready(function() {
 		}, 300);
 		
 	});
+
+	// CO CREATE ADD SOCIAL MEDIA
+
+	$('#add-social-checkbox').change(function(){
+
+
+        if( $('#add-social-checkbox').is(':checked')) {
+        	$('.cf-add-accounts').stop(true, false).slideDown(300);
+        } else {
+            $('.cf-add-accounts').stop(true, false).slideUp(300);
+        }
+
+    });
 });
 
 win.load(function() {
