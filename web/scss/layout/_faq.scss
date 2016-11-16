@@ -1,0 +1,312 @@
+.faq-search {
+	background: $coViolet;
+	padding: 1.2vw 0;
+
+	@include breakpoint(largedesktop) {
+		padding: 20px 0;
+	}
+
+	@include breakpoint(tablet2) {
+		padding: 15px 0;
+	}
+
+	.faq-search-field {
+		max-width: 45%;
+		margin: 0 auto;
+		position: relative;
+
+		@include breakpoint(desktop) {
+			max-width: 60%;
+		}
+
+		@include breakpoint(tablet2) {
+			max-width: 100%;
+		}
+
+		@include breakpoint(mobile) {
+			text-align: center;
+		}
+
+		.input-wrap {
+			padding-right: 35%;
+			margin-bottom: 0;
+			text-align: left;
+
+			input[type="text"] {
+				height: 3vw;
+			}
+
+			@include breakpoint(mobile) {
+				max-width: 100%;
+				padding-right: 0;
+			}
+		}
+
+		button {
+			position: absolute;
+			top: 0;
+			right: 0;
+			line-height: 2.70vw;
+			width: 32%;
+			min-height: 38px;
+
+			@include breakpoint(largedesktop) {
+				line-height: 38px;
+			}
+
+			@include breakpoint(mobile) {
+				width: auto;
+				position: relative;
+				margin-top: 10px;
+			}
+		}
+	}
+}
+
+.faq-categ {
+	padding-right: 2vw;
+
+	@include breakpoint(largedesktop) {
+		padding-right: 30px;
+	}
+
+	@include breakpoint(tablet) {
+		display: none;
+	}
+}
+
+.faq-categ-wrap {
+	border: 0.22vw solid $coViolet;
+
+	ul {
+		padding: 1vw 0.8vw;
+
+		li {
+			padding: 1vw 0;
+			border-bottom: 1px solid #f2f2f2;
+
+			&.active {
+
+				a {
+					color: $coPink;
+
+					&:after {
+						color: $coViolet;
+						right: 0;
+						opacity: 1;
+					}
+				}
+			}
+
+			&:last-child {
+				border-bottom: none;
+			}
+
+			a {
+				font-size: 1.4vw;
+				font-family: $defaultFont;
+				font-weight: 500;
+				display: block;
+				padding-right: 2.5vw;
+				position: relative;
+				color: $coViolet;
+
+				@include breakpoint(largedesktop) {
+					font-size: 18px;
+					padding-right: 25px;
+				}
+
+				&:after {
+					content: "\e901";
+					font-family: 'icomoon' !important;
+					speak: none;
+					font-style: normal;
+					font-weight: normal;
+					font-variant: normal;
+					text-transform: none;
+					line-height: 1;
+					font-size: 1.2vw;
+					font-weight: bold;
+					position: absolute;
+					right: 10px;
+					top: 50%;
+					color: $coViolet;
+					opacity: 0;
+					@include transform(translateY(-50%));
+					@include transition(all 0.4s ease);
+
+					@include breakpoint(largedesktop) {
+						font-size: 16px;
+					}
+				}
+
+				&:hover {
+					color: $coPink;
+				}
+			}
+		}
+	}
+}
+
+.faq-c-title {
+	background: $coViolet;
+	color: $coWhite;
+	font-size: 1.8vw;
+	padding: 0.5vw 0.8vw;
+	font-weight: 700;
+
+	@include breakpoint(largedesktop) {
+		font-size: 20px;
+	}
+}
+
+.fc-item {
+	
+
+	ul {
+		padding-top: 1vw;
+
+		li {
+			padding: 0.5vw 0;
+
+			@include breakpoint(largedesktop) {
+				padding: 8px 0;
+			}
+
+			@include breakpoint(phablet) {
+				font-size: 16px;
+				padding-top: 0;
+			}
+
+			&.active {
+				.fc-question {
+					color: $coWhite;
+					background: $coViolet;
+
+					&:after {
+						@include transform(rotate(90deg));
+						color: $coWhite;
+					}
+				}
+
+				.fc-answer {
+					background: $coViolet;
+					color: $coWhite;
+				}
+			}
+		}
+	}
+
+	h1 {
+		font-size: 3.8vw;
+		font-weight: 700;
+		color: $coPink;
+		padding: 0 0.8vw;
+
+		@include breakpoint(largedesktop) {
+			font-size: 44px;
+			padding: 0px 10px;
+		}
+
+		@include breakpoint(tablet) {
+			font-size: 36px;
+		}
+
+		@include breakpoint(phablet) {
+			font-size: 28px;
+			padding: 0;
+		}
+	}
+
+}
+
+.fc-question {
+	font-size: 1.6vw;
+	color: $coViolet;
+	display: block;
+	padding: 1vw 0.8vw;
+	border-bottom: 1px solid #918f8f;
+	font-weight: 500;
+	font-family: $fontA;
+	position: relative;
+	cursor: pointer;
+	background: $coWhite;
+	@include transition(all 0.4s ease);
+
+	@include breakpoint(largedesktop) {
+		font-size: 20px;
+		padding: 12px 40px 12px 10px;
+	}
+
+	@include breakpoint(phablet) {
+		font-size: 16px;
+		padding: 10px 30px 10px 0px;
+	}
+
+
+	&.active {
+		color: $coWhite;
+		background: $coViolet;
+
+		&:after {
+			@include transform(rotate(90deg));
+			color: $coWhite;
+		}
+	}
+
+	&:after {
+		content: "\e901";
+		font-family: 'icomoon' !important;
+		speak: none;
+		font-style: normal;
+		font-weight: normal;
+		font-variant: normal;
+		text-transform: none;
+		line-height: 1;
+		font-size: 1.2vw;
+		font-weight: bold;
+		position: absolute;
+		right: 20px;
+		top: 1.2vw;
+		color: $coViolet;
+		opacity: 1;
+		@include transform(rotate(0deg));
+		@include transition(all 0.4s ease);
+
+		@include breakpoint(largedesktop) {
+			font-size: 16px;
+			top: 12px;
+		}
+
+		@include breakpoint(phablet) {
+			font-size: 14px;
+			top: 10px;
+			right: 10px;
+		}
+	}
+}
+
+.fc-answer {
+	padding: 0 0.5vw 1vw 0.8vw;
+	background: $coWhite;
+	display: none;
+	@include transition(background 0.4s ease);
+
+	@include breakpoint(largedesktop) {
+		padding: 0 10px 10px;
+	}
+}
+
+.faq-categ-content {
+	display: none;
+
+	&:first-child {
+		margin-top: 0;
+	}
+
+	@include breakpoint(tablet) {
+		display: block !important;
+		margin-top: 25px;
+	}
+}
+

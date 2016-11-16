@@ -51,7 +51,11 @@
 									</div>
 								</div>
 								<div class="col-md-3 col-sm-3 col-xs-12">
-									<p class="unionbank text-center"><span>Powered by</span>UNIONBANK</p>
+									<p class="unionbank text-right"><label>Powered by</label>
+									UNIONBANK
+									<span><img class="c-visa" src="images/page_template/visa.png" alt=""></span>
+									<span><img class="c-bancnet" src="images/page_template/bancnet.png" alt=""></span>
+									</p>
 								</div>
 								<div class="col-md-6 col-sm-6 col-xs-12">
 									<p class="copyrights text-center">&copy; COPYRIGHT 2016 EON</p>
@@ -59,7 +63,6 @@
 							</div>
 						</div>
 					</div>
-
 					<!-- End Mobile Menu section -->
 				</div>
 			</div>
@@ -75,374 +78,470 @@
 			<img src="images/banner/banner-news.jpg" width="1600" height="541" alt="">
 			<div class="table-wrap">
 				<div class="table-cell">
-					<h1>Co-Cretate Photo Upload</h1>
+					<h1>Co-Create Photo Upload</h1>
 					<p>You are EON's most important component, and your feedback is gold. Here are your shout outst</p>
 				</div>
 			</div>
 		</div>
-		<div class="inner-wrapper express-wrap">
+		<div class="inner-wrapper cocreate-wrap">
 			<section class="sec-pad">
 				<div class="container">
 					<div class="sect-tagline text-center">
-						<h3>You can say anything about EON.</h3>
-						<p>Submit a post here, or share from your social media account.</p>
-						<a class="btn btn-default btn-primary btn-modal">Express Your Thoughts</a>
+						<h3>The Board Of Creators</h3>
+						<p>Our board of creators are a group of people, from different walks of life. They help us by providing insights on how we can further improve EON to fit the needs of everyone who lives the digital life.</p>
+						<div class="creator-form-wrap">
+							<h4>Send your suggestions and be part of this breakthrough!</h4>
+							<form id="photoupload-form" method="post" action="">
+								<a href="" class="btn btn-default btn-primary btn-close-form"><span class="btc-text">I will do this later</span> <span class="ico icon-close"></span></a>
+								<div class="input-wrap">
+									<input type="text" id="p-name" name="p-name" value="" placeholder="First Name, Last Name" required="required" onchange="this.setAttribute('value', this.value);">
+									<label for="p-name">Your Name <span>(First Name, Last Name)</span></label>
+								</div>
+								<div class="input-wrap">
+						
+									<input type="email" id="p-email" name="p-name" value="" required="required" onchange="this.setAttribute('value', this.value);" placeholder="youremail@email.com">
+									<label for="p-email">Your Email <span>(youremail@email.com)</span></label>
+								</div>
+								<div class="input-wrap">
+									<textarea colspan="3" id="p-message" rowspan="4" value="" required="required" onchange="this.setAttribute('value', this.value);" placeholder="Please limit to xxx words"></textarea>
+									<label for="p-message">Write your suggestions here<span>(Please limit to xxx words)</span></label>
+								</div>
+								<div class="input-wrap cc-photo-upload text-center">
+									<p>Upload Your Photo</p>
+									<span class="cc-max-size">We recommend using image sized 400x400 px</span>
+									<div class="file-field input-field">
+										<div class="btn btn-default">
+											<div class="photp-uploaded-wrap has-element">
+												<img src="" id="sw-item">
+											</div>
+											<span><span class="ico icon-upload"></span> Choose a File</span>
+											<input type="file" id="imgInp" onchange="this.setAttribute('value', this.value);">
+										</div>
+											<div class="file-path-wrapper">
+											<input class="file-path validate" type="text">
+										</div>
+									</div>
+								</div>
+								<div class="input-wrap">
+									<input type="submit" class="btn btn-default btn-secondary" value="Submit Suggestion" name="">
+								</div>
+							</form>
+							
+							<a href="" class="btn btn-default btn-co-create">WRITE A SUGGESTION</a>
+						</div>
+						
 					</div>
 				</div>
-				<div class="masonry-wrap">
+				<div class="masonry-wrap masonry-cc">
 					<div class="grid">
 						<div class="grid-sizer"></div>
-						<div class="grid-item">
-							<div class="gi-wrap animated" data-animation="fadeInUp">
-								<div class="gi-holder"><a href="#"><img src="images/news/featured-new.jpg" alt=""></a></div>
-								<div class="gi-text">
-									<p>Risus, et consectetur tellus nisl nec enim. Proin tincidunt sapien ac auctor tempus. Nunc mattis tempor eros.</p>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						<div class="grid-item gi-w-pink">
+							<div class="gi-cc gi-red animated" data-animation="fadeInUp" style="background-image: url('images/co-create/co-create4.jpg');">
+								<div class="table-wrap">
+									<div class="table-cell">
+										<p>It will be nice if the app has the ability to do everything without me telling what to do.</p>
+									</div>
 								</div>
-								<div class="gi-action">
-									<div class="submitted-by"> 
-										<span class="author-wrap"><img src="images/news/author1.jpg" alt=""></span> 
-										<span>
-											<span class="author-name">Charles Ferrer</span> 
-											<span class="author-datepost">
-												<span class="author-sm a-sm-linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></span>
-												<span>Nov 11</span>
-											</span>
-										</span>
+							</div>
+							<div class="gi-cc-share">
+								<div class="table-wrap">
+									<div class="table-cell">
+										<p class="gi-cc-name">Dex <span>Bolisay</span></p>
+										<p class="gi-cc-position">Freelancer</p>
 									</div>
-									<div class="gi-action-btn">
-										<a href="" class="ico icon-like"></a>
-										<a href="" class="ico icon-reply"></a>
-									</div>
+								</div>
+								<div class="follow-us">
+									<ul>
+										<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+										
+									</ul>
 								</div>
 							</div>
 						</div>
 						<div class="grid-item">
-							<div class="gi-wrap animated" data-animation="fadeInUp">
-								<div class="gi-holder"><a href="#" class="gi-play"><img src="images/news/new3.jpg" alt=""></a></div>
-								<div class="gi-text">
-									<p class="gi-name"> Elwin Dela Cruz</p>
-									<p class="gi-captions">Caption 213  sdkf sdkf s;dfj s;adfj sadfj skl;dfj sdf #test #lorem</p>
+							<div class="gi-cc gi-violet animated" data-animation="fadeInUp" style="background-image: url('images/co-create/co-create2.jpg');">
+								<div class="table-wrap">
+									<div class="table-cell">
+										<p>It will be nice if the app has the ability to do everything without me telling what to do.</p>
+									</div>
 								</div>
-								<div class="gi-action">
-									<div class="submitted-by"> 
-										<span class="author-wrap"><img src="images/news/author.jpg" alt=""></span> 
-										<span>
-											<span class="author-name">Charles Ferrer</span> 
-											<span class="author-datepost">
-												<span class="author-sm a-sm-twitter"><i class="fa fa-twitter" aria-hidden="true"></i></span>
-												<span>Nov 11</span>
-											</span>
-										</span>
+							</div>
+							<div class="gi-cc-share">
+								<div class="table-wrap">
+									<div class="table-cell">
+										<p class="gi-cc-name">Jahren <span>Bautista</span></p>
+										<p class="gi-cc-position">Freelancer</p>
 									</div>
-									<div class="gi-action-btn">
-										<a href="" class="ico icon-like"></a>
-										<a href="" class="ico icon-reply"></a>
+								</div>
+								<div class="follow-us">
+									<ul>
+										<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+										
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="grid-item gi-w-pink">
+							<div class="gi-cc gi-red animated" data-animation="fadeInUp" style="background-image: url('images/co-create/co-create3.jpg');">
+								<div class="table-wrap">
+									<div class="table-cell">
+										<p>It will be nice if the app has the ability to do everything without me telling what to do.</p>
 									</div>
+								</div>
+							</div>
+							<div class="gi-cc-share">
+								<div class="table-wrap">
+									<div class="table-cell">
+										<p class="gi-cc-name">Tina <span>Ferrer</span></p>
+										<p class="gi-cc-position">Blogger</p>
+									</div>
+								</div>
+								<div class="follow-us">
+									<ul>
+										<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+										
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="grid-item gi-w-blue">
+							<div class="gi-cc gi-blue animated" data-animation="fadeInUp" style="background-image: url('images/co-create/co-create3.jpg');">
+								<div class="table-wrap">
+									<div class="table-cell">
+										<p>It will be nice if the app has the ability to do everything without me telling what to do.</p>
+									</div>
+								</div>
+							</div>
+							<div class="gi-cc-share">
+								<div class="table-wrap">
+									<div class="table-cell">
+										<p class="gi-cc-name">Tina <span>Ferrer</span></p>
+										<p class="gi-cc-position">Blogger</p>
+									</div>
+								</div>
+								<div class="follow-us">
+									<ul>
+										<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+										
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="grid-item gi-w-pink">
+							<div class="gi-cc gi-red animated" data-animation="fadeInUp" style="background-image: url('images/co-create/co-create1.jpg');">
+								<div class="table-wrap">
+									<div class="table-cell">
+										<p>It will be nice if the app has the ability to do everything without me telling what to do.</p>
+									</div>
+								</div>
+							</div>
+							<div class="gi-cc-share">
+								<div class="table-wrap">
+									<div class="table-cell">
+										<p class="gi-cc-name">Jahren <span>Bautista</span></p>
+										<p class="gi-cc-position">Freelancer</p>
+									</div>
+								</div>
+								<div class="follow-us">
+									<ul>
+										<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+										
+									</ul>
 								</div>
 							</div>
 						</div>
 						<div class="grid-item">
-							<div class="gi-wrap animated" data-animation="fadeInUp">
-								<div class="gi-holder"></div>
-								<div class="gi-text">
-									<p>Risus, et consectetur tellus nisl nec enim. Proin tincidunt sapien ac auctor tempus. Nunc mattis tempor eros.</p>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							<div class="gi-cc gi-violet animated" data-animation="fadeInUp" style="background-image: url('images/co-create/co-create3.jpg');">
+								<div class="table-wrap">
+									<div class="table-cell">
+										<p>It will be nice if the app has the ability to do everything without me telling what to do.</p>
+									</div>
 								</div>
-								<div class="gi-action">
-									<div class="submitted-by"> 
-										<span class="author-wrap"><img src="images/news/author.jpg" alt=""></span> 
-										<span>
-											<span class="author-name">Charles Ferrer</span> 
-											<span class="author-datepost">
-												<span class="author-sm a-sm-linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></span>
-												<span>Nov 11</span>
-											</span>
-										</span>
+							</div>
+							<div class="gi-cc-share">
+								<div class="table-wrap">
+									<div class="table-cell">
+										<p class="gi-cc-name">Tina <span>Ferrer</span></p>
+										<p class="gi-cc-position">Blogger</p>
 									</div>
-									<div class="gi-action-btn">
-										<a href="" class="ico icon-like"></a>
-										<a href="" class="ico icon-reply"></a>
+								</div>
+								<div class="follow-us">
+									<ul>
+										<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+										
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="grid-item gi-w-pink">
+							<div class="gi-cc gi-red animated" data-animation="fadeInUp" style="background-image: url('images/co-create/co-create3.jpg');">
+								<div class="table-wrap">
+									<div class="table-cell">
+										<p>It will be nice if the app has the ability to do everything without me telling what to do.</p>
 									</div>
+								</div>
+							</div>
+							<div class="gi-cc-share">
+								<div class="table-wrap">
+									<div class="table-cell">
+										<p class="gi-cc-name">Tina <span>Ferrer</span></p>
+										<p class="gi-cc-position">Blogger</p>
+									</div>
+								</div>
+								<div class="follow-us">
+									<ul>
+										<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+										
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="grid-item gi-w-blue">
+							<div class="gi-cc gi-blue animated" data-animation="fadeInUp" style="background-image: url('images/co-create/co-create1.jpg');">
+								<div class="table-wrap">
+									<div class="table-cell">
+										<p>It will be nice if the app has the ability to do everything without me telling what to do.</p>
+									</div>
+								</div>
+							</div>
+							<div class="gi-cc-share">
+								<div class="table-wrap">
+									<div class="table-cell">
+										<p class="gi-cc-name">Jahren <span>Bautista</span></p>
+										<p class="gi-cc-position">Freelancer</p>
+									</div>
+								</div>
+								<div class="follow-us">
+									<ul>
+										<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+										
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="grid-item gi-w-pink">
+							<div class="gi-cc gi-red animated" data-animation="fadeInUp" style="background-image: url('images/co-create/co-create4.jpg');">
+								<div class="table-wrap">
+									<div class="table-cell">
+										<p>It will be nice if the app has the ability to do everything without me telling what to do.</p>
+									</div>
+								</div>
+							</div>
+							<div class="gi-cc-share">
+								<div class="table-wrap">
+									<div class="table-cell">
+										<p class="gi-cc-name">Dex <span>Bolisay</span></p>
+										<p class="gi-cc-position">Designer</p>
+									</div>
+								</div>
+								<div class="follow-us">
+									<ul>
+										<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+										
+									</ul>
 								</div>
 							</div>
 						</div>
 						<div class="grid-item">
-							<div class="gi-wrap animated" data-animation="fadeInUp">
-								<div class="gi-holder"><a href="#" class="gi-play"><img src="images/news/new5.jpg" alt=""></a></div>
-								<div class="gi-text">
-									<p class="gi-name"> Elwin Dela Cruz</p>
-									<p class="gi-captions">Caption 213  sdkf sdkf s;dfj s;adfj sadfj skl;dfj sdf #test #lorem</p>
+							<div class="gi-cc gi-violet animated" data-animation="fadeInUp" style="background-image: url('images/co-create/co-create2.jpg');">
+								<div class="table-wrap">
+									<div class="table-cell">
+										<p>It will be nice if the app has the ability to do everything without me telling what to do.</p>
+									</div>
 								</div>
-								<div class="gi-action">
-									<div class="submitted-by"> 
-										<span class="author-wrap"><img src="images/news/author.jpg" alt=""></span> 
-										<span>
-											<span class="author-name">Charles Ferrer</span> 
-											<span class="author-datepost">
-												<span class="author-sm a-sm-instagram"><i class="fa fa-instagram" aria-hidden="true"></i></span>
-												<span>Nov 11</span>
-											</span>
-										</span>
+							</div>
+							<div class="gi-cc-share">
+								<div class="table-wrap">
+									<div class="table-cell">
+										<p class="gi-cc-name">Jahren <span>Bautista</span></p>
+										<p class="gi-cc-position">Freelancer</p>
 									</div>
-									<div class="gi-action-btn">
-										<a href="" class="ico icon-like"></a>
-										<a href="" class="ico icon-reply"></a>
+								</div>
+								<div class="follow-us">
+									<ul>
+										<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+										
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="grid-item gi-w-pink">
+							<div class="gi-cc gi-red animated" data-animation="fadeInUp" style="background-image: url('images/co-create/co-create4.jpg');">
+								<div class="table-wrap">
+									<div class="table-cell">
+										<p>It will be nice if the app has the ability to do everything without me telling what to do.</p>
 									</div>
+								</div>
+							</div>
+							<div class="gi-cc-share">
+								<div class="table-wrap">
+									<div class="table-cell">
+										<p class="gi-cc-name">Dex <span>Bolisay</span></p>
+										<p class="gi-cc-position">Freelancer</p>
+									</div>
+								</div>
+								<div class="follow-us">
+									<ul>
+										<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+										
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="grid-item gi-w-blue">
+							<div class="gi-cc gi-blue animated" data-animation="fadeInUp" style="background-image: url('images/co-create/co-create1.jpg');">
+								<div class="table-wrap">
+									<div class="table-cell">
+										<p>It will be nice if the app has the ability to do everything without me telling what to do.</p>
+									</div>
+								</div>
+							</div>
+							<div class="gi-cc-share">
+								<div class="table-wrap">
+									<div class="table-cell">
+										<p class="gi-cc-name">Jahren <span>Bautista</span></p>
+										<p class="gi-cc-position">Freelancer</p>
+									</div>
+								</div>
+								<div class="follow-us">
+									<ul>
+										<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+										
+									</ul>
 								</div>
 							</div>
 						</div>
 						<div class="grid-item">
-							<div class="gi-wrap animated" data-animation="fadeInUp">
-								<div class="gi-holder"><a href="#"><img src="images/news/new1.jpg" alt=""></a></div>
-								<div class="gi-text">
-									<p>Risus, et consectetur tellus nisl nec enim. Proin tincidunt sapien ac auctor tempus. Nunc mattis tempor eros.</p>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-								</div>
-								<div class="gi-action">
-									<div class="submitted-by"> 
-										<span class="author-wrap"><img src="images/news/author.jpg" alt=""></span> 
-										<span>
-											<span class="author-name">Charles Ferrer</span> 
-											<span class="author-datepost">
-												<span class="author-sm a-sm-pinterest"><i class="fa fa-pinterest" aria-hidden="true"></i></span>
-												<span>Nov 11</span>
-											</span>
-										</span>
-									</div>
-									<div class="gi-action-btn">
-										<a href="" class="ico icon-like"></a>
-										<a href="" class="ico icon-reply"></a>
+							<div class="gi-cc gi-violet animated" data-animation="fadeInUp" style="background-image: url('images/co-create/co-create3.jpg');">
+								<div class="table-wrap">
+									<div class="table-cell">
+										<p>It will be nice if the app has the ability to do everything without me telling what to do.</p>
 									</div>
 								</div>
 							</div>
-						</div>
-						<div class="grid-item">
-							<div class="gi-wrap animated" data-animation="fadeInUp">
-								<div class="gi-holder"></div>
-								<div class="gi-text">
-									<p class="gi-name"> Elwin Dela Cruz</p>
-									<p class="gi-captions">Caption 213  sdkf sdkf s;dfj s;adfj sadfj skl;dfj sdf #test #lorem</p>
+							<div class="gi-cc-share">
+								<div class="table-wrap">
+									<div class="table-cell">
+										<p class="gi-cc-name">Tina <span>Ferrer</span></p>
+										<p class="gi-cc-position">Blogger</p>
+									</div>
 								</div>
-								<div class="gi-action">
-									<div class="submitted-by"> 
-										<span class="author-wrap"><img src="images/news/author.jpg" alt=""></span> 
-										<span>
-											<span class="author-name">Charles Ferrer</span> 
-											<span class="author-datepost">
-												<span class="author-sm a-sm-linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></span>
-												<span>Nov 11</span>
-											</span>
-										</span>
-									</div>
-									<div class="gi-action-btn">
-										<a href="" class="ico icon-like"></a>
-										<a href="" class="ico icon-reply"></a>
-									</div>
+								<div class="follow-us">
+									<ul>
+										<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+										
+									</ul>
 								</div>
 							</div>
 						</div>
-						<div class="grid-item">
-							<div class="gi-wrap animated" data-animation="fadeInUp">
-								<div class="gi-holder"></div>
-								<div class="gi-text">
-									<p>Risus, et consectetur tellus nisl nec enim. Proin tincidunt sapien ac auctor tempus. Nunc mattis tempor eros.</p>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-								</div>
-								<div class="gi-action">
-									<div class="submitted-by"> 
-										<span class="author-wrap"><img src="images/news/author.jpg" alt=""></span> 
-										<span>
-											<span class="author-name">Charles Ferrer</span> 
-											<span class="author-datepost">
-												<span class="author-sm a-sm-linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></span>
-												<span>Nov 11</span>
-											</span>
-										</span>
-									</div>
-									<div class="gi-action-btn">
-										<a href="" class="ico icon-like"></a>
-										<a href="" class="ico icon-reply"></a>
+						<div class="grid-item gi-w-pink">
+							<div class="gi-cc gi-red animated" data-animation="fadeInUp" style="background-image: url('images/co-create/co-create2.jpg');">
+								<div class="table-wrap">
+									<div class="table-cell">
+										<p>It will be nice if the app has the ability to do everything without me telling what to do.</p>
 									</div>
 								</div>
 							</div>
-						</div>
-						<div class="grid-item">
-							<div class="gi-wrap animated" data-animation="fadeInUp">
-								<div class="gi-holder"><a href="#" class="gi-play"><img src="images/express/sample-video.jpg" alt=""></a></div>
-								<div class="gi-text">
-									<p class="gi-name"> Elwin Dela Cruz</p>
-									<p class="gi-captions">Caption 213  sdkf sdkf s;dfj s;adfj sadfj skl;dfj sdf #test #lorem</p>
+							<div class="gi-cc-share">
+								<div class="table-wrap">
+									<div class="table-cell">
+										<p class="gi-cc-name">Tina <span>Ferrer</span></p>
+										<p class="gi-cc-position">Blogger</p>
+									</div>
 								</div>
-								<div class="gi-action">
-									<div class="submitted-by"> 
-										<span class="author-wrap"><img src="images/news/author.jpg" alt=""></span> 
-										<span>
-											<span class="author-name">Charles Ferrer</span> 
-											<span class="author-datepost">
-												<span class="author-sm a-sm-pinterest"><i class="fa fa-pinterest" aria-hidden="true"></i></span>
-												<span>Nov 11</span>
-											</span>
-										</span>
-									</div>
-									<div class="gi-action-btn">
-										<a href="" class="ico icon-like"></a>
-										<a href="" class="ico icon-reply"></a>
-									</div>
+								<div class="follow-us">
+									<ul>
+										<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+										
+									</ul>
 								</div>
 							</div>
 						</div>
-						<div class="grid-item">
-							<div class="gi-wrap animated" data-animation="fadeInUp">
-								<div class="gi-holder"><a href="#"><img src="images/news/featured-new.jpg" alt=""></a></div>
-								<div class="gi-text">
-									<p>Risus, et consectetur tellus nisl nec enim. Proin tincidunt sapien ac auctor tempus. Nunc mattis tempor eros.</p>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-								</div>
-								<div class="gi-action">
-									<div class="submitted-by"> 
-										<span class="author-wrap"><img src="images/news/author1.jpg" alt=""></span> 
-										<span>
-											<span class="author-name">Charles Ferrer</span> 
-											<span class="author-datepost">
-												<span class="author-sm a-sm-linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></span>
-												<span>Nov 11</span>
-											</span>
-										</span>
-									</div>
-									<div class="gi-action-btn">
-										<a href="" class="ico icon-like"></a>
-										<a href="" class="ico icon-reply"></a>
+						<div class="grid-item gi-w-blue">
+							<div class="gi-cc gi-blue animated" data-animation="fadeInUp" style="background-image: url('images/co-create/co-create1.jpg');">
+								<div class="table-wrap">
+									<div class="table-cell">
+										<p>It will be nice if the app has the ability to do everything without me telling what to do.</p>
 									</div>
 								</div>
 							</div>
-						</div>
-						<div class="grid-item">
-							<div class="gi-wrap animated" data-animation="fadeInUp">
-								<div class="gi-holder"><a href="#" class="gi-play"><img src="images/news/new3.jpg" alt=""></a></div>
-								<div class="gi-text">
-									<p class="gi-name"> Elwin Dela Cruz</p>
-									<p class="gi-captions">Caption 213  sdkf sdkf s;dfj s;adfj sadfj skl;dfj sdf #test #lorem</p>
-								</div>
-								<div class="gi-action">
-									<div class="submitted-by"> 
-										<span class="author-wrap"><img src="images/news/author.jpg" alt=""></span> 
-										<span>
-											<span class="author-name">Charles Ferrer</span> 
-											<span class="author-datepost">
-												<span class="author-sm a-sm-twitter"><i class="fa fa-twitter" aria-hidden="true"></i></span>
-												<span>Nov 11</span>
-											</span>
-										</span>
-									</div>
-									<div class="gi-action-btn">
-										<a href="" class="ico icon-like"></a>
-										<a href="" class="ico icon-reply"></a>
+							<div class="gi-cc-share">
+								<div class="table-wrap">
+									<div class="table-cell">
+										<p class="gi-cc-name">Jahren <span>Bautista</span></p>
+										<p class="gi-cc-position">Freelancer</p>
 									</div>
 								</div>
-							</div>
-						</div>
-						<div class="grid-item">
-							<div class="gi-wrap animated" data-animation="fadeInUp">
-								<div class="gi-holder"></div>
-								<div class="gi-text">
-									<p>Risus, et consectetur tellus nisl nec enim. Proin tincidunt sapien ac auctor tempus. Nunc mattis tempor eros.</p>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-								</div>
-								<div class="gi-action">
-									<div class="submitted-by"> 
-										<span class="author-wrap"><img src="images/news/author.jpg" alt=""></span> 
-										<span>
-											<span class="author-name">Charles Ferrer</span> 
-											<span class="author-datepost">
-												<span class="author-sm a-sm-linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></span>
-												<span>Nov 11</span>
-											</span>
-										</span>
-									</div>
-									<div class="gi-action-btn">
-										<a href="" class="ico icon-like"></a>
-										<a href="" class="ico icon-reply"></a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="grid-item">
-							<div class="gi-wrap animated" data-animation="fadeInUp">
-								<div class="gi-holder"><a href="#"><img src="images/news/featured-new.jpg" alt=""></a></div>
-								<div class="gi-text">
-									<p>Risus, et consectetur tellus nisl nec enim. Proin tincidunt sapien ac auctor tempus. Nunc mattis tempor eros.</p>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-								</div>
-								<div class="gi-action">
-									<div class="submitted-by"> 
-										<span class="author-wrap"><img src="images/news/author1.jpg" alt=""></span> 
-										<span>
-											<span class="author-name">Charles Ferrer</span> 
-											<span class="author-datepost">
-												<span class="author-sm a-sm-linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></span>
-												<span>Nov 11</span>
-											</span>
-										</span>
-									</div>
-									<div class="gi-action-btn">
-										<a href="" class="ico icon-like"></a>
-										<a href="" class="ico icon-reply"></a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="grid-item">
-							<div class="gi-wrap animated" data-animation="fadeInUp">
-								<div class="gi-holder"><a href="#" class="gi-play"><img src="images/news/new3.jpg" alt=""></a></div>
-								<div class="gi-text">
-									<p class="gi-name"> Elwin Dela Cruz</p>
-									<p class="gi-captions">Caption 213  sdkf sdkf s;dfj s;adfj sadfj skl;dfj sdf #test #lorem</p>
-								</div>
-								<div class="gi-action">
-									<div class="submitted-by"> 
-										<span class="author-wrap"><img src="images/news/author.jpg" alt=""></span> 
-										<span>
-											<span class="author-name">Charles Ferrer</span> 
-											<span class="author-datepost">
-												<span class="author-sm a-sm-twitter"><i class="fa fa-twitter" aria-hidden="true"></i></span>
-												<span>Nov 11</span>
-											</span>
-										</span>
-									</div>
-									<div class="gi-action-btn">
-										<a href="" class="ico icon-like"></a>
-										<a href="" class="ico icon-reply"></a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="grid-item">
-							<div class="gi-wrap animated" data-animation="fadeInUp">
-								<div class="gi-holder"></div>
-								<div class="gi-text">
-									<p>Risus, et consectetur tellus nisl nec enim. Proin tincidunt sapien ac auctor tempus. Nunc mattis tempor eros.</p>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-								</div>
-								<div class="gi-action">
-									<div class="submitted-by"> 
-										<span class="author-wrap"><img src="images/news/author.jpg" alt=""></span> 
-										<span>
-											<span class="author-name">Charles Ferrer</span> 
-											<span class="author-datepost">
-												<span class="author-sm a-sm-linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></span>
-												<span>Nov 11</span>
-											</span>
-										</span>
-									</div>
-									<div class="gi-action-btn">
-										<a href="" class="ico icon-like"></a>
-										<a href="" class="ico icon-reply"></a>
-									</div>
+								<div class="follow-us">
+									<ul>
+										<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+										
+									</ul>
 								</div>
 							</div>
 						</div>
 					</div>
+
 
 					<div class="ajax-container">
 					
@@ -454,13 +553,28 @@
 						<a href="#" class="btn btn-default btn-primary"> Load More</a>
 					</div>
 				</div>
+				<div class="talk-a-eon">
+					<div class="container">
+						<div class="sect-tagline">
+							<h3 class="text-center">This is the part where <br>we briefly talk about EON</h3>
+						</div>
+						<div class="row">
+							<div class="col-sm-6 par">
+								<p>Provide a short description here about EON, Union Bank and all other digital initiatives. Provide a short description here about EON, Union Bank and all other digital initiatives.</p>
+								<p>Risus, Lorem ipsum dolor amit sit Provide a short description here about EON, Union Bank and all other digital initiatives. Risus, Lorem ipsum dolor amit sit Provide a short description here about EON, Union Bank and all other digital initiatives.</p>
+							</div>
+							<div class="col-sm-6 text-center">
+								<img class="te-img" src="images/page_template/digital-me-violet.svg" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
 			</section>
 		</div>
-
 		<div class="home-menu">
 			<ul class="hm-mobile-list">
-				<li>
-					<a href="#" class="hm-mobile-link">
+				<li class="active">
+					<a href="co-create.html" class="hm-mobile-link">
 						<span class="hm-link">
 							<span class="hm-icons hm-red"><i class="ico icon-co-create"></i></span>
 							<span class="hm-label">Co-Create</span>
@@ -483,7 +597,7 @@
 						</span>
 					</a>
 				</li>
-				<li class="active">
+				<li>
 					<a href="express.html" class="hm-mobile-link">
 						<span class="hm-link">
 							<span class="hm-icons hm-blue"><i class="ico icon-express"></i></span>
@@ -502,7 +616,7 @@
 							<span class="hm-label">Co-Create</span>
 							<div class="expanded-details">
 								<p>Discover how EON is shaped by YOU, the digital citizen, and how it’ll stay that way.</p>
-								<a href="#" class="btn hm-red">Learn More</a>
+								<a href="co-create.html" class="btn hm-red">Learn More</a>
 							</div>
 						</div>
 					</span>
@@ -516,7 +630,7 @@
 							<span class="hm-label">LIFEHACKS</span>
 							<div class="expanded-details">
 								<p>EON allows you to breeze through life's hurdles like a whiz, so you can focus on the good stuff.</p>
-								<a href="#" class="btn">Learn More</a>
+								<a href="lifehacks-v2.html" class="btn">Learn More</a>
 							</div>
 						</div>
 					</span>
@@ -544,7 +658,7 @@
 							<span class="hm-label">EXPRESS</span>
 							<div class="expanded-details">
 								<p>You are EON's most important component, and your feedback is gold. Here are your shout outs..</p>
-								<a href="#" class="btn">Learn More</a>
+								<a href="express.html" class="btn">Learn More</a>
 							</div>
 						</div>
 					</span>
@@ -557,8 +671,14 @@
 	<div class="footer-wrap">
 		<div class="container-fluid">
 			<div class="row">
-				
-				<div class="col-lg-4 col-md-3 col-sm-6 col-xs-6">
+				<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 fr">
+					<p class="unionbank text-right"><label>Powered by</label>
+					UNIONBANK
+					<span><img class="c-visa" src="images/page_template/visa.png" alt=""></span>
+					<span><img class="c-bancnet" src="images/page_template/bancnet.png" alt=""></span>
+					</p>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
 					<div class="follow-us">
 						<label> Follow Us :</label>
 						<ul>
@@ -567,17 +687,9 @@
 						</ul>
 					</div>
 				</div>
-				<div class="col-lg-4 col-md-3 col-sm-6 col-xs-12 fr">
-					<p class="unionbank text-right"><label>Powered by</label>
-					UNIONBANK
-					<span><img class="c-visa" src="images/page_template/visa.png" alt=""></span>
-					<span><img class="c-bancnet" src="images/page_template/bancnet.png" alt=""></span>
-					</p>
-				</div>
-				<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+				<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
 					<p class="copyrights text-center">&copy; COPYRIGHT 2016 EON</p>
 				</div>
-				
 			</div>
 			
 			
@@ -607,11 +719,11 @@
 	    stagger: 30
 	};
 
-    var $grid = $('.grid').imagesLoaded( function() {
+    var $grid = $('.masonry-cc .grid').imagesLoaded( function() {
 		// init Isotope after all images have loaded
 
 		$grid.isotope(isoOptions);
-		$('.gi-wrap').each(function(){
+		$('.gi-cc').each(function(){
 			$(this).css({'opacity' : '0'});
 		});
 		
@@ -639,7 +751,7 @@
 		$(this).css({'display' : 'none'});
 
         $.ajax({
-            url: 'ajax-item.html',
+            url: 'ajax-item-cocreate.html',
             type: 'POST',
             dataType: 'html',
             cache: true
@@ -667,6 +779,24 @@
             }
         });
 	});
+
+	// PHOTO UPLOAD
+	$("#imgInp").change(function(){
+        readURL(this);
+    });
+
+	function readURL(input) {
+	    if (input.files && input.files[0]) {
+	        var reader = new FileReader();
+	        
+	        reader.onload = function (e) {
+	            $('#sw-item').attr('src', e.target.result).css({'display' : 'block'});
+	            $('.form-wrapper textarea').focus();
+	        }
+	        
+	        reader.readAsDataURL(input.files[0]);
+	    }
+	}
 </script>
 </body>
 </html>

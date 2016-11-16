@@ -1,0 +1,263 @@
+.contact-wrap {
+	
+	h1 {
+		color: $coViolet;
+		font-size: 5.1vw;
+
+		@include breakpoint(desktop) {
+			font-size: 50px;
+		}
+
+		@include breakpoint(tablet2) {
+			font-size: 36px;
+		}
+	}
+
+	.contact-field {
+		padding-top: 1.5vw;
+		padding-right: 2.5vw;
+
+		@include breakpoint(desktop) {
+			padding-top: 25px;
+			padding-right: 0;
+		}
+
+		@include breakpoint(tablet2) {
+			padding-top: 0;
+		}
+	}
+
+	.cf-info {
+		.input-wrap {
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	.cf-info, .cf-inquiry {
+		padding: 1.2vw 0.8vw;	
+
+		@include breakpoint(largedesktop)	 {
+			padding: 20px 10px;
+		}
+
+		@include breakpoint(tablet2) {
+			padding-left: 0;
+			padding-right: 0;
+			padding-bottom: 10px;
+		}
+	}
+
+	.cf-inquiry {
+		background: #e6e7e8;
+		padding-bottom: 0.3vw;
+		margin-bottom: 20px;
+
+		@include breakpoint(tablet2) {
+			background: none;
+			padding-bottom: 0;
+		}
+	}
+
+	p {
+		color: $coViolet;
+		padding-bottom: 25px;
+		font-size: 1.2vw;
+
+		@include breakpoint(largedesktop) {
+			font-size: 18px;
+			padding-bottom: 20px;
+		}
+	}
+
+	textarea {
+		min-height: 150px;
+	}
+
+	input[type="text"], input[type="email"], input[type="number"], input[type="tel"], input[type="password"], textarea {
+		
+		&::-webkit-input-placeholder {
+		  	font-size: 1.1vw;
+		  	opacity: 0;
+		  	visibility: hidden;
+
+		  	@include breakpoint(largedesktop) {
+		  		font-size: 13px;
+		  	}
+		}
+		&::-moz-placeholder { 
+		  	font-size: 1.1vw;
+		  	opacity: 0;
+		  	visibility: hidden;
+
+		  	@include breakpoint(largedesktop) {
+		  		font-size: 13px;
+		  	}
+		}
+
+		&:-ms-input-placeholder { 
+		   	font-size: 1.1vw;
+		  	opacity: 0;
+		  	visibility: hidden;
+
+		  	@include breakpoint(largedesktop) {
+		  		font-size: 13px;
+		  	}
+		}
+
+		&:-moz-placeholder { 
+			font-size: 1.1vw;
+		  	opacity: 0;
+		  	visibility: hidden;
+
+		  	@include breakpoint(largedesktop) {
+		  		font-size: 13px;
+		  	}
+		}
+
+		&:focus {
+			border-bottom: 1px solid $coDarkViolet;
+
+			&::-webkit-input-placeholder {
+			  	opacity: 1;
+			  	visibility: visible;
+			}
+			&::-moz-placeholder { 
+			  	opacity: 1;
+			  	visibility: visible;
+			}
+
+			&:-ms-input-placeholder { 
+			   	opacity: 1;
+			  	visibility: visible;
+			}
+
+			&:-moz-placeholder { 
+				opacity: 1;
+			  	visibility: visible;
+			}
+		}
+	}
+}
+
+.contact-detail.contact-tooltip {
+	position: relative;
+	opacity: 1;
+	visibility: visible;
+	@include transform(translateY(0));
+	z-index: 1;
+	padding: 2vw 0 0 3vw;
+	display: block;
+
+	@include breakpoint(largedesktop) {
+		padding-top: 25px;
+		padding-left: 0;
+	}
+
+	&:after {
+		display: none;
+	}
+
+	p {
+		color: $coGrey;
+		padding-bottom: 0.8vw;
+
+		@include breakpoint(largedesktop) {
+			padding-bottom: 8px;
+		}
+
+		@include breakpoint(tablet2) {
+			font-size: 16px;
+			padding-bottom: 5px;
+		}
+	}
+
+	.contact-t-wrap {
+		border-radius: 0;
+		min-width: 320px;
+
+		.ct-title-icon {
+			margin-bottom: 1.5vw;
+
+			@include breakpoint(largedesktop) {
+				margin-bottom: 14px;
+
+				.ico {
+					margin-right: 6px;
+				}
+			}
+
+			@include breakpoint(tablet2) {
+				font-size: 18px;
+
+				.ico {
+					font-size: 22px;
+				}
+			}
+		}
+
+		ul {
+			@include breakpoint(tablet2) {
+				padding: 0;
+			}
+		}
+	}
+
+	.contact-t-title {
+		text-align: left;
+		font-size: 2.5vw;
+		padding: 0.8vw 1vw;
+
+		@include breakpoint(tablet2) {
+			font-size: 22px;
+			padding: 8px 10px;
+		}
+	}
+
+	.c-social-wrap {
+
+		a {
+			margin-left: 0;
+		}
+
+		.fa {
+			width: 1.8vw;
+			height: 1.8vw;
+			line-height: 1.8vw;
+			text-align: center;
+			display: inline-block;
+			background: #2AA9E0;
+			border-radius: 50%;
+			margin: 0px 0.18vw;
+			font-size: 1vw;
+			vertical-align: middle;
+			position: relative;
+			top: -2px;
+			color: $coWhite;
+			margin-right: 0.5vw;
+
+			&.fa-facebook {
+				background: #36609f;
+			}
+
+			@include breakpoint(largedesktop) {
+				width: 30px;
+				height: 30px;
+				line-height: 30px;
+				margin-right: 6px;
+				top: -1px;
+				font-size: 16px;
+			}
+		}
+	}
+
+	.contact-t-wrap ul li {
+		padding-top: 1.5vw;
+
+		@include breakpoint(largedesktop) {
+			padding-top: 15px;
+		}
+	}
+}

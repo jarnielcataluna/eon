@@ -1,0 +1,511 @@
+.creator-form-wrap {
+	max-width: 80%;
+	margin: 0 auto;
+	background: $coRed;
+	padding: 2vw 5vw;
+	margin-top: 2vw;
+	position: relative;
+
+	@include breakpoint(largedesktop) {
+		margin-top: 25px;
+	}
+
+	@include breakpoint(desktop) {
+		max-width: 100%;
+	}
+
+	@include breakpoint(tablet2) {
+		padding: 20px 30px 50px;
+	}
+
+	@include breakpoint(mobile) {
+		padding: 15px 15px 40px;
+	}
+
+	.file-field .btn.btn-default {
+		margin-top: 10px;
+		&:hover {
+			background: $coRed;
+			color: $coWhite;
+		}
+	}
+
+	.input-wrap {
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	&:after {
+		content:'';
+		display: block;
+		float: none;
+		width: 0;
+		height: 0;
+		border-left: 1.2vw solid transparent;
+		border-right: 1.2vw solid transparent;
+		border-top: 1.2vw solid $coViolet;
+		position: absolute;	
+		top: -1px;
+		left: 50%;
+		z-index: 2;
+		margin-left: -1.2vw;
+
+		@include breakpoint(largedesktop) {
+			border-left: 15px solid transparent;
+			border-right: 15px solid transparent;
+			border-top: 12px solid $coViolet;
+		}
+	}
+
+	form {
+		max-width: 60%;
+		margin: 2vw auto 0;
+		display: none;
+
+		@include breakpoint(largedesktop) {
+			xmax-width: 80%;
+			margin-top: 20px;
+		}
+
+		@include breakpoint(tablet2) {
+			max-width: 80%;
+		}
+
+		@include breakpoint(mobile) {
+			max-width: 100%;
+		}
+
+		.btn.btn-default {
+			margin-top: 0;
+			font-weight: 700;
+			max-width: 20vw;
+
+			@include breakpoint(largedesktop) {
+				max-width: 240px;
+			}
+		}
+	}
+
+	textarea {
+		min-height: 150px;
+	}
+
+	input[required]:valid + label, input[required]:focus + label, input:not([value=""]) + label, textarea:focus + label{
+	    color: $coWhite;
+	    font-weight: 700;
+	}
+
+	input[type="text"], input[type="email"], input[type="number"], input[type="tel"], input[type="password"], textarea {
+		border: 1px solid $coWhite;
+		
+		&::-webkit-input-placeholder {
+		  	font-size: 0.8vw;
+		  	opacity: 0;
+		  	visibility: hidden;
+
+		  	@include breakpoint(largedesktop) {
+		  		font-size: 13px;
+		  	}
+		}
+		&::-moz-placeholder { 
+		  	font-size: 0.8vw;
+		  	opacity: 0;
+		  	visibility: hidden;
+
+		  	@include breakpoint(largedesktop) {
+		  		font-size: 13px;
+		  	}
+		}
+
+		&:-ms-input-placeholder { 
+		   	font-size: 0.8vw;
+		  	opacity: 0;
+		  	visibility: hidden;
+
+		  	@include breakpoint(largedesktop) {
+		  		font-size: 13px;
+		  	}
+		}
+
+		&:-moz-placeholder { 
+			font-size: 0.8vw;
+		  	opacity: 0;
+		  	visibility: hidden;
+
+		  	@include breakpoint(largedesktop) {
+		  		font-size: 13px;
+		  	}
+		}
+
+		&:focus {
+
+			&::-webkit-input-placeholder {
+			  	opacity: 1;
+			  	visibility: visible;
+			}
+			&::-moz-placeholder { 
+			  	opacity: 1;
+			  	visibility: visible;
+			}
+
+			&:-ms-input-placeholder { 
+			   	opacity: 1;
+			  	visibility: visible;
+			}
+
+			&:-moz-placeholder { 
+				opacity: 1;
+			  	visibility: visible;
+			}
+		}
+	}
+}
+
+.cc-photo-upload {
+	margin-bottom: 35px;
+
+	.ico {
+		font-size: 1.5vw;
+		display: inline-block;
+		margin-right: 0.5vw;
+		position: relative;
+		top: 3px;
+
+		@include breakpoint(largedesktop) {
+			font-size: 20px;
+			margin-right: 8px;
+		}
+	}
+
+	.cc-max-size {
+		font-size: 0.9vw;
+		margin-top: 0.8vw;
+		display: inline-block;
+
+		@include breakpoint(largedesktop) {
+			font-size: 14px;
+			margin-top: 10px;
+		}
+
+		@include breakpoint(phablet) {
+			font-size: 12px;
+		}
+	}
+}
+
+.photp-uploaded-wrap {
+	
+
+	&.has-element {
+		
+	}
+
+	img {
+		max-width: 100%;
+		height: auto;
+
+		margin-top: 1.1vw;
+
+		@include breakpoint(largedesktop) {
+			margin-top: 15px;
+		}
+	}
+}
+
+
+
+.cocreate-wrap {
+	background: $coViolet;
+	padding-bottom: 0;
+	color: $coWhite;
+
+	.sec-pad {
+		padding-bottom: 0;
+	}
+}
+
+.masonry-cc {
+	background: $coWhite;
+}
+
+.talk-a-eon {
+	background: $coWhite;
+	color: $defaultColor;
+	padding: 3vw 0;
+
+	@include breakpoint(largedesktop) {
+		padding-top: 50px;
+	}
+
+	.sect-tagline {
+		padding-bottom: 3vw;
+
+		h3 {
+			color: $coViolet;
+		}
+	}
+}
+
+.te-img {
+	max-width: 80%;
+	height: auto;
+	display: inline-block;
+}
+
+.masonry-cc {
+	padding: 0;
+
+	.grid-sizer { 
+		width:20%;
+	}
+
+	.grid-item { 
+		width:20%;
+		height: 0;
+		padding-left: 0;
+		padding-top: 0;
+		padding-right: 0;
+		padding-bottom: 20%;
+		overflow: hidden;
+
+		&:hover {
+			.gi-cc {
+				background-blend-mode: inherit;
+				background-color: transparent;
+				background-position: 100px;
+				@include transition(all 0.3s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1));
+
+				.table-wrap {
+					opacity: 0;
+					@include transition(opacity 0s 0s cubic-bezier(0.645, 0.045, 0.355, 1));
+				}
+			}
+
+			
+
+			.gi-cc-share {
+				left: 0;
+				@include transition(all 0.4s  cubic-bezier(0.645, 0.045, 0.355, 1));
+			}
+		}
+	}
+
+	.gi-cc {
+		background-size: cover;
+		padding-bottom: 100%;
+		position: relative;
+		height: 0;
+		width: 100%;
+		background-position: 0;
+		overflow: hidden;
+		@include transition(all 0.3s 0s cubic-bezier(0.645, 0.045, 0.355, 1));
+
+		p {
+			font-size: 1.4vw;
+			line-height: 1.5vw;
+			font-weight: 300;
+
+			@include breakpoint(largedesktop) {
+				font-size: 16px;
+				line-height: 19px;
+				padding-bottom: 8px;
+			}
+		}
+
+		.table-wrap {
+			opacity: 1;
+			@include transition(opacity 0.2s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1));
+		}
+
+		.table-wrap .table-cell {
+			padding-top: 0;
+			padding-left: 2vw;
+			padding-right: 2vw;
+		}
+
+	}
+
+	
+	.gi-cc-share {
+		background: $coWhite;
+		padding: 1vw 1vw;
+		position: absolute;
+		height: 100%;
+		width: 50%;
+		top: 0;
+		left: -100%;
+		z-index: 999;
+		box-shadow: 0 -7px 17px rgba(0, 0, 0, 0.06), 0 -7px 20px rgba(0, 0, 0, 0.09);
+		@include transition(all 0.4s 0s cubic-bezier(0.645, 0.045, 0.355, 1));
+
+
+		p {
+			font-size: 1.6vw;
+			padding-bottom: 0.5vw;
+			line-height: 1.8vw;
+
+			@include breakpoint(largedesktop) {
+				font-size: 16px;
+				line-height: 19px;
+				padding-bottom: 8px;
+			}
+		}
+
+		.follow-us {
+			position: absolute;
+			bottom: 5px;
+			z-index: 101;
+
+			@include breakpoint(tablet) {
+				padding: 0px 10px;
+			}
+		}
+
+		.follow-us a {
+			margin: 0 0 5px 0;
+			width: 1.5vw;
+			height: 1.5vw;
+			line-height: 1.5vw;
+
+
+			@include breakpoint(tablet) {
+				width: 23px;
+				height: 23px;
+				line-height: 23px;
+			}
+
+			.fa {
+				color: $coWhite;
+				line-height: 1.5vw;
+
+				@include breakpoint(tablet) {
+					font-size: 14px;
+					line-height: 23px;
+				}
+			}
+		}
+
+		.table-wrap .table-cell {
+			padding-top: 0;
+			text-align: left;
+			padding-left: 1vw;
+			padding-right: 1vw;
+
+			@include breakpoint(desktop) {
+				padding-right: 15px;
+				padding-left: 15px;
+			}
+		}
+	}
+
+	.gi-cc-name {
+		color: $coViolet;
+		font-weight: 500;
+
+		span {
+			display: block;
+		}
+	}
+
+	.gi-cc-position {
+		color: $defaultColor;
+		font-weight: 300;
+		font-size: 1.2vw;   
+	}
+}
+
+.gi-red {
+	background-color: rgba(239, 0, 133, 0.8); 
+	background-blend-mode: multiply;
+}
+
+.gi-blue {
+	background-color: rgba(65, 64, 64, 0.8);
+	background-blend-mode: multiply;
+}
+
+.gi-violet {
+	background: rgba(86, 42, 138, 0.8);   
+	background-blend-mode: multiply;
+}
+
+.gi-w-pink {
+	.gi-cc-share {
+		background: $coPink;
+	}
+
+	.gi-cc-name {
+		
+		color: $coWhite;
+	}
+
+	.gi-cc-position {
+		color: $coWhite;
+	}
+}
+@media only screen and (max-width: 1600px) {
+
+	.masonry-cc {
+
+		.grid-sizer { 
+			width:25%;
+		}
+
+		.grid-item { 
+			width:25%;
+			padding-bottom: 25%;
+
+		}
+	}
+}
+
+
+@media only screen and (max-width: 991px) {
+
+	.masonry-cc {
+
+		.grid-sizer { 
+			width:33.33%;
+		}
+
+		.grid-item { 
+			width:33.33%;
+			padding-bottom: 33%;
+
+		}
+	}
+}
+
+@media only screen and (max-width: 640px) {
+
+	.masonry-cc {
+
+		.grid-sizer { 
+			width:50%;
+		}
+
+		.grid-item { 
+			width:50%;
+			padding-bottom: 50%;
+
+		}
+	}
+}
+
+@media only screen and (max-width: 480px) {
+
+	.masonry-cc {
+
+		.grid-sizer { 
+			width:100%;
+		}
+
+		.grid-item { 
+			width:100%;
+			padding-bottom: 100%;
+
+		}
+	}
+}

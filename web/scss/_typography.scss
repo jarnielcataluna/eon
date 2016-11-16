@@ -1,5 +1,6 @@
 // includes all tags for paragraphs and titles such as header, p, span
 h1 { font-size: 4.1vw; font-family: $defaultFont; 
+	font-weight: 700;
 
 	@include breakpoint(desktop) {
 		font-size: 50px;
@@ -11,6 +12,7 @@ h1 { font-size: 4.1vw; font-family: $defaultFont;
 }
 h2 { 
 	font-size: 3.4vw; font-family: $defaultFont;
+	font-weight: 700;
 
 	@include breakpoint(desktop) {
 		font-size: 42px;
@@ -23,6 +25,7 @@ h2 {
 h3 { 
 
 	font-size: 2.8vw; font-family: $defaultFont;
+	font-weight: 700;
 
 	@include breakpoint(desktop) {
 		font-size: 35px;
@@ -33,6 +36,7 @@ h3 {
 	}
 }
 h4 { font-size: 2.4vw; font-family: $defaultFont;
+	font-weight: 700;
 
 	@include breakpoint(desktop) {
 		font-size: 30px;
@@ -44,6 +48,7 @@ h4 { font-size: 2.4vw; font-family: $defaultFont;
  }
 h5 { 
 	font-size: 2vw; font-family: $defaultFont;
+	font-weight: 700;
 
 	@include breakpoint(desktop) {
 		font-size: 26px;
@@ -55,6 +60,7 @@ h5 {
 }
 h6 { 
 	font-size: 1.5vw; font-family: $defaultFont;
+	font-weight: 700;
 
 	@include breakpoint(desktop) {
 		font-size: 22px;
@@ -82,7 +88,7 @@ p {
 	font-size: 1.1vw;
 	line-height: 1.2vw;
 
-	@include breakpoint(desktop) {
+	@include breakpoint(largedesktop) {
 		font-size: 16px;
 		line-height: 19px;
 	}

@@ -625,13 +625,31 @@ header {
 		margin-bottom: 25px;
 	}
 
-	ul {
+	> ul {
 
-		li {
+		> li {
 			display: inline-block;
 			text-align: center;
 			min-width: 5vw;
 			margin: 0px 0.1vw;
+			position: relative;
+
+			&.active {
+
+				a {
+					.menu-labels {
+						color: $coPink;
+					}
+
+					.menu-icons {
+						border: 0.15vw solid $coPink;
+
+						.ico {
+							color: $coPink;
+						}
+					}
+				}
+			}
 
 			@include breakpoint(desktop) {
 				min-width: 70px;
@@ -1090,6 +1108,138 @@ header {
 	}
 }
 
+.contact-tooltip {
+	position: absolute;
+	padding: 1.5vw 0 1.5vw 1vw;
+	top: 100%;
+	right: 0.4vw;
+	visibility: hidden;
+	opacity: 0;
+	@include transition(opacity 0s cubic-bezier(0.645, 0.045, 0.355, 1));
+	@include transform(translateY(100px));
+	z-index: -1;
+
+	&.is-active {
+		z-index: 100;
+		visibility: visible;
+		opacity: 1;
+		@include transform(translateY(0));
+		@include transition(all 0.4s  cubic-bezier(0.645, 0.045, 0.355, 1));
+	}
+
+	@include breakpoint(tablet2) {
+		display: none;
+	}
+
+	&:after {
+		content:'';
+		display: block;
+		position: absolute;
+		top: 0.6vw;
+		right: 1vw;
+		width: 0;
+		height: 0;
+		border-left: 1.2vw solid transparent;
+		border-right: 1.2vw solid transparent;
+		border-bottom: 1vw solid $coViolet;
+
+		@include breakpoint(largedesktop) {
+			border-left: 15px solid transparent;
+			border-right: 15px solid transparent;
+			border-bottom: 12px solid $coViolet;
+		}
+	}
+
+	.contact-t-wrap {
+		background: $coWhite;
+		min-width: 26vw;
+		border-radius: 18px;
+		position: relative;
+		overflow: hidden;
+		text-align: center;
+		padding-bottom: 1.2vw;
+
+		@include breakpoint(largedesktop) {
+			min-width: 370px;
+			padding-bottom: 20px;
+		}
+
+		ul {
+			margin-bottom: 1vw;
+			padding: 1vw 1vw 0;
+
+			padding: 12px 12px 0;
+			margin-bottom: 15px;
+
+			li {
+				display: block;
+				float: none;
+				clear: both;
+				border-bottom: 1px solid lighten($coGrey, 30%);
+				padding: 0.5vw 0.7vw 0.5vw;
+				margin-bottom: 0.5vw;
+
+				@include breakpoint(largedesktop) {
+					padding: 6px 10px;
+				}
+			}
+		}
+
+		p {
+			text-align: left;
+			padding-bottom: 0.4vw;
+
+			@include breakpoint(largedesktop) {
+				padding-bottom: 6px;
+			}
+
+			a, span {
+				color: $coPink;
+				font-weight: 500;
+				margin-left: 0.2vw;
+
+				@include breakpoint(largedesktop) {
+					margin-left: 5px;
+				}
+
+			}
+		}
+
+		.ct-title-icon {
+			font-size: 1.5vw;
+			font-weight: 700;
+			text-align: left;
+			color: $coViolet;
+			margin-bottom: 0.7vw;
+
+			@include breakpoint(largedesktop) {
+				font-size: 24px;
+				margin-bottom: 5px;
+			}
+
+			.ico {
+				margin-right: 0.8vw;
+				position: relative;
+				top: 1px;
+			}
+		}
+
+	}
+
+	.contact-t-title {
+		background: $coViolet;
+		font-size: 1.5vw;
+		color: $coWhite;
+		padding: 0.8vw 0.5vw;
+		border: 1px solid $coViolet;
+
+		@include breakpoint(largedesktop) {
+			font-size: 22px;
+			padding: 8px 5px;
+		}
+	}
+
+}
 
 
 /*** Home End ***/
