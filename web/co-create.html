@@ -103,8 +103,8 @@
 									<label for="p-email">Your Email <span>(youremail@email.com)</span></label>
 								</div>
 								<div class="input-wrap">
-									<textarea colspan="3" id="p-message" rowspan="4" value="" required="required" onchange="this.setAttribute('value', this.value);" placeholder="Please limit to xxx words"></textarea>
-									<label for="p-message">Write your suggestions here<span>(Please limit to xxx words)</span></label>
+									<textarea colspan="3" id="p-message" rowspan="4" value="" required="required" onchange="this.setAttribute('value', this.value);" placeholder="Please limit to 120 letters" name="limitedtextarea" onKeyDown="limitText(this.form.limitedtextarea,this.form.countdown,120);"  onKeyUp="limitText(this.form.limitedtextarea,this.form.countdown,120);"></textarea>
+									<label for="p-message">Write your suggestions here<span>(Please limit to 120 letters)</span></label>
 								</div>
 								<div class="input-wrap cc-photo-upload text-center">
 									<p>Upload Your Photo</p>
