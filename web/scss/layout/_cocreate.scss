@@ -445,6 +445,15 @@
 		color: $coWhite;
 	}
 }
+
+.cf-add-accounts {
+	padding-bottom: 1vw;
+
+	@include breakpoint(largedesktop) {
+		padding-bottom: 15px;
+	}
+}
+
 @media only screen and (max-width: 1600px) {
 
 	.masonry-cc {

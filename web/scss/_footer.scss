@@ -108,8 +108,8 @@ footer {
 	font-weight: 300;
 	letter-spacing: 0.03vw;
 	line-height: 1.8vw;
+	margin-top: 15px;
 	
-
 	@include breakpoint(tablet2) {
 		margin-top: 8px;
 	} 
@@ -123,6 +123,9 @@ footer {
 	font-weight: 700;
 	letter-spacing: 0.03vw;
 	line-height: 1.8vw;
+	margin-bottom: 5px;
+
+
 
 	@include breakpoint(tablet2) {
 		text-align: left;
@@ -142,6 +145,18 @@ footer {
 			top: -2px;
 		}
 
+		&.c-unionbank {
+			max-width: 8vw;
+		}
+
+		&.c-visaplus {
+			top: -6px;
+
+			@include breakpoint(largedesktop) {
+				top: -3px;
+			}
+		}
+
 		@include breakpoint(largedesktop) {
 			max-width: 70px;
 
@@ -157,10 +172,9 @@ footer {
 
 	label {
 		font-weight: 300;
-		margin-right: 0.3vw;
 		font-size: 1vw;
 		display: inline-block;
-		vertical-align: middle;
+		vertical-align: top;
 
 		@include breakpoint(desktop) {
 			font-size: 12px;
@@ -175,6 +189,13 @@ footer {
 	span {
 		position: relative;
 		padding-left: 8px;
+
+		&.ub-noborder {
+			&:before {
+
+				display: none;
+			}
+		}
 
 		&:before {
 			content:'';

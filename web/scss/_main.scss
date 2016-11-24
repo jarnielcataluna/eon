@@ -234,6 +234,33 @@ em {
 .inner-banner {
 	position: relative;
 	height: 35vw;
+	overflow: hidden;
+
+	&.inner-banner-bot {
+
+		img {
+			margin-top: 0 !important;
+		}
+	}
+
+	img {
+
+		&.desktop-banner-img {
+			display: block;
+
+			@include breakpoint(tablet2) {
+				display: none;
+			}
+		}
+
+		&.mobile-banner-img {
+			display: none;
+
+			@include breakpoint(tablet2) {
+				display: block;
+			}
+		}
+	}
 
 	@include breakpoint(desktop) {
 		height: 400px;
@@ -840,7 +867,7 @@ em {
 
 .input-wrap {
 	position: relative;
-	margin-bottom: 20px;
+	margin-bottom: 1.3vw;
 	padding: 0px;
 	width: 100%;
 
@@ -951,7 +978,7 @@ em {
 
 	/* hide the placeholder when input has some text typed in */
 	input[required]:valid + label, input[required]:focus + label, input:not([value=""]) + label, textarea:focus + label{
-	    font-size: 13px;
+	    font-size: 0.7vw;
 	    position: absolute;
 	    bottom: 100%;
 	    left: 0px;
@@ -965,7 +992,7 @@ em {
 	}
 
 	textarea:focus + label {
-		top: -14px;
+		top: -0.8vw;
 
 		@include breakpoint(largedesktop) {
 			top: -14px;
@@ -979,11 +1006,11 @@ em {
 
 .custom-checkbox label {
 	position: relative !important;
-	font-size: 1vw;
+	font-size: 1vw !important;
 	color: $coDarkViolet;
 
 	@include breakpoint(largedesktop) {
-		font-size: 16px;
+		font-size: 12px !important;
 	}
 }
 
@@ -992,12 +1019,18 @@ em {
 	content: '';
 	position: relative;
 	display: inline-block;
-	width: 17px; height: 17px;
+	width: 1vw; height: 1vw;
 	border: 1px solid $coDarkViolet;
 	background: $coWhite;
 	vertical-align: middle;
-	margin-right: 10px;
+	margin-right: 0.6vw;
 	top: -2px;
+
+	@include breakpoint(largedesktop) {
+		width: 16px;
+		height: 16px;
+		margin-right: 8px;
+	}
 }
 /* checked mark aspect */
 .custom-checkbox [type="checkbox"]:not(:checked) + label:after,
@@ -1010,11 +1043,17 @@ em {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	position: absolute;
-	top: 1px; left: 3px;
-	font-size: 13px;
+	top: 50%; left: 0.2vw;
+	font-size: 0.8vw;
+	margin-top: -0.4vw;
 	line-height: 0.8;
 	color: $coDarkViolet;
 	transition: all .2s;
+
+	@include breakpoint(largedesktop) {
+		font-size: 14px;
+		margin-top: -4px;
+	}
 }
 /* checked mark aspect changes */
 .custom-checkbox [type="checkbox"]:not(:checked) + label:after {

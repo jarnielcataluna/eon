@@ -133,7 +133,7 @@ header {
 				@include breakpoint(desktop) {
 					display: block;
 				}
-				@include breakpoint(tablet) {
+				@include breakpoint(tablet2) {
 					display: none;
 				}
 			}
@@ -144,7 +144,7 @@ header {
 				@include breakpoint(desktop) {
 					display: none;
 				}
-				@include breakpoint(tablet) {
+				@include breakpoint(tablet2) {
 					display: block;
 				}
 			}
@@ -431,6 +431,14 @@ header {
 	@include breakpoint(tablet2) {
 		padding: 0px 15px;
 	}
+
+	.btn {
+		display: none;
+
+		&.btn-slide-app {
+			display: inline-block;
+		}
+	}
 	
 	h2 {
 		font-size: 4.5vw;
@@ -516,7 +524,13 @@ header {
 	width: 100%;
 	overflow: hidden;
 	background: $coViolet;
-	
+
+	&.left {
+
+		img {
+			margin-left: 0 !important;
+		}
+	}
 
 	img {
 		display: block;
@@ -749,7 +763,7 @@ header {
 
 .home-menu {
 	background: $coViolet;
-	padding: 0.6vw 0;
+	
 	position: absolute;
 	bottom: -100%;
 	width: 100vw;
@@ -803,10 +817,15 @@ header {
 		}
 
 		li {
-			padding: 0px 2.8vw;
+			padding: 0.6vw 2.8vw;
 			position: relative;
 			float: left;
 			width: 25vw;
+			background: $coViolet;
+
+			&.active {
+				background: lighten($coViolet, 10%);
+			}
 
 			@include breakpoint(desktop) {
 				padding: 0px 25px;
