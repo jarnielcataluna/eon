@@ -33,6 +33,10 @@ footer {
 
 .follow-us {
 
+	.menu-right & {
+		margin-bottom: 20px;
+	}
+
 	label {
 		display: inline-block;
 		vertical-align: middle;
@@ -117,6 +121,8 @@ footer {
 	@include breakpoint(desktop) {
 		line-height: 33px;
 	}
+
+
 }
 
 .unionbank {
@@ -147,6 +153,10 @@ footer {
 
 		&.c-unionbank {
 			max-width: 8vw;
+
+			@include breakpoint(tablet2) {
+				max-width: 100px;
+			}
 		}
 
 		&.c-visaplus {

@@ -281,6 +281,14 @@ em {
 		background: rgba(35, 31, 32, 0.60);
 		z-index: 2;
 	}
+
+	p {
+		br {
+			@include breakpoint(tablet) {
+				display: none;
+			}
+		}
+	}
 }
 
 .table-wrap {

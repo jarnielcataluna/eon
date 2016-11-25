@@ -175,6 +175,18 @@ header {
 				}
 				
 			}
+
+			.home-slide-text {
+
+				@include breakpoint(tablet) {
+					h2 {
+						br {
+							display: none;
+						}
+					}
+					
+				}
+			}
 		}
 
 		.flex-direction-nav {
@@ -350,6 +362,11 @@ header {
 			width: 100%;
 			text-align: center;
 			padding-top: 4vW;
+			padding-bottom: 4vw;
+
+			@include breakpoint(desktop) {
+				padding-bottom: 61px;
+			}
 
 			@include breakpoint(tablet) {
 				padding-top: 100px;
@@ -459,8 +476,8 @@ header {
 		}
 
 		@include breakpoint(mobile) {
-			font-size: 36px;
-			line-height: 42px;
+			font-size: 28px;
+			line-height: 35px;
 
 			br {
 				display: none;
@@ -564,7 +581,7 @@ header {
 
 		.copyrights {
 			font-size: 12px;
-			margin-top: 0;
+			margin-top: 20px;
 		}
 	}
 
@@ -750,6 +767,16 @@ header {
 					top: 0px;
 				}
 			}
+
+			&.icon-EON_CashIn {
+				font-size: 2.5vw;
+
+				@include breakpoint(desktop) {
+					font-size: 34px;
+					line-height: 45px;
+					top: 0px;
+				}
+			}
 		}
 
 		@include breakpoint(desktop) {
@@ -839,6 +866,10 @@ header {
 				width: 50%;
 				padding-bottom: 15px;
 				margin-bottom: 25px;
+
+				&:nth-child(2n + 1) {
+					clear: left;
+				}
 
 			}
 
@@ -992,7 +1023,7 @@ header {
 	bottom: -0.8vw;
 	left: 0;
 	width: 100%;
-	padding: 1.5vw 2.8vw;
+	padding: 1.5vw 2.8vw 5vw;
 	background: #783ABF;
 	text-align: left;
 	@include transition(transform 0.1s cubic-bezier(0.215, 0.61, 0.355, 1));
@@ -1025,10 +1056,33 @@ header {
 	p {
 		font-size: 1.2vw;
 		font-weight: 300;
-		text-align: center;
+		text-align: left;
 		margin-top: 2vw;
+		line-height: 1.3;
 		text-transform: initial;
 		padding: 0px 0.5vw;
+
+		@include breakpoint(tablet2) {
+			text-align: center;
+		}
+
+		.fa {
+			font-size: 1vw;
+			position: relative;
+			left: 0;
+			@include transition(all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1));
+		}
+
+		a {
+
+			&:hover {
+				.fa {
+					left: 5px;
+				}
+			}
+
+			
+		}
 
 		@include breakpoint(desktop) {
 			font-size: 14px;
@@ -1056,6 +1110,7 @@ header {
 		font-weight: 400;
 		text-transform: initial;
 		box-shadow: 0 8px 17px 0 rgba(0,0,0,0),0 6px 20px 0 rgba(0,0,0,0);
+		cursor: pointer;
 
 		&:hover {
 			    box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
@@ -1085,7 +1140,60 @@ header {
 }
 
 .expanded-details {
-	text-align: center;
+	text-align: left;
+
+	@include breakpoint(tablet2) {
+		text-align: center;
+	}
+
+	p {
+		a {
+			color: $coRed;
+			font-weight: 700;
+			font-style: italic;
+		}
+	}
+
+	&.hm-green {
+
+		a {
+			color: $coGreen;
+			display: block;
+			font-weight: 700;
+		}
+	}
+
+	&.hm-blue {
+
+		a {
+			color: $coBlue;
+			display: block;
+			font-weight: 700;
+		}
+
+	}
+
+	&.hm-pink {
+
+		a {
+			color: $coWhite;
+			display: block;
+			font-style: italic;
+			font-weight: 700;
+		}
+
+	}
+
+	&.hm-red {
+
+		a {
+			color: $coRed;
+			display: block;
+			font-weight: 700;
+			font-style: italic;
+		}
+
+	}
 }
 
 .digital-me {
