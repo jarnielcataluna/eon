@@ -77,7 +77,7 @@ function resize() {
   	var ClassName = get_biggest($('.classname'));
   	$('.classname').css({minHeight: ClassName});
 
-  	$('.home-slide').css({'height' :  windowHeight});
+  	$('.home-slide').css({'height' :  windowHeight - footerHeight});
 }
 
 function coverImage( image ) {
