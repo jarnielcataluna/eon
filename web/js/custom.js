@@ -8,6 +8,7 @@ win.resize(function() {
 
 doc.ready(function() {
 	smoothScroll();
+	resize();
 	
 	$('.header-hamburger').click(function(){
         var _this = $(this);
@@ -77,7 +78,9 @@ function resize() {
   	var ClassName = get_biggest($('.classname'));
   	$('.classname').css({minHeight: ClassName});
 
-  	$('.home-slide').css({'height' :  windowHeight - footerHeight});
+  	var hsHeight = windowHeight - footerHeight - $('.home-menu').outerHeight(false);
+
+  	$('.home-slide, .coverimage, .home-slide .table-wrap').css({'height' :  hsHeight});
 }
 
 function coverImage( image ) {
