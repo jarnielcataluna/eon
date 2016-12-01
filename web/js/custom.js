@@ -73,14 +73,14 @@ function resize() {
 		$(this).css({marginTop: bpMiddleHeight});
 	});
 
-	// for equalize
+	// for equalizer
 	$('.classname').css({minHeight: 0});
   	var ClassName = get_biggest($('.classname'));
   	$('.classname').css({minHeight: ClassName});
 
   	var hsHeight = windowHeight - footerHeight - $('.home-menu').outerHeight(false);
 
-  	$('.home-slide, .coverimage').css({'height' :  hsHeight});
+  	$('.home-slide, .coverimage, .home-slide .table-wrap').css({'height' :  hsHeight});
 }
 
 function coverImage( image ) {
