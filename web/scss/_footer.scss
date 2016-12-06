@@ -27,7 +27,16 @@ footer {
 	min-height: 3vw;
 
 	@include breakpoint(desktop) {
-		padding: 12px 0px 6px 0;
+		padding: 6px 0px 2px 0;
+	}
+
+	@include breakpoint(tablet2) {
+		padding-bottom: 6px;
+
+		.fr {
+			float: none;
+			clear: both;
+		}
 	}
 }
 

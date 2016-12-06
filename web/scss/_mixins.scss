@@ -248,6 +248,9 @@
   @else if $point == tablet {
     @media (max-width: 991px) { @content; }
   }
+  @else if $point == sptablet {
+    @media (max-width: 810px) { @content; }
+  }
   @else if $point == tablet2 {
     @media (max-width: 767px) { @content; }
   }

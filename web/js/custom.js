@@ -28,6 +28,25 @@ doc.ready(function() {
     	$(this).closest('li').toggleClass('active').find('.menu-info-wrap').toggleClass('is-active');
     });
 
+    if($(window).width() > 768 ) {
+    	$('.animated').appear(function() {
+	        var element = $(this);
+	        var animation = element.data('animation');
+	        var animationDelay = element.data('delay');
+	        if(animationDelay) {
+	          setTimeout(function(){
+	              element.addClass( animation + " visible" );
+	              element.removeClass('hiding');
+	          }, animationDelay);
+	        } else {
+	          element.addClass( animation + " visible" );
+	          element.removeClass('hiding');
+	        }               
+	    }, {accY: -90});
+    } else {
+    	$('.hiding').css({'opacity' : '1'});
+    }
+    
     
 });
 
@@ -39,6 +58,8 @@ win.load(function() {
 		setTimeout(function() {
 			$('.pace-inactive').hide();
 			$('header').addClass('is-anim');
+
+				
 		}, 500);
 	});
 

@@ -12,8 +12,7 @@
 		}
 	  	
 	  	p {
-	  		font-size: 4vh;
-	  		line-height: 4.2vh
+	  		font-size: 6vh;
 	  	}
 	}
 
@@ -30,12 +29,17 @@
 	.digital-me {
 		top: 10vh;
 	}
+
+	.home-slide .flexslider .flex-control-nav {
+		display: none;
+	}
 }
 
 @media only screen and (max-height: 767px) and (min-width: 1025px) {
 
 	.home-slide .flexslider .flex-control-nav {
-		display: none;
+		xdisplay: none;
+		bottom: 5px;
 	}
 
 

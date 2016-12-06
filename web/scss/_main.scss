@@ -62,6 +62,14 @@ em {
 .explorer .preloader .spinner { display:none; }
 // this is area is for reserved class
 
+.hiding {
+	opacity: 0;
+}
+
+.visible {
+	opacity: 1;
+}
+
 // you can include here the rest of your class name eg. home page
 
 .gradient-animate {
@@ -125,7 +133,9 @@ em {
 		top: 0;
 		max-height: 5.3vw;
 		z-index: 1001;
+		background: none;
 		-webkit-backface-visibility: hidden;
+
 
 		@include breakpoint(desktop) {
 			max-height: 65px;
@@ -135,6 +145,19 @@ em {
 			display: none;
 			visibility: hidden;
 			box-shadow: 6px 1px 3px 0 rgba(0,0,0,0.05),10px 0px 16px 0 rgba(0,0,0,0.16),3px -1px 4px -8px rgba(0,0,0,0.5);
+		}
+
+		ul.hm-desktop-list {
+			li {
+				text-align: center;
+				padding: 0.6vw 2.8vw;
+
+				&.active {
+					.expanded-info {
+						display: none;
+					}
+				}
+			}
 		}
 
 		@include breakpoint(tablet2) {
@@ -162,6 +185,10 @@ em {
 				margin-bottom: 0;
 				padding: 0;
 
+				&:nth-child(2n+1) {
+					clear: none;
+				}
+
 				&.active {
 					.hm-mobile-link {
 						background: #783ABF;
@@ -184,6 +211,7 @@ em {
 	.hm-link:hover .expanded-info {}
 
 	.hm-link {
+		cursor: pointer;
 
 		.hm-icons {
 
@@ -220,8 +248,25 @@ em {
 
 	.expanded-info {
 		bottom: inherit;
-		top: -0.72vw;
+		top: 0vw;
 		@include transform(translateY(-40px));
+		position: absolute;
+		bottom: inherit;
+		left: 0;
+		width: 100%;
+		padding: 1.5vw 2.8vw 2vw;
+		background: #783ABF;
+		text-align: center;
+		opacity: 0;
+		visibility: hidden;
+
+		p {
+			margin-top: 1vw;
+		}
+
+		.btn {
+			margin-top: 1vw;
+		}
 
 		@include breakpoint(tablet2) {
 			top: 0;
@@ -278,7 +323,7 @@ em {
 		position: absolute;
 		top: 0;
 		left: 0;
-		background: rgba(35, 31, 32, 0.60);
+		background: rgba(35, 31, 32, 0.2);
 		z-index: 2;
 	}
 
@@ -341,12 +386,14 @@ em {
 		font-weight: 900;
 		color: $coWhite;
 		margin-bottom: 10px;
+		text-shadow: 2px 2px 5px rgba(0,0,0,0.2),2px 2px 10px rgba(0,0,0,0.3),1px 1px 10px rgba(0,0,0,0.1),1px 1px 40px rgba(0,0,0,0.18),1px 1px 50px rgba(0,0,0,0.2);
 	}
 
 	p {
-		font-size: 1.2vw;
+		font-size: 1.3vw;
 		color: $coWhite;
 		line-height: 1.3vw;
+		text-shadow: 1px 1px 1px rgba(0,0,0,0.9),1px 1px 1px rgba(255,255,255,0.9),1px 1px 10px rgba(0,0,0,0.2),1px 1px 20px rgba(0,0,0,0.2);
 
 		@include breakpoint(largedesktop) {
 			font-size: 22px;

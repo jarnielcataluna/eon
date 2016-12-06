@@ -75,7 +75,26 @@
 	}
 }
 
+.gi-captions {
+	
+	span {
+		color: $coViolet;
+		font-weight: 700;
+	}
+}
+
 .gi-holder {
+
+	&.gi-no-image  {
+
+		a {
+			h2.gi-h-title {
+				position: relative;
+				bottom: inherit;
+				padding-bottom: 0;
+			}
+		}   	
+	}
 
 	a {
 		display: block;
@@ -117,6 +136,35 @@
 				position: absolute;
 				top: 0;
 				left: 0;
+			}
+		}
+
+		.gi-h-title {
+			position: absolute;
+		    bottom: 0;
+		    color: $coPink;
+		    font-size: 1.2vw;
+		    padding: 0.5vw 1vw;
+		    background: rgba(255, 255, 255, 0.8);
+		    font-weight: 700;
+		    width: 100%;
+		    z-index: 3;
+
+		    @include breakpoint(largedesktop) {
+		    	font-size: 18px;
+		    	padding: 6px 15px;
+		    }
+
+
+			
+
+			span {
+				display: -webkit-box;
+				-webkit-line-clamp: 2;
+				-webkit-box-orient: vertical;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				position: relative;
 			}
 		}
 	}
