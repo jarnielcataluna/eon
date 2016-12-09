@@ -59,7 +59,7 @@ win.load(function() {
 			$('.pace-inactive').hide();
 			$('header').addClass('is-anim');
 
-			$('.preloader').remove();
+			//$('.preloader').remove();
 				
 		}, 500);
 	});
