@@ -29,11 +29,7 @@ $(document).ready(function() {
 		nextText: "&nbsp;"
 	});
 
-	// ClOSE MODAL
-	$('.pop-close, .bg-close').click(function(e){
-		e.preventDefault();
-		$('.popup-wrap').removeClass('active');
-	});
+	
 
 	// FAQ TABS
 	$('.faq-categ-wrap a').click(function(){
@@ -87,20 +83,20 @@ $(document).ready(function() {
 
     });
 
-    $('.animated').appear(function() {
-        var element = $(this);
-        var animation = element.data('animation');
-        var animationDelay = element.data('delay');
-        if(animationDelay) {
-          setTimeout(function(){
-              element.addClass( animation + " visible" );
-              element.removeClass('hiding');
-          }, animationDelay);
-        } else {
-          element.addClass( animation + " visible" );
-          element.removeClass('hiding');
-        }               
-    }, {accY: -90});
+    // $('.animated').appear(function() {
+    //     var element = $(this);
+    //     var animation = element.data('animation');
+    //     var animationDelay = element.data('delay');
+    //     if(animationDelay) {
+    //       setTimeout(function(){
+    //           element.addClass( animation + " visible" );
+    //           element.removeClass('hiding');
+    //       }, animationDelay);
+    //     } else {
+    //       element.addClass( animation + " visible" );
+    //       element.removeClass('hiding');
+    //     }               
+    // }, {accY: -90});
 });
 
 win.load(function() {
@@ -121,13 +117,6 @@ win.load(function() {
 	}, 2000);
 });
 
-
-
-$(window).on('scroll load', function(){
-    _cur_top = $(window).scrollTop();
-
-
-});
 
 
 function innerMenu() {

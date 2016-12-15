@@ -20,22 +20,96 @@
 </head>
 <body>
 <section id="main-container" class="home">
+	<div class="popup-wrap popup-contact active">
+		<a href="#" class="bg-close"></a>
+		<div class="popup-content ">
+			<a href="#" class="pop-close"><span class="ico icon-close"></span></a>
+			<div class="popup-head">
+				<h3>Drop Us A Line</h3>
+			</div>
+			<div class="popup-body">
+				<form id="contact-form" method="post" action="">
+					<p class="cf-sub-title"><span>Please be patient with us, we need all these info to make sure we give the best experience for you!</span><br><br></p>
+					<h6>Your Info</h6>
+					<div class="input-wrap">
+						<input type="text" id="p-name" name="p-name" value="" placeholder="First Name, Last Name" required="required" onchange="this.setAttribute('value', this.value);">
+						<label for="p-name">Your Name <span>(First Name, Last Name)</span></label>
+					</div>
+					<div class="input-wrap">
+						
+						<input type="email" id="p-email" name="p-name" value="" required="required" onchange="this.setAttribute('value', this.value);" placeholder="youremail@email.com">
+						<label for="p-email">Your Email <span>(youremail@email.com)</span></label>
+					</div>
+					<div class="input-wrap">
+						
+						<input type="tel" id="p-mobile" name="p-name" value="" required="required" onchange="this.setAttribute('value', this.value);" placeholder="91x xxx xxxx">
+						<label for="p-mobile">Mobile Number <span>(91x xxx xxxx)</span></label>
+					</div>
+					<h6>Your Inquiry</h6>
+					<div class="input-wrap input-half">
+						
+						<select class="custom-select">
+							<option value="1">Sample 1</option>
+							<option value="2">Sample 2</option>
+							<option value="3">Sample 3</option>
+						</select>
+					</div>
+					<div class="input-wrap">
+						<textarea colspan="3" id="p-message" rowspan="4" value="" required="required" onchange="this.setAttribute('value', this.value);" placeholder="Your Message"></textarea>
+						<label for="p-message">Express It Here  <span>(Please keep it to xxx characters!)</span></label>
+					</div>
+					<div class="input-wrap">
+						<input class="btn btn-default btn-primary" type="submit" value="Send Message!" name="">
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
 	<div class="header-hamburger"><span></span></div>
 	<header>
 		<div class="head-wrap">
 			<div class="container-fluid">
 				<div class="logo fl"><a href="index.html"><img src="images/page_template/digital-me.svg" alt=""></a></div>
 				<div class="menu-right">
-					<!-- <a href="#" class="write-review"><i class="ico icon-write-a-review"></i>share experience</a> -->
 					<div class="menu">
 						<ul>
-							<!-- <li><a href="#"> <span class="menu-icons"><i class="ico icon-submit-post"></i></span><span class="menu-labels">Submit Post</span></a></li> -->
-							<li><a href="#" class="menu-w-info"> <span class="menu-icons"><i class="ico icon-EON_CashIn"></i></span><span class="menu-labels">Cash in</span></a></li>
+							<li><a href="#" class="menu-w-info"> <span class="menu-icons"><i class="ico icon-cashin"></i></span><span class="menu-labels">Cash in</span></a></li>
 							<li><a href="#" class="menu-w-info"> <span class="menu-icons"><i class="ico icon-login"></i></span><span class="menu-labels">Log in</span></a></li>
 							<li>
 								<a href="#" class="menu-w-info"> <span class="menu-icons"><i class="ico icon-contact"></i></span><span class="menu-labels">Contact</span></a>
-								<!-- <div class="contact-tooltip menu-info-wrap">
+								<div class="contact-tooltip menu-info-wrap is-active">
 									<div class="contact-t-wrap">
+										<div class="row">
+											<div class="col-sm-6">
+												<div class="contact-tool-left">
+													<h2 class="contact-t-title">Contact us thru the contact form</h2> 
+													<p>Let us know how we can help you and we'll get back to you before you even know it.</p>
+													<a href="#" class="btn btn-default btn-primary btn-use-form">Use Our Contact Form</a>
+												</div>
+											</div>
+											<div class="col-sm-6">
+												<div class="contact-tool-right">
+													<h2 class="contact-t-title">Reach us thru social media or email</h2> 
+													<ul>
+														<li>
+															<h3 class="ct-title-icon"><i class="ico icon-contact"></i>Email Us! </h3>
+															<p><a href="mailto:customer.service@unionbankph.com">customer.service@unionbankph.com</a></p>
+														</li>
+														<li>
+															<h3 class="ct-title-icon"><i class="ico icon-contact"></i>Chat Us!</h3>
+															<p><a href="https://www.facebook.com/eonbakph" target="_blank">facebook.com/eonbakph</a></p>
+															<p><a href="https://twitter.com/eonbankph" target="_blank">twitter.com/eonbankph</a></p>
+														</li>
+														<li>
+															<h3 class="ct-title-icon"><i class="ico icon-contact"></i>Call Us</h3>
+															<p><a href="tel:">1-800-1888-2277</a></p>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- <div class="contact-t-wrap">
 										<h2 class="contact-t-title">Contact us however you want!</h2> 
 										<ul>
 											<li>
@@ -59,8 +133,8 @@
 										</ul>
 
 										<a href="#" class="btn btn-default btn-primary">Use Our Contact Form Here!</a>
-									</div>
-								</div> -->
+									</div> -->
+								</div>
 							</li>
 						</ul>
 					</div>
@@ -68,28 +142,6 @@
 					<!-- Part of mobile Menu -->
 					<div class="footer-wrap">
 						<div class="container-fluid">
-							<!-- <div class="row">
-								
-								<div class="col-md-3 col-sm-3 col-xs-6">
-									<div class="follow-us">
-										<label> Follow Us :</label>
-										<ul>
-											<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-											<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-										</ul>
-									</div>
-								</div>
-								<div class="col-md-3 col-sm-3 col-xs-12">
-									<p class="unionbank text-right"><label>Powered by</label>
-									UNIONBANK
-									<span><img class="c-visa" src="images/page_template/visa.png" alt=""></span>
-									<span><img class="c-bancnet" src="images/page_template/bancnet.png" alt=""></span>
-									</p>
-								</div>
-								<div class="col-md-6 col-sm-6 col-xs-12">
-									<p class="copyrights text-center">&copy; COPYRIGHT 2016 EON</p>
-								</div>
-							</div> -->
 							<div class="row">
 								<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
 									<div class="follow-us">
@@ -100,35 +152,17 @@
 										</ul>
 									</div>
 								</div>
-
-
 								<div class="col-lg-7 col-md-6 col-sm-6 col-xs-12 fr">
 									<div class="row">
 										<div class="col-md-12 col-lg-6">
-											<p class="unionbank text-right"><label>Issued By</label>
+											<p class="unionbank text-right"><label>Powered by</label>
 											<span class="ub-noborder"><img class="c-unionbank" src="images/page_template/unionBank.png" alt=""></span>
 										</div>
-										<div class="col-md-12 col-lg-6">
-											<p class="unionbank text-right"><label>Accepted at</label>
-												<span class="ub-noborder"><img class="c-bancnet" src="images/page_template/bancnet.png" alt=""></span>
-												<span><img class="c-visa" src="images/page_template/visa.png" alt=""></span>
-												<span><img class="c-visa c-visaplus" src="images/page_template/visaplus.png" alt=""></span>
-												
-											</p>
-										</div>
+										
 									</div>
 								</div>
-								
-								<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 text-center">
-									<!-- <p class="copyrights text-center">&copy; COPYRIGHT 2016 EON</p> -->
-									
-								</div>
 							</div>
-							<!-- <div class="row">
-								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-									<p class="copyrights text-center">&copy; COPYRIGHT 2016 EON</p>
-								</div>
-							</div> -->
+							
 						</div>
 					</div>
 
@@ -156,8 +190,8 @@
 						<div class="table-wrap">
 							<div class="table-cell">
 								<div class="home-slide-text">
-									<h2>Add a Dash of Magic <br>Into the Digital World</h2>
-									<p>Your personal touch is the perfect spice to create a truly <br>amazing EON experience.</p>
+									<h2>Add Your Colors <br>into the Mix</h2>
+									<p>EON is a melting pot of personal experiences. Enjoy the <br>community of digital celebrities!</p>
 								</div>
 							</div>
 						</div>
@@ -172,8 +206,8 @@
 						<div class="table-wrap">
 							<div class="table-cell">
 								<div class="home-slide-text">
-									<h2>Get Everyone Together in <br>Making Life Awesome</h2>
-									<p>For out-of-this-world moments in the web, <br>EON gets the whole gang involved.</p>
+									<h2>Your Every Idea Has a Space</h2>
+									<p>Go take your moonshot! Join in and blast EON to the next <br>frontier!</p>
 								</div>
 							</div>
 						</div>
@@ -189,8 +223,8 @@
 						<div class="table-wrap">
 							<div class="table-cell">
 								<div class="home-slide-text">
-									<h2>You Create a Divine <br>Digital Experience </h2>
-									<p>Need help? You'll get the real solutions <br>and the unbelievable customer experience you deserve.</p>
+									<h2>Breathe Life to a <br>Divine Experience</h2>
+									<p>Realize the experience you have been praying for. Step up <br>to EON and discover the possibilities!</p>
 								</div>
 							</div>
 						</div>
@@ -205,8 +239,8 @@
 						<div class="table-wrap">
 							<div class="table-cell">
 								<div class="home-slide-text">
-									<h2>Take a Bite of Something <br> Extraordinary</h2>
-									<p>Online banking that feels truly yours to enjoy <br>and use in exactly the ways you want.</p>
+									<h2>Take a Bite of <br>Something Extraordinary</h2>
+									<p>Delight in the taste of innovation well done. Jump in and spice <br>up the EON flavor.</p>
 								</div>
 							</div>
 						</div>
@@ -222,8 +256,8 @@
 						<div class="table-wrap">
 							<div class="table-cell">
 								<div class="home-slide-text">
-									<h2>Feed your Online Obsessions<br> on Any Device</h2>
-									<p>You help us create the perfect banking experience, <br>no matter how big or small your screen is!</p>
+									<h2>Make Life Smashingly <br>Awesome</h2>
+									<p>Live the good vibes.  Be cool with EON!</p>
 								</div>
 							</div>
 						</div>
@@ -234,108 +268,85 @@
 		<div class="home-menu">
 			<ul>
 				<li>
-					<span class="hm-link">
-						<span class="hm-icons hm-red"><i class="ico icon-co-create"></i></span>
-						<span class="hm-label">Co-Create</span>
-						<div class="expanded-info">
+					<span class="hm-link active">
+						<div class="expanded-info text-center">
 							<span class="hm-icons hm-red"><i class="ico icon-co-create"></i></span>
 							<span class="hm-label">Co-Create</span>
 							<div class="expanded-details">
-								<p>EON has gathered so many learnings into providing great experiences. The best part? They all came from you.</p>
-								<a href="#" class="btn">Check them out!</a>
+								<p>Here's the story of how you have shaped EON.</p>
+								<a href="#" class="btn">Tell me the story!</a>
 							</div>
 						</div>
 					</span>
 				</li>
 				<li>
-					<span class="hm-link">
-						<span class="hm-icons hm-green"><i class="ico icon-experience"></i></span>
-						<span class="hm-label">EXPERIENCE </span>
-						<div class="expanded-info">
+					<span class="hm-link active">
+						<div class="expanded-info text-center">
 							<span class="hm-icons hm-green"><i class="ico icon-experience"></i></span>
 							<span class="hm-label">EXPERIENCE </span>
 							<div class="expanded-details">
-								<p>You've given EON the insights to provide an unbelievable customer experience.</p>
-								<a href="#" class="btn">Learn more about it!</a>
+								<p>Take a tour of the EON wonderland.</p>
+								<a href="#" class="btn">Let's go!</a>
 							</div>
 						</div>
 					</span>
 				</li>
 				<li>
-					<span class="hm-link">
-						<span class="hm-icons hm-pink"><i class="ico icon-lifehacks"></i></span>
-						<span class="hm-label">LIFEHACKS</span>
-						<div class="expanded-info">
+					<span class="hm-link active">
+						<div class="expanded-info text-center">
 							<span class="hm-icons hm-pink"><i class="ico icon-lifehacks"></i></span>
 							<span class="hm-label">LIFEHACKS</span>
 							<div class="expanded-details">
-								<p>Digital freelancers and entrepreneurs have used EON to create amazing opportunities. <a href="#" style="display:block;">See how EON is a match for you. <i class="fa fa-chevron-right" aria-hidden="true"></i></a></p>
+								<p>EON rocks with your digital life.</p>
+								<a href="#" class="btn">Show me!</a>
 							</div>
 						</div>
 					</span>
 				</li>
 				<li>
-					<span class="hm-link">
-						<span class="hm-icons hm-blue"><i class="ico icon-express"></i></span>
-						<span class="hm-label">EXPRESS</span>
-						<div class="expanded-info">
+					<span class="hm-link active">
+						<div class="expanded-info text-center">
 							<span class="hm-icons hm-blue"><i class="ico icon-express"></i></span>
 							<span class="hm-label">EXPRESS</span>
 							<div class="expanded-details hm-white">
-								<p>Here's the place to say it all. Your shout-outs are gold to us, so please <a href="#">drop us a line! <i class="fa fa-chevron-right" aria-hidden="true"></i></a></p>
+								<p>Here's the place to say it all.</p>
+								<a href="#" class="btn">Shout out!</a>
 							</div>
 						</div>
 					</span>
 				</li>
-				<!-- <div class="indicator"></div> -->
 			</ul>
 		</div>
 	</section>
-</section>
-<footer>
-	<div class="footer-wrap">
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-lg-7 col-md-8 col-sm-6 col-xs-12 fr">
-					<div class="row">
-						<div class="col-md-4 col-lg-6">
-							<p class="unionbank text-right"><label>Issued by</label>
-							<span class="ub-noborder"><img class="c-unionbank" src="images/page_template/unionBank.png" alt=""></span>
-						</div>
-						<div class="col-md-8 col-lg-6">
-							<p class="unionbank text-right"><label>Accepted at</label>
-								<span class="ub-noborder"><img class="c-bancnet" src="images/page_template/bancnet.png" alt=""></span>
-								<span><img class="c-visa" src="images/page_template/visa.png" alt=""></span>
-								<span><img class="c-visa c-visaplus" src="images/page_template/visaplus.png" alt=""></span>
-								
-							</p>
+
+	<footer>
+
+		<div class="footer-wrap">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-lg-7 col-md-8 col-sm-6 col-xs-12 fr">
+						<div class="row">
+							<div class="col-md-4 col-lg-6 fr">
+								<p class="unionbank text-right"><label>Powered by</label>
+								<span class="ub-noborder"><img class="c-unionbank" src="images/page_template/unionBank.png" alt=""></span>
+							</div>
 						</div>
 					</div>
-					
-				</div>
-				<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-					<div class="follow-us">
-						<label> Follow Us :</label>
-						<ul>
-							<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-							<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-						</ul>
+					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+						<div class="follow-us">
+							<label> Follow Us :</label>
+							<ul>
+								<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+								<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+							</ul>
+						</div>
 					</div>
-				</div>
-				<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 text-center">
-					<!-- <p class="copyrights text-center">&copy; COPYRIGHT 2016 EON</p> -->
-					
 				</div>
 			</div>
-			<!-- <div class="row">
-				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-					<p class="copyrights text-center">&copy; COPYRIGHT 2016 EON</p>
-				</div>
-			</div> -->
-			
 		</div>
-	</div>
-</footer>
+	</footer>
+</section>
+
 
 <script src="js/lib/jquery.min.js"></script>
 <script src="js/TweenMax.min.js"></script>

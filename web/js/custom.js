@@ -8,6 +8,7 @@ win.resize(function() {
 
 doc.ready(function() {
 	smoothScroll();
+	initCustomForm();
 	resize();
 	
 	$('.header-hamburger').click(function(){
@@ -17,6 +18,9 @@ doc.ready(function() {
         $('header').toggleClass('is-open')
         $('.head-wrap').toggleClass('active');
         $('body').toggleClass('fixed');
+
+        $('.popup-wrap').removeClass('active');
+        $('.contact-tooltip').removeClass('is-active');
         setTimeout(function() {
             _this.toggleClass('active');
         }, 300);
@@ -27,6 +31,26 @@ doc.ready(function() {
 
     	$(this).closest('li').toggleClass('active').find('.menu-info-wrap').toggleClass('is-active');
     });
+
+    // OPEN MODAL
+	$('.btn-use-form').click(function(e){
+		e.preventDefault();
+
+		$('.popup-contact .popup-content').css({'top' : _cur_top + 40});
+		$('.popup-contact').addClass('active');
+	});	
+
+	// ClOSE MODAL
+	$('.pop-close, .bg-close').click(function(e){
+		e.preventDefault();
+		$('.popup-wrap').removeClass('active');
+
+	});
+
+	$('.contact-t-wrap .pop-close').click(function(e){
+		e.preventDefault();
+		$(this).closest('.contact-tooltip').removeClass('is-active');
+	});
 
     // if($(window).width() > 768 ) {
     // 	$('.animated').appear(function() {
@@ -63,6 +87,10 @@ win.load(function() {
 				
 		}, 500);
 	});
+});
+
+$(window).on('scroll load', function(){
+    _cur_top = $(window).scrollTop();
 
 
 });
@@ -76,6 +104,20 @@ function get_biggest(elements){
 		if(element_height > biggest_height ) biggest_height = element_height;
 	}
 	return biggest_height;
+}
+
+function initCustomForm() {
+    $('select.custom-select').each(function() {
+        $(this).wrap('<div class="custom-select-wrapper" />');
+        $(this).before('<div class="custom-select-display" />');
+        $(this).change(function() {
+            $(this).siblings('.custom-select-display').text( $(this).find('option:selected').text() );
+        });
+        $(this).keyup(function() {
+            $(this).siblings('.custom-select-display').text( $(this).find('option:selected').text() );
+        });
+        $(this).change();
+    });
 }
 
 function resize() {
