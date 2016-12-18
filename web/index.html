@@ -30,33 +30,39 @@
 			<div class="popup-body">
 				<form id="contact-form" method="post" action="">
 					<p class="cf-sub-title"><span>Fill these up as best you can and help us provide the best experience.</span><br><br></p>
-					<h6>Your Info</h6>
-					<div class="input-wrap">
-						<input type="text" id="p-name" name="p-name" value="" placeholder="First Name, Last Name" required="required" onchange="this.setAttribute('value', this.value);">
-						<label for="p-name">Your Name <span>(First Name, Last Name)</span></label>
-					</div>
-					<div class="input-wrap">
-						
-						<input type="email" id="p-email" name="p-name" value="" required="required" onchange="this.setAttribute('value', this.value);" placeholder="youremail@email.com">
-						<label for="p-email">Your Email <span>(youremail@email.com)</span></label>
-					</div>
-					<div class="input-wrap">
-						
-						<input type="tel" id="p-mobile" name="p-name" value="" required="required" onchange="this.setAttribute('value', this.value);" placeholder="91x xxx xxxx">
-						<label for="p-mobile">Mobile Number <span>(91x xxx xxxx)</span></label>
-					</div>
-					<h6>Your Inquiry</h6>
-					<div class="input-wrap input-half">
-						
-						<select class="custom-select">
-							<option value="1">Sample 1</option>
-							<option value="2">Sample 2</option>
-							<option value="3">Sample 3</option>
-						</select>
-					</div>
-					<div class="input-wrap">
-						<textarea colspan="3" id="p-message" rowspan="4" value="" required="required" onchange="this.setAttribute('value', this.value);" placeholder="Your Message"></textarea>
-						<label for="p-message">Express It Here  <span>(Please keep it to xxx characters!)</span></label>
+					<div class="row">
+						<div class="col-sm-6">
+							<h6>Your Info</h6>
+							<div class="input-wrap">
+								<input type="text" id="p-name" name="p-name" value="" placeholder="First Name, Last Name" required="required" onchange="this.setAttribute('value', this.value);">
+								<label for="p-name">Your Name <span>(First Name, Last Name)</span></label>
+							</div>
+							<div class="input-wrap">
+								
+								<input type="email" id="p-email" name="p-name" value="" required="required" onchange="this.setAttribute('value', this.value);" placeholder="youremail@email.com">
+								<label for="p-email">Your Email <span>(youremail@email.com)</span></label>
+							</div>
+							<div class="input-wrap">
+								
+								<input type="tel" id="p-mobile" name="p-name" value="" required="required" onchange="this.setAttribute('value', this.value);" placeholder="91x xxx xxxx">
+								<label for="p-mobile">Mobile Number <span>(91x xxx xxxx)</span></label>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<h6>Your Inquiry</h6>
+							<div class="input-wrap input-half">
+								
+								<select class="custom-select">
+									<option value="1">Sample 1</option>
+									<option value="2">Sample 2</option>
+									<option value="3">Sample 3</option>
+								</select>
+							</div>
+							<div class="input-wrap">
+								<textarea colspan="3" id="p-message" rowspan="4" value="" required="required" onchange="this.setAttribute('value', this.value);" placeholder="Your Message"></textarea>
+								<label for="p-message">Express It Here  <span>(Please keep it to xxx characters!)</span></label>
+							</div>
+						</div>
 					</div>
 					<div class="input-wrap">
 						<input class="btn btn-default btn-primary" type="submit" value="Send Message!" name="">

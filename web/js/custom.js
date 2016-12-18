@@ -38,6 +38,7 @@ doc.ready(function() {
 
 		$('.popup-contact .popup-content').css({'top' : _cur_top + 40});
 		$('.popup-contact').addClass('active');
+		$('.contact-tooltip').removeClass('is-active');
 	});	
 
 	// ClOSE MODAL
