@@ -26,11 +26,11 @@ doc.ready(function() {
         }, 300);
     });
 
-    $('.menu-w-info').click(function(e){
-    	e.preventDefault();
+    // $('.menu-w-info').click(function(e){
+    // 	e.preventDefault();
 
-    	$(this).closest('li').toggleClass('active').find('.menu-info-wrap').toggleClass('is-active');
-    });
+    // 	$(this).closest('li').toggleClass('active').find('.menu-info-wrap').toggleClass('is-active');
+    // });
 
     // OPEN MODAL
 	$('.btn-use-form').click(function(e){
