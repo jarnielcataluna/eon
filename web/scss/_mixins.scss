@@ -239,7 +239,16 @@
   @if $point == maxwidth {
     @media (max-width: $maxWidth) { @content; }
   }
+  @else if $point == extralargedesktop {
+    @media (max-width: 1700px) { @content; }
+  }
+  @else if $point == meduimlargedesktop {
+    @media (max-width: 1500px) { @content; }
+  }
   @else if $point == largedesktop {
+    @media (max-width: 1450px) { @content; }
+  }
+  @else if $point == smalldesktop {
     @media (max-width: 1200px) { @content; }
   }
   @else if $point == desktop {

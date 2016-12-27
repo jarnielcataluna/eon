@@ -64,6 +64,10 @@ em {
 
 .hiding {
 	opacity: 0;
+
+	@include breakpoint(tablet2) {
+		opacity: 1 !important;
+	}
 }
 
 .visible {
@@ -145,17 +149,33 @@ em {
 			display: none;
 			visibility: hidden;
 			box-shadow: 6px 1px 3px 0 rgba(0,0,0,0.05),10px 0px 16px 0 rgba(0,0,0,0.16),3px -1px 4px -8px rgba(0,0,0,0.5);
+
+			li {
+				width: 20%;
+
+				@include breakpoint(tablet2) {
+					width: 20%;
+				}
+			}
 		}
 
 		ul.hm-desktop-list {
+			box-shadow: 6px 1px 3px 0 rgba($coDarkViolet,0.05),10px 0px 16px 0 rgba($coDarkViolet,0.16),3px -1px 4px -8px rgba($coDarkViolet,0.5);
+
 			li {
 				text-align: center;
 				padding: 0.6vw 2.8vw;
+				width: 20%;
+				@include transition(all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1));
 
 				&.active {
 					.expanded-info {
 						display: none;
 					}
+				}
+
+				&:hover {
+					background: #7c3dc4;
 				}
 			}
 		}
@@ -194,10 +214,11 @@ em {
 						background: #783ABF;
 					}
 				}
+
 			}
 
 			.hm-mobile-link {
-				padding: 8px 10px 5px 10px;
+				padding: 8px 5px 5px 5px;
 				display: block;
 				
 			}
@@ -222,16 +243,18 @@ em {
 
 		.hm-label {
 			@include breakpoint(tablet2) {
-				padding-top: 0;
+				padding-top: 5px;
 				font-weight: 300;
-				font-size: 9px;
+				font-size: 8px;
 			}
+
 		}
 
 		.hm-icons {
 			@include breakpoint(tablet2) {
 				width: 35px;
 				height: 35px;
+				margin: 0 auto 8px;
 
 				.ico {
 					line-height: 35px;
@@ -351,7 +374,7 @@ em {
 		display: table-cell;
 		width: 100%;
 		text-align: center;
-		padding-top: 10vW;
+		xpadding-top: 10vW;
 		padding-left: 15px;
 		padding-right: 15px;
 
@@ -373,7 +396,7 @@ em {
 }
 
 .container {
-	max-width: 75vw;
+	max-width: 1400px;
 
 	@include breakpoint(desktop) {
 		max-width: 100%;
@@ -413,8 +436,8 @@ em {
 }
 
 .inner-wrapper {
-	padding: 2vw 0px 3vw 0;
-	background: $coWhite;
+	padding: 11vw 0px 3vw 0;
+	background: $coViolet;
 
 	@include breakpoint(desktop) {
 		padding: 20px 0px 30px 0;
@@ -440,6 +463,8 @@ em {
     font-size: 1.2vw;
 	line-height: 3vw;
 	padding: 0px 1.1vw;
+	-webkit-appearance: none;
+	appearance: none;
 
 	&.btn-primary {
 		background: $coRed;
@@ -724,7 +749,6 @@ em {
 		.popup-content {
 			@include transform(translateY(0) scale(1));
 			opacity: 1;
-
 		}
 
 		&:after {
@@ -735,6 +759,13 @@ em {
 			position: fixed;
 		}
 		
+	}
+
+	&.popup-contact {
+
+		&.active {
+			z-index: 1004;
+		}
 	}
 
 	.bg-close {
@@ -859,6 +890,7 @@ em {
 		right: 0;
 		border-radius: 0;
 		font-size: 13px;
+		z-index: 10;
 	}
 
 	span {
@@ -925,6 +957,10 @@ em {
 	margin-bottom: 1.3vw;
 	padding: 0px;
 	width: 100%;
+
+	@include breakpoint(largedesktop) {
+		margin-bottom: 20px;
+	}
 
 	@include breakpoint(tablet2) {
 		margin-bottom: 15px;
@@ -1021,6 +1057,11 @@ em {
 
 	textarea[value=""] + label {
 		top: 0.5vw;
+
+		@include breakpoint(tablet) {
+			top: 8px;
+			left: 10px;
+		}
 	}
 
 	/*input[required] + label:after {
@@ -1040,6 +1081,13 @@ em {
 	    z-index: 1;
 	    outline: none;
 
+	    @include breakpoint(largedesktop) {
+	    	font-size: 12px;
+	    }
+
+	    @include breakpoint(tablet2) {
+	    	display: none;
+	    }
 
 	    span {
 	    	opacity: 0;
@@ -1051,6 +1099,10 @@ em {
 
 		@include breakpoint(largedesktop) {
 			top: -14px;
+		}
+
+		@include breakpoint(tablet2) {
+			display: none;
 		}
 	}
 }
@@ -1181,6 +1233,125 @@ em {
     	background: none;
     	display: none;
     }
+}
+
+
+.custom-select-wrapper { 
+	display: block; 
+	position: relative; 
+	height: 39px; 
+	background: $coWhite;  
+	box-sizing: border-box; 
+	border: 1px solid $coViolet;
+
+	.error & {
+		border: 1px solid red;
+	}
+
+	&:after {
+		content:'';
+		position: absolute;
+		top: 50%;
+		right: 10px;
+		width: 0;
+		height: 0;
+		border-left: 8px solid transparent;
+		border-right: 8px solid transparent;
+		border-top: 8px solid #a7a9ac;
+		margin-top: -4px;
+	}
+
+	&.focus {
+		border-bottom:1px solid $coViolet;
+	}
+}
+.custom-select-wrapper .custom-select-display { 
+	display: block; 
+	height: 37px; 
+	margin-right: 25px; 
+	color: $defaultColor; 
+	overflow: hidden; 
+	padding: 11px 8px 0px 8px; 
+	white-space: nowrap; 
+	text-overflow: ellipsis;
+	text-align: left;
+}
+
+.custom-select-wrapper select { 
+	-webkit-appearance: none; 
+	position: absolute; 
+	top: 0; 
+	left: 0; 
+	width: 100%; 
+	height: 100%; 
+	filter: alpha(opacity=0); 
+	opacity: 0; 
+	z-index: 1; 
+	cursor: pointer;
+}
+
+.popup-contact {
+
+	.popup-content {
+		width: 80vw;
+		margin-left: -40vw;
+
+	}
+
+	.pop-close {
+		@include breakpoint(tablet2) {
+			display: none;
+		}
+	}
+
+	&.active {
+		z-index: 1005;
+
+		.popup-content {
+			@include breakpoint(tablet2) {
+				margin-left: 0;
+				width: 100%;
+			}
+		}
+	}
+}
+
+#contact-form {
+	max-width: 50vw;
+	margin: 2vw auto 0;
+	min-width: 320px;
+
+	@include breakpoint(desktop) {
+		max-width: 100%;
+	}
+
+	@include breakpoint(mobile) {
+		min-width: 100%;
+		padding: 0px 10px;
+	}
+}
+
+#contact-form h6 {
+	font-size: 1vw;
+	margin-bottom: 1vw;
+	text-align: left;
+	margin-top: 10px;
+	color: $defaultColor;
+
+	@include breakpoint(largedesktop) {
+		font-size: 16px;
+
+
+	}
+
+
+}
+
+.cf-sub-title {
+
+	@include breakpoint(largedesktop) {
+		padding-top: 20px;
+	}
 }
 
 @-webkit-keyframes wavy-loader{
