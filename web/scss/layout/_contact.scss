@@ -110,7 +110,7 @@
 
 	&.cc-floating-email {
 		
-		top: 41%;
+		top: 45%;
 		left: -15px;
 
 		/*@include breakpoint(largedesktop) {
@@ -135,8 +135,8 @@
 	}
 
 	&.cc-floating-call {
-		top: 58%;
-		left: 0px;
+		top: 65%;
+		left: 40px;
 
 		@include breakpoint(tablet2) {
 			top: 0;
@@ -229,7 +229,7 @@
 		right: 0;
 		height: 100%;
 		top: 0;
-		background: url(../images/contact/contact-banner.jpg) no-repeat top right;
+		background: url(../images/contact/contact-banner.jpg) no-repeat bottom right;
 		background-size: cover;
 
 		@include breakpoint(tablet2) {
@@ -252,11 +252,23 @@
 	.follow-us {
 		margin-top: 5px;
 
+		li {
+			display: block;
+			margin-bottom: 5px;
+		}
+
 		a {
 			width: 35px;
 			height: 35px;
 			line-height: 35px;
 			background: $coPink;
+			position: relative;
+
+			span {
+				position: absolute;
+				top: 3px;
+				left: 40px;
+			}
 
 			&:hover {
 				background: $coViolet;
@@ -299,7 +311,7 @@
 		form {
 			padding-top: 30px;
 
-			@include breapoint(tablet2) {
+			@include breakpoint(tablet2) {
 				padding-top: 15px;
 			}
 		}
