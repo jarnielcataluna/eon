@@ -26,6 +26,12 @@
 }
 
 
+.icon-express-articles-icon:before {
+  content: "\e927";
+}
+.icon-express-social-icon:before {
+  content: "\e928";
+}
 .icon-ContactUs:before {
   content: "\e926";
 }
@@ -158,6 +164,140 @@
 .icon-co-create:before {
   content: "\e90a";
 }
+
+/*
+.icon-ContactUs:before {
+  content: "\e926";
+}
+.icon-EON-icn-chat:before {
+  content: "\e924";
+}
+.icon-EON-icn-mail:before {
+  content: "\e925";
+}
+.icon-cashin:before {
+  content: "\e922";
+}
+.icon-homeicon:before {
+  content: "\e923";
+}
+.icon-arrow-play:before {
+  content: "\e90b";
+}
+.icon-arrow-smallred:before {
+  content: "\e90c";
+}
+.icon-close:before {
+  content: "\e90d";
+}
+.icon-devices-desktop:before {
+  content: "\e90e";
+}
+.icon-devices-phone:before {
+  content: "\e90f";
+}
+.icon-devices-tablet:before {
+  content: "\e910";
+}
+.icon-like:before {
+  content: "\e911";
+}
+.icon-reply:before {
+  content: "\e912";
+}
+.icon-social_insta .path1:before {
+  content: "\e913";
+  color: rgb(82, 128, 164);
+}
+.icon-social_insta .path2:before {
+  content: "\e914";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-social_linkedIn .path1:before {
+  content: "\e915";
+  color: rgb(0, 123, 182);
+}
+.icon-social_linkedIn .path2:before {
+  content: "\e916";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-social_pinterest .path1:before {
+  content: "\e917";
+  color: rgb(203, 33, 40);
+}
+.icon-social_pinterest .path2:before {
+  content: "\e918";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-social_twitter .path1:before {
+  content: "\e919";
+  color: rgb(43, 168, 224);
+}
+.icon-social_twitter .path2:before {
+  content: "\e91a";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-social-facebook .path1:before {
+  content: "\e91b";
+  color: rgb(58, 90, 152);
+}
+.icon-social-facebook .path2:before {
+  content: "\e91c";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-star:before {
+  content: "\e91d";
+}
+.icon-upload_facebook:before {
+  content: "\e91e";
+}
+.icon-upload_insta:before {
+  content: "\e91f";
+}
+.icon-upload_youtube:before {
+  content: "\e920";
+}
+.icon-upload:before {
+  content: "\e921";
+}
+.icon-login:before {
+  content: "\e907";
+}
+.icon-arrowleft:before {
+  content: "\e900";
+}
+.icon-arrowright:before {
+  content: "\e901";
+}
+.icon-contact:before {
+  content: "\e902";
+}
+.icon-experience:before {
+  content: "\e903";
+}
+.icon-express:before {
+  content: "\e904";
+}
+.icon-FAQ:before {
+  content: "\e905";
+}
+.icon-lifehacks:before {
+  content: "\e906";
+}
+.icon-submit-post:before {
+  content: "\e908";
+}
+.icon-write-a-review:before {
+  content: "\e909";
+}
+.icon-co-create:before {
+  content: "\e90a";
+}*/
 
 /*
 .icon-EON-icn-chat:before {

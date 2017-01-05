@@ -97,6 +97,19 @@ $(document).ready(function() {
     //       element.removeClass('hiding');
     //     }               
     // }, {accY: -90});
+
+    $('.express-tab-menu-link').click(function(e){
+    	e.preventDefault();
+    	var _this = $(this).attr('href');
+
+    	console.log(_this);
+
+    	$('.express-tab-menu li').removeClass('active');
+    	$(this).parent('li').addClass('active');
+    	$('.express-tab-item').css({'display' : 'none'});
+    	$(_this).css({'display' : 'block'});
+
+    });
 });
 
 win.load(function() {
