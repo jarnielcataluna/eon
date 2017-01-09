@@ -1,12 +1,24 @@
 var _cur_top;
 
+
+function windowHeight() {
+	var wH = $(window).height();
+	var fH = $('footer').outerHeight(false);
+	var total = wH - fH;
+
+	$('.wrap-404').css({'height' : total});
+}
+
 win.resize(function() {
 	doCoverImage();
 	innerMenu();
+	windowHeight();
+	
 });
 
 $(document).ready(function() {
 	doCoverImage();
+	windowHeight();
 
 	$('.featured-lifehack .flexslider').flexslider({
 		animation: "fade",
@@ -50,8 +62,11 @@ $(document).ready(function() {
 	$('.btn-modal').click(function(e){
 		e.preventDefault();
 
+
+		var _this = $(this).attr('href');
+
 		$('.popup-content').css({'top' : _cur_top + 40});
-		$('.popup-wrap').addClass('active');
+		$(_this).addClass('active');
 	});	
 
 	// CO CREATE FORM

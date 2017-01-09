@@ -20,7 +20,15 @@
 </head>
 <body>
 <section id="main-container" class="inner-page">
-	<div class="popup-wrap">
+	<div id="popup-sent-notif" class="popup-wrap">
+		<div class="popup-content popup-notification">
+			<a href="#" class="pop-close"><span class="ico icon-close"></span></a>
+			<div class="popup-head">
+				<h3>Shout out received!</h3>
+			</div>
+		</div>
+	</div>
+	<div id="popup-share-something" class="popup-wrap">
 		<a href="#" class="bg-close"></a>
 		<div class="popup-content">
 			<a href="#" class="pop-close"><span class="ico icon-close"></span></a>
@@ -28,7 +36,7 @@
 				<h3>What do you have in mind?</h3>
 			</div>
 			<div class="popup-body">
-				<form id="express-form" method="post" action="">
+				<form id="express-form" method="post" action="" novalidate>
 					<div class="input-wrap">
 						<input type="text" id="p-name" name="p-name" value="" placeholder="First Name, Last Name" required="required" onchange="this.setAttribute('value', this.value);">
 						<label for="p-name">Your Name <span>(First Name, Last Name)</span></label>
@@ -174,7 +182,7 @@
 								<div class="sect-tagline text-center">
 									<h3>Here’s what they say about EON.</h3>
 									<p>Submit a post here, or share it from Facebook or Twitter.</p>
-									<a href="" class="btn btn-default btn-modal">SHARE SOMETHING</a>
+									<a href="#popup-share-something" class="btn btn-default btn-modal">SHARE SOMETHING</a>
 								</div>
 							</div>
 						</div>
@@ -999,6 +1007,13 @@
 
         }
     });
+
+    $('#express-form').submit(function(e){
+    	e.preventDefault();
+    	$('.popup-wrap').removeClass('active');
+    	$('#popup-sent-notif').addClass('active');
+    });
+
 
 </script>
 </body>
