@@ -388,7 +388,6 @@
         if( IsEmail($('#c-email').val() )) {
             $('#c-email').closest('.input-wrap').removeClass('error');
             isvalidate = true;
-            console.log('confirm');
         } else {
             isvalidate = false;
         }
@@ -396,7 +395,6 @@
         if( !$('#c-name').val() == '') {
             $('#c-name').closest('.input-wrap').removeClass('error');
             isvalidate = true;
-            console.log('confirm');
         } else {
             isvalidate = false;
         }
@@ -404,7 +402,6 @@
         if( !$('#c-lname').val() == '') {
             $('#c-lname').closest('.input-wrap').removeClass('error');
             isvalidate = true;
-            console.log('confirm');
         } else {
             isvalidate = false;
         }
@@ -412,14 +409,12 @@
         if( !$('#c-tel-num').val() == '') {
             $('#c-tel-num').closest('.input-wrap').removeClass('error');
             isvalidate = true;
-            console.log('confirm');
         } else {
             isvalidate = false;
         }
 
         if(!$('#c-email') == '' && !$('#c-lname').val() == '' && !$('#c-name').val() == '' && !$('#c-tel-num').val() == '' && isvalidate == true) {
         	$('#popup-contact-notif').addClass('active');
-        	console.log('confirm final');
         } else {
         	e.preventDefault();
         }
