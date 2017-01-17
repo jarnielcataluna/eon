@@ -10,7 +10,6 @@
 <meta name="theme-color" content="#562A8A">
 
 <link rel="stylesheet" href="css/icofont.css" media="all"/>
-<link rel="stylesheet" href="css/flexslider.css" media="all"/>
 <link rel="stylesheet" href="css/owl.carousel.css" media="all"/>
 <link rel="stylesheet" href="css/style.css" media="all"/>
 
@@ -292,7 +291,7 @@
 							<h5>Transfer Funds from PayPal <br>to Your EON Account</h5>
 							<p>Moving money from your PayPal account to EON is a breeze! Just select UnionBank of the Philippines as the bank and enter its bank code for an easy transfer, which costs a minimal fee of PhP50. And when you're moving at least PhP7,000, withdrawing from PayPal is free!</p>
 							<div class="exp-funds-icon-mobile">
-								<div class="exp-funds-icon-item exp-funds-icon-paypal>
+								<div class="exp-funds-icon-item exp-funds-icon-paypal">
 									<img src="images/experience/exp-funds-paypal.png" alt="">
 								</div>
 								<div class="exp-funds-icon-item exp-funds-icon-cashin">
@@ -745,11 +744,10 @@
 	    }
 	});
 
-	$('.exp-f-tabs-menu a').click(function(e){
+	$(document).on('click', '.exp-f-tabs-menu a', function(e){
 		e.preventDefault();
 
 		var _this = $(this).attr('href');
-
 		$('.exp-f-tabs-menu a').closest('li').removeClass('active');
 		$(this).closest('li').addClass('active');
 		$('.exp-featured-content').removeClass('active');
