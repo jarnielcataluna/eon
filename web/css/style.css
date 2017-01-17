@@ -9617,7 +9617,7 @@ header {
   z-index: 9; }
   @media (max-width: 767px) {
     .experience-pin {
-      max-width: 140px;
+      max-width: 80%;
       left: -2px; } }
 
 .get-app {
@@ -9732,7 +9732,7 @@ header {
 .experience-wrap {
   padding-bottom: 0;
   color: #63309E; }
-  @media (max-width: 640px) {
+  @media (max-width: 991px) {
     .experience-wrap .cc-why-eon {
       background: #63309E url(../images/banner/banner-experience.jpg) no-repeat bottom center;
       background-size: auto 60%; } }
