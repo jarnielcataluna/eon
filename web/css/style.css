@@ -9869,6 +9869,11 @@ header {
       .exp-platform:after {
         display: none; } }
 
+@-moz-document url-prefix() {
+  .exp-platform {
+    border: 2px dashed #ff4053;
+    border-radius: 20px; } }
+
 .exp-title-wrap {
   position: relative;
   padding: 110px 0 50px 0; }
