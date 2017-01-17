@@ -9964,9 +9964,6 @@ header {
   margin-left: 0;
   position: relative;
   overflow: hidden; }
-  @media (max-width: 767px) {
-    .exp-featured-holder {
-      display: none; } }
 
 .exp-featured-img-wrap {
   width: 220px;
@@ -10722,8 +10719,11 @@ header {
       display: block; }
     .exp-feature-mobile-wrap .exp-featured-holder {
       display: block;
-      margin: 0 auto;
+      margin: 20px auto 0;
       float: none; } }
+
+.exp-feature-mobile-wrap .pop-close {
+  text-align: center; }
 
 .express-wrap {
   background: #63309E;

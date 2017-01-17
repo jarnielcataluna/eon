@@ -400,6 +400,7 @@
 
 						<div class="exp-featured-wrap">
 							<div class="exp-feature-mobile-wrap">
+								<a href="#" class="pop-close"><span class="ico icon-close"></span></a>
 								<div class="exp-featured-holder">
 									<div class="exp-featured-img-wrap">
 									  	<div id="test1" class="exp-featured-img">Screen 1</div>
@@ -675,8 +676,25 @@
 
 		$('.exp-featured-img').removeClass('is-active');
 		$(_this).addClass('is-active');
+
+		if($(window).width() < 768) {
+			$('.exp-feature-mobile-wrap').css({'opacity' : '1','visibility' : 'visible', 'display' : 'block'});
+			$('.header-hamburger').css({'opacity' : '0', 'visibility' : 'hidden'});
+			$('.home-menu, footer').css({'opacity' : '0', 'visibility' : 'hidden'});
+		}
 	});
 
+	$(document).on('click', '.exp-feature-mobile-wrap .pop-close', function(e){
+		e.preventDefault();
+
+		var offsetTop = $('.exp-f-tabs-menu').offset().top - 44;
+
+		$("html, body").animate({ scrollTop: offsetTop });
+		$('.exp-feature-mobile-wrap').css({'opacity' : '0','visibility' : 'hidden', 'display' : 'none'});
+		$('.header-hamburger').css({'opacity' : '1', 'visibility' : 'visible'});
+		$('.home-menu, footer').css({'opacity' : '1', 'visibility' : 'visible'});
+
+	});
 
 	$('.exp-devices-feature .owl-carousel').owlCarousel({
 	    loop:true,
@@ -752,6 +770,8 @@
 		$(this).closest('li').addClass('active');
 		$('.exp-featured-content').removeClass('active');
 		$(_this).addClass('active');
+
+
 	});
 </script>
 </body>
