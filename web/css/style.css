@@ -9618,7 +9618,7 @@ header {
   @media (max-width: 767px) {
     .experience-pin {
       max-width: 140px;
-      left: 0; } }
+      left: -2px; } }
 
 .get-app {
   margin: 3vw auto 0; }
@@ -9734,7 +9734,7 @@ header {
   color: #63309E; }
   @media (max-width: 640px) {
     .experience-wrap .cc-why-eon {
-      background: url(../images/banner/banner-experience.jpg) no-repeat bottom center;
+      background: #63309E url(../images/banner/banner-experience.jpg) no-repeat bottom center;
       background-size: auto 60%; } }
   .experience-wrap .cc-digital-me {
     padding-top: 0;
@@ -9778,7 +9778,7 @@ header {
       padding-bottom: 0px; }
       @media (max-width: 767px) {
         .experience-wrap .sec-pad.exp-funds {
-          border-top: 2px dashed #ef0085; } }
+          border-top: 1px dashed #ef0085; } }
   .experience-wrap h2 {
     font-size: 62px; }
     @media (max-width: 991px) {
@@ -10028,7 +10028,9 @@ header {
   @media (max-width: 767px) {
     .exp-activated-img-wrap {
       border-bottom: 1px dashed red;
-      margin: 0px -50px 21px; } }
+      margin: 0px -50px 21px;
+      width: auto;
+      max-width: initial; } }
   .exp-activated-img-wrap img {
     max-width: 100%; }
 
@@ -10107,7 +10109,7 @@ header {
   background: url("../images/experience/feature-border-right.png") no-repeat top right;
   background-size: cover;
   z-index: 1; }
-  @media (max-width: 767px) {
+  @media (max-width: 991px) {
     .feature-border-right {
       display: none; } }
 
@@ -10120,7 +10122,7 @@ header {
   height: 100%;
   background-size: cover;
   z-index: 1; }
-  @media (max-width: 767px) {
+  @media (max-width: 991px) {
     .feature-border-left {
       display: none; } }
 
