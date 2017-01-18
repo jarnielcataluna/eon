@@ -9594,6 +9594,8 @@ header {
     font-size: 60px;
     line-height: 100px;
     color: #ff4053; }
+  .exp-devices-feature .ed-f-img.ed-f-card span {
+    font-size: 33px; }
   .exp-devices-feature .ed-f-img.ed-f-phone span {
     font-size: 45px; }
   .exp-devices-feature .ed-f-img.ed-f-desktop span {
