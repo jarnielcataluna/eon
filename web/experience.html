@@ -96,7 +96,7 @@
 										<div class="cc-img-holder">
 											<img src="images/co-create/paolo.jpg" alt="">
 										</div>
-										<p>“Passion to turn the impossible to is possible.””</p>
+										<p>“Passion to turn the  <em>impossible</em> to is <em>possible</em>.”</p>
 										<p class="cc-name">Paolo Baltao</p>
 										<p class="cc-position">EON's Head Advocate</p>
 									</div>
@@ -179,7 +179,7 @@
 						</div>
 						<div class="col-sm-4 col-md-6">
 							<div class="exp-activated-img-wrap">
-								<img class="img-desktop" src="images/experience/exp-activated.png" alt="">
+								<img class="img-desktop" src="images/experience/exp-activated-img.png" alt="">
 								
 							</div>
 						</div>
@@ -387,7 +387,7 @@
 					<div class="exp-title-wrap">
 						<div class="feature-border-left"></div>
 						<h4>Each Feature has <br> Your Experience in Mind</h4>
-						<p>No matter where life takes you, EON is right there at your fingertips.</p>
+						<p>From the smallest button, each thing about EON is aimed towards providing you with a banking experience that's nothing short of unbelievable.</p>
 					</div>
 					<div class="exp-featured-tabs">
 						
@@ -498,7 +498,7 @@
 					<div class="row">
 						<div class="col-sm-12 col-md-7">
 							<h2 class="why-title">We're All Ears</h2>
-							<p>From the smallest button, each thing about EON is aimed towards providing you with a banking experience that's nothing short of unbelievable.</p>
+							<p>We know you're more comfortable with Facebook or Twitter, so go ahead and reach us there! You get 24/7 customer support on the channel you prefer the most.</p>
 
 							<div class="follow-us">
 								<ul>
@@ -676,9 +676,12 @@
 
 		$('.exp-featured-img').removeClass('is-active');
 		$(_this).addClass('is-active');
+		$('.exp-featured-content li').removeClass('active');
+		$(this).closest('li').addClass('active');
+		
 
 		if($(window).width() < 768) {
-			$('.exp-feature-mobile-wrap').css({'opacity' : '1','visibility' : 'visible', 'display' : 'block'});
+			$('.exp-feature-mobile-wrap').css({'opacity' : '1','visibility' : 'visible', 'display' : 'block'}).addClass('active');
 			$('.header-hamburger').css({'opacity' : '0', 'visibility' : 'hidden'});
 			$('.home-menu, footer').css({'opacity' : '0', 'visibility' : 'hidden'});
 		}
@@ -690,7 +693,7 @@
 		var offsetTop = $('.exp-f-tabs-menu').offset().top - 44;
 
 		$("html, body").animate({ scrollTop: offsetTop });
-		$('.exp-feature-mobile-wrap').css({'opacity' : '0','visibility' : 'hidden', 'display' : 'none'});
+		$('.exp-feature-mobile-wrap').css({'opacity' : '0','visibility' : 'hidden', 'display' : 'none'}).removeClass('active');
 		$('.header-hamburger').css({'opacity' : '1', 'visibility' : 'visible'});
 		$('.home-menu, footer').css({'opacity' : '1', 'visibility' : 'visible'});
 
@@ -730,7 +733,7 @@
 
 	$('.exp-account-card .owl-carousel').owlCarousel({
 	    loop:true,
-	    margin:15,
+	    margin:10,
 	    responsiveClass:true,
 	    navigationText: false,
 	    lazyLoad: false,
