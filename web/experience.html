@@ -403,32 +403,37 @@
 								<a href="#" class="pop-close"><span class="ico icon-close"></span></a>
 								<div class="exp-featured-holder">
 									<div class="exp-featured-img-wrap">
-									  	<div id="test1" class="exp-featured-img">Screen 1</div>
-									  	<div id="test2" class="exp-featured-img">Screen 2</div>
-									  	<div id="test3" class="exp-featured-img">Screen 3</div>
-									  	<div id="test4" class="exp-featured-img">Screen 4</div>
+									  	<div id="f-selfie" class="exp-featured-img is-active"><img src="images/experience/experience_img-selfie.jpg" alt=""></div>
+									  	<div id="f-lockaccount" class="exp-featured-img"><img src="images/experience/experience_img-lockaccount.jpg" alt=""></div>
+									  	<div id="f-changepin" class="exp-featured-img"><img src="images/experience/experience_img-changepin.jpg" alt=""></div>
+									  	<div id="f-mobiledata" class="exp-featured-img">Mobile data</div>
+									  	<div id="f-accountupgrade" class="exp-featured-img"><img src="images/experience/experience_img-accountupgrade.jpg" alt=""></div>
+									  	<div id="f-cardreplacement" class="exp-featured-img">Card replacement</div>
+									  	<div id="f-movemoney" class="exp-featured-img"><img src="images/experience/experience_img-movemoney.jpg" alt=""></div>
+									  	<div id="f-paybills" class="exp-featured-img"><img src="images/experience/experience_img-paybills.jpg" alt=""></div>
+									  	<div id="f-buystuff" class="exp-featured-img"><img src="images/experience/experience_img-buystuff.jpg" alt=""></div>
 								  	</div>
 								</div>
 							</div>
 							<div id="exp-f-security" class="exp-featured-content active">
 							  	<h4 class="exp-featured-content-title">Security</h4>
 							  	<ul>
-							  		<li class="exp-feature-item">
-							  			<a href="#test1">
+							  		<li class="exp-feature-item active">
+							  			<a href="#f-selfie">
 							  				<span class="ef-icons"><i class="ico icon-plus-sign"></i></span>
 							  				<h5>Log in via Selfie or Touch ID</h5>
 							  				<p>Take a selfie to log in. Or you can use TouchID. Either way, forgetting your password will never be a problem!</p>
 							  			</a>
 							  		</li>
 							  		<li class="exp-feature-item">
-							  			<a href="#test2">
+							  			<a href="#f-lockaccount">
 							  				<span class="ef-icons"><i class="ico icon-plus-sign"></i></span>
 							  				<h5>Lock Your Account</h5>
 							  				<p>There's really no such thing as "too secure". As an extra measure, you can lock your account with the EON app or the EON website.</p>
 							  			</a>
 							  		</li>
 							  		<li class="exp-feature-item">
-							  			<a href="#test3">
+							  			<a href="#f-changepin">
 							  				<span class="ef-icons"><i class="ico icon-plus-sign"></i></span>
 							  				<h5>Change Your PIN</h5>
 							  				<p>You can also use the app to change your PIN. Looking for an ATM just to do that is such a waste of time!</p>
@@ -440,21 +445,21 @@
 							  	<h4 class="exp-featured-content-title">Convenience</h4>
 							  	<ul>
 							  		<li class="exp-feature-item">
-							  			<a href="#test1">
+							  			<a href="#f-mobiledata">
 							  				<span class="ef-icons"><i class="ico icon-plus-sign"></i></span>
 							  				<h5>Free Mobile Data Access</h5>
 							  				<p>No WiFi? No problem! You can access the EON app using mobile data on any network for free as long as you're not on roaming!</p>
 							  			</a>
 							  		</li>
 							  		<li class="exp-feature-item">
-							  			<a href="#test2">
+							  			<a href="#f-accountupgrade">
 							  				<span class="ef-icons"><i class="ico icon-plus-sign"></i></span>
 							  				<h5>Account Upgrade</h5>
 							  				<p>You can upgrade your EON account for a quick level-up the moment the need arises.</p>
 							  			</a>
 							  		</li>
 							  		<li class="exp-feature-item">
-							  			<a href="#test3">
+							  			<a href="#f-cardreplacement">
 							  				<span class="ef-icons"><i class="ico icon-plus-sign"></i></span>
 							  				<h5>Card Replacement</h5>
 							  				<p>Losing your card really shouldn't be so troublesome. If you need another EON card, just buy a new one at a convenience store and link it to your account with the app. Because nobody has time for a long replacement process.</p>
@@ -466,21 +471,21 @@
 							  	<h4 class="exp-featured-content-title">Services</h4>
 							  	<ul>
 							  		<li class="exp-feature-item">
-							  			<a href="#test1">
+							  			<a href="#f-movemoney">
 							  				<span class="ef-icons"><i class="ico icon-plus-sign"></i></span>
 							  				<h5>Move money</h5>
 							  				<p>You can transfer money to another EON account or an account in another bank. You can even schedule your transfers!</p>
 							  			</a>
 							  		</li>
 							  		<li class="exp-feature-item">
-							  			<a href="#test2">
+							  			<a href="#f-paybills">
 							  				<span class="ef-icons"><i class="ico icon-plus-sign"></i></span>
 							  				<h5>Pay bills</h5>
 							  				<p>Never miss a payment! No matter where you may be, you can pay your bills in seconds.</p>
 							  			</a>
 							  		</li>
 							  		<li class="exp-feature-item">
-							  			<a href="#test3">
+							  			<a href="#f-buystuff">
 							  				<span class="ef-icons"><i class="ico icon-plus-sign"></i></span>
 							  				<h5>Buy stuff</h5>
 							  				<p>From prepaid credits, airtime load, or credits for your favorite games, EON has it covered.</p>
@@ -774,7 +779,11 @@
 		$('.exp-featured-content').removeClass('active');
 		$(_this).addClass('active');
 
+		if($(window).width < 768) {
+			$(_this).find('li:first-child > a').click();
+		}
 
+		
 	});
 </script>
 </body>
