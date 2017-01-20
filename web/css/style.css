@@ -10009,7 +10009,7 @@ header {
     opacity: 1;
     z-index: 99; }
   .exp-featured-img img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
     top: 0; }
 
