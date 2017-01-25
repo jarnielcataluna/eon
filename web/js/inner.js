@@ -13,12 +13,14 @@ win.resize(function() {
 	doCoverImage();
 	innerMenu();
 	windowHeight();
+	innerMenu();
 	
 });
 
 $(document).ready(function() {
 	doCoverImage();
 	windowHeight();
+	innerMenu();
 
 	$('.featured-lifehack .flexslider').flexslider({
 		animation: "fade",
@@ -118,29 +120,31 @@ $(document).ready(function() {
 
 win.load(function() {
 	// preloader once done
-
-
-	Pace.on('done', function() {
-		// totally hide the preloader especially for IE
-		setTimeout(function() {
-			$('.pace-inactive').hide();
-			innerMenu();
-
-		}, 500);
-	});
-
-	setTimeout(function(){
-		$('.home-menu').addClass('is-anim');
-	}, 2000);
+	innerMenu();
+	
 });
+
+Pace.on('done', function() {
+	// totally hide the preloader especially for IE
+	setTimeout(function() {
+		$('.pace-inactive').hide();
+		innerMenu();
+
+	}, 500);
+});
+
+setTimeout(function(){
+	$('.home-menu').addClass('is-anim');
+}, 2000);
 
 
 
 function innerMenu() {
 
 	var hH = $('header').outerHeight(false);
-
 	$('.home-menu').css({'top' : hH});
+
+	console.log(hH)
 }
 
 function doCoverImage() {	

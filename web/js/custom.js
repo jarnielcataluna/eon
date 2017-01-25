@@ -78,16 +78,18 @@ doc.ready(function() {
 win.load(function() {
 	resize();
 	// preloader once done
-	Pace.on('done', function() {
-		// totally hide the preloader especially for IE
-		setTimeout(function() {
-			$('.pace-inactive').hide();
-			$('header').addClass('is-anim');
+	
+});
 
-			//$('.preloader').remove();
-				
-		}, 500);
-	});
+Pace.on('done', function() {
+	// totally hide the preloader especially for IE
+	setTimeout(function() {
+		$('.pace-inactive').hide();
+		$('header').addClass('is-anim');
+
+		//$('.preloader').remove();
+			
+	}, 500);
 });
 
 $(window).on('scroll load', function(){
