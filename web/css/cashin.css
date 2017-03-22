@@ -36,7 +36,7 @@
 
 .cashin-tab p { font-size: 20px; line-height: 26px; }
 
-@media (max-width: 767px) { .cashin-tab p { font-size: 16px; } }
+@media (max-width: 767px) { .cashin-tab p { font-size: 16px; line-height: 20px; } }
 
 .cashin-tab-title { max-width: 750px; margin: 0 auto 50px; padding: 0px 15px; }
 

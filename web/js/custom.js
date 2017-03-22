@@ -102,7 +102,7 @@ $(window).on('scroll load', function(){
 function get_biggest(elements){
 	var biggest_height = 0;
 	for ( var i = 0; i < elements.length ; i++ ){
-		var element_height = $(elements[i]).height();
+		var element_height = $(elements[i]).outerHeight(false);
 		//compare the height, if bigger, assign to variable
 		if(element_height > biggest_height ) biggest_height = element_height;
 	}
