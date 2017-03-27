@@ -18,7 +18,7 @@ width: 80%; left: 50%; max-width: 991px; -webkit-transform: translate(-50%, 0%) 
 @media (max-width: 767px) { .p-cash-col-wrap ol li { margin-bottom: 10px; padding-left: 65px; min-height: 55px; } }
 .p-cash-col-wrap ol li p { font-size: 14px; font-weight: 700; color: #333; font-family: 'Avenir'; font-weight: 500; }
 .p-cash-col-wrap ol li p span { color: #ff4053; }
-.p-cash-col-wrap .p-cashin-img { width: 65px; height: 65px; border-radius: 50%; position: absolute; left: 0; top: 0; overflow: hidden; }
+.p-cash-col-wrap .p-cashin-img { width: 65px; height: 65px; border-radius: 50%; position: absolute; left: 0; top: 0; overflow: hidden; box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);  }
 @media (max-width: 767px) { .p-cash-col-wrap .p-cashin-img { width: 55px; height: 55px; } }
 .p-cash-col-wrap .p-cashin-img img { width: 100%; height: auto; }
 .p-cash-col-wrap p { text-align: left; color: #562a8a; font-size: 14px; line-height: 16px; }
