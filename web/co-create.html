@@ -12,6 +12,7 @@
 <link rel="stylesheet" href="css/icofont.css" media="all"/>
 <link rel="stylesheet" href="css/flexslider.css" media="all"/>
 <link rel="stylesheet" href="css/style.css" media="all"/>
+<link rel="stylesheet" href="css/cashin.css">
 
 <!--[if lt IE 9]> <script src="js/css3-mediaqueries.js"></script> <![endif]-->
 <script src="js/html5.js"></script>
@@ -26,6 +27,58 @@
 			<div class="popup-head">
 				<h3>Great suggestion!</h3>
 				<p>We'll keep you in the loop on how this goes.</p>
+			</div>
+		</div>
+	</div>
+	<div id="popup-cashin-info" class="popup-wrap popup-cashin active">
+		<a href="#" class="bg-close"></a>
+		<div class="popup-content" style="top: 40px;">
+			<a href="#" class="pop-close"><span class="ico icon-close"></span></a>
+			<div class="popup-head">
+				<h3>Linking your EON account to <span class="seven-eleven-wrap"><img src="images/cashin/icon-paypal.png" alt=""></span> is a breeze.</h3>
+			</div>
+			<div class="popup-body">
+
+				<div class="p-cashin-wrap">
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="p-cash-col-wrap paypal-list">
+								<h3>Here's how to go about it.</h3>
+								<ol>
+									<li>
+										<div class="p-cashin-img"><img src="images/cashin/paypal1.jpg" alt=""></div>
+										<p><span>1.</span> Log into your <a href="https://www.paypal.com/ph/home" target="_blank"><span class="seven-eleven-wrap"><img src="images/cashin/icon-paypal.png" alt=""></span></a> account.</p>	
+									</li>
+									<li>
+										<div class="p-cashin-img"><img src="images/cashin/paypal2.jpg" alt=""></div>
+										<p><span>2.</span>Check at the top of the page and click "Wallet."</p>	
+									</li>
+									<li>
+										<div class="p-cashin-img"><img src="images/cashin/paypal3.jpg" alt=""></div>
+										<p><span>3.</span> Click "Link a bank account."</p>	
+									</li>
+									<li>
+										<div class="p-cashin-img"><img src="images/cashin/paypal4.jpg" alt=""></div>
+										<p><span>5.</span> You'll need to type "Union Bank of the Philippines" as your bank.</p>	
+									</li>
+									<li>
+										<div class="p-cashin-img"><img src="images/cashin/paypal5.jpg" alt=""></div>
+										<p><span>6.</span>The bank code is 010419995</p>	
+									</li>
+									<li>
+										<div class="p-cashin-img"><img src="images/cashin/paypal6.jpg" alt=""></div>
+										<p><span>7.</span> Lastly, you'll need to check your EON app homepage for your account number and enter that here.</p>	
+									</li>
+									<li>
+										<div class="p-cashin-img"><img src="images/cashin/paypal7.jpg" alt=""></div>
+										<p><span>7.</span> Click Save.</p>	
+									</li>
+								</ol>
+								<p>If everything went as planned, this should appear at the sidebar under "Banks and cards"</p>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -182,7 +235,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="cc-digital-me">
+				<!--<div class="cc-digital-me">
 					<div class="container">
 						<div class="row">
 							<div class="col-md-8 col-sm-8 col-lg-8 cc-d-card-wrap">
@@ -194,87 +247,89 @@
 						</div>
 						
 					</div>
-				</div>
+				</div>-->
 			</section>
 			<section class="sec-pad sec-meet-board">
-				<div class="container">
-					<div class="sect-tagline text-center">
-						<h3>Meet our Board of Creators.</h3>
-						<p>These digital celebrities have a direct hand in shaping EON. Count yourself among our Board of Creators today!</p>
-						<div class="creator-form-wrap">
-							<h4>Send your suggestions and be part of the EON evolution!</h4>
-							<form id="photoupload-form" method="post" action="" novalidate>
-								<a href="" class="btn btn-default btn-primary btn-close-form"><span class="btc-text">I will do this later</span> <span class="ico icon-close"></span></a>
-								<div class="input-wrap">
-									<input type="text" id="p-name" name="p-name" value="" placeholder="First Name, Last Name" required="required" onchange="this.setAttribute('value', this.value);">
-									<label for="p-name">Your Name <span>(First Name, Last Name)</span></label>
-								</div>
-								<div class="input-wrap">
-									<input type="text" id="p-occupation" name="p-occupation" value="" placeholder="First Name, Last Name" required="required" onchange="this.setAttribute('value', this.value);">
-									<label for="p-occupation">Your Occupation</label>
-								</div>
-								<div class="input-wrap">
-						
-									<input type="email" id="p-email" name="p-email" value="" required="required" onchange="this.setAttribute('value', this.value);" placeholder="youremail@email.com">
-									<label for="p-email">Your Email <span>(youremail@email.com)</span></label>
-								</div>
-								<div class="input-wrap">
-									<textarea colspan="3" id="p-message" rowspan="4" value="" required="required" onchange="this.setAttribute('value', this.value);" placeholder="Please limit to 120 letters" name="limitedtextarea" onKeyDown="limitText(this.form.limitedtextarea,this.form.countdown,120);"  onKeyUp="limitText(this.form.limitedtextarea,this.form.countdown,120);"></textarea>
-									<label for="p-message">Write your suggestions here<span>(Please limit to 120 letters)</span></label>
-								</div>
-								
-								
-								<div class="input-wrap cc-photo-upload text-center">
-									<p>Upload Your Photo</p>
-									<span class="cc-max-size">We recommend using image sized 400x400 px</span>
-									<div class="file-field input-field">
-										<div class="btn btn-default">
-											<div class="photp-uploaded-wrap has-element">
-												<img src="" id="sw-item">
-											</div>
-											<span><span class="ico icon-upload"></span> Choose a File</span>
-											<input type="file" id="imgInp" onchange="this.setAttribute('value', this.value);">
-										</div>
-											<div class="file-path-wrapper">
-											<input class="file-path validate" type="text">
-										</div>
-									</div>
-								</div>
-								<div class="input-wrap custom-checkbox text-left">
-									<input type="checkbox" id="add-social-checkbox">
-			            			<label for="add-social-checkbox">Add your social media accounts</label>
-								</div>
-								<div class="cf-add-accounts">
-									
+				<div class="sec-meet-board-head">
+					<div class="container">
+						<div class="sect-tagline text-center">
+							<h2>Meet our Board of Creators.</h2>
+							<p>These digital celebrities have a direct hand in shaping EON. Count yourself among our Board of Creators today!</p>
+							<div class="creator-form-wrap">
+								<h4>Send your suggestions and be part of the EON evolution!</h4>
+								<form id="photoupload-form" method="post" action="" novalidate>
+									<a href="" class="btn btn-default btn-primary btn-close-form"><span class="btc-text">I will do this later</span> <span class="ico icon-close"></span></a>
 									<div class="input-wrap">
-										<input type="text" id="p-facebook" name="p-facebook" value="" required="required" onchange="this.setAttribute('value', this.value);">
-										<label for="p-facebook">Facebook</span></label>
+										<input type="text" id="p-name" name="p-name" value="" placeholder="First Name, Last Name" required="required" onchange="this.setAttribute('value', this.value);">
+										<label for="p-name">Your Name <span>(First Name, Last Name)</span></label>
 									</div>
 									<div class="input-wrap">
-										<input type="text" id="p-twitter" name="p-twitter" value="" required="required" onchange="this.setAttribute('value', this.value);">
-										<label for="p-twitter">Twitter</span></label>
+										<input type="text" id="p-occupation" name="p-occupation" value="" placeholder="First Name, Last Name" required="required" onchange="this.setAttribute('value', this.value);">
+										<label for="p-occupation">Your Occupation</label>
 									</div>
 									<div class="input-wrap">
-										<input type="text" id="p-linkedin" name="p-linkedin" value="" required="required" onchange="this.setAttribute('value', this.value);">
-										<label for="p-linkedin">Linkedin</span></label>
-									</div>
-									<div class="input-wrap">
-										<input type="text" id="p-instagram" name="p-instagram" value="" required="required" onchange="this.setAttribute('value', this.value);">
-										<label for="p-instagram">Instagram</span></label>
-									</div>
-									<div class="input-wrap">
-										<input type="text" id="p-pinterest" name="p-pinterest" value="" required="required" onchange="this.setAttribute('value', this.value);">
-										<label for="p-pinterest">Pinterest</span></label>
-									</div>
-								</div>
-								<div class="input-wrap">
-									<input type="submit" class="btn btn-default btn-secondary" value="Submit Suggestion" name="">
-								</div>
-							</form>
 							
-							<a href="" class="btn btn-default btn-co-create">WRITE YOUR SUGGESTION</a>
+										<input type="email" id="p-email" name="p-email" value="" required="required" onchange="this.setAttribute('value', this.value);" placeholder="youremail@email.com">
+										<label for="p-email">Your Email <span>(youremail@email.com)</span></label>
+									</div>
+									<div class="input-wrap">
+										<textarea colspan="3" id="p-message" rowspan="4" value="" required="required" onchange="this.setAttribute('value', this.value);" placeholder="Please limit to 120 letters" name="limitedtextarea" onKeyDown="limitText(this.form.limitedtextarea,this.form.countdown,120);"  onKeyUp="limitText(this.form.limitedtextarea,this.form.countdown,120);"></textarea>
+										<label for="p-message">Write your suggestions here<span>(Please limit to 120 letters)</span></label>
+									</div>
+									
+									
+									<div class="input-wrap cc-photo-upload text-center">
+										<p>Upload Your Photo</p>
+										<span class="cc-max-size">We recommend using image sized 400x400 px</span>
+										<div class="file-field input-field">
+											<div class="btn btn-default">
+												<div class="photp-uploaded-wrap has-element">
+													<img src="" id="sw-item">
+												</div>
+												<span><span class="ico icon-upload"></span> Choose a File</span>
+												<input type="file" id="imgInp" onchange="this.setAttribute('value', this.value);">
+											</div>
+												<div class="file-path-wrapper">
+												<input class="file-path validate" type="text">
+											</div>
+										</div>
+									</div>
+									<div class="input-wrap custom-checkbox text-left">
+										<input type="checkbox" id="add-social-checkbox">
+				            			<label for="add-social-checkbox">Add your social media accounts</label>
+									</div>
+									<div class="cf-add-accounts">
+										
+										<div class="input-wrap">
+											<input type="text" id="p-facebook" name="p-facebook" value="" required="required" onchange="this.setAttribute('value', this.value);">
+											<label for="p-facebook">Facebook</span></label>
+										</div>
+										<div class="input-wrap">
+											<input type="text" id="p-twitter" name="p-twitter" value="" required="required" onchange="this.setAttribute('value', this.value);">
+											<label for="p-twitter">Twitter</span></label>
+										</div>
+										<div class="input-wrap">
+											<input type="text" id="p-linkedin" name="p-linkedin" value="" required="required" onchange="this.setAttribute('value', this.value);">
+											<label for="p-linkedin">Linkedin</span></label>
+										</div>
+										<div class="input-wrap">
+											<input type="text" id="p-instagram" name="p-instagram" value="" required="required" onchange="this.setAttribute('value', this.value);">
+											<label for="p-instagram">Instagram</span></label>
+										</div>
+										<div class="input-wrap">
+											<input type="text" id="p-pinterest" name="p-pinterest" value="" required="required" onchange="this.setAttribute('value', this.value);">
+											<label for="p-pinterest">Pinterest</span></label>
+										</div>
+									</div>
+									<div class="input-wrap">
+										<input type="submit" class="btn btn-default btn-secondary" value="Submit Suggestion" name="">
+									</div>
+								</form>
+								
+								<a href="" class="btn btn-default btn-co-create">WRITE YOUR SUGGESTION</a>
+							</div>
+							
 						</div>
-						
 					</div>
 				</div>
 				<div class="masonry-wrap masonry-cc">
