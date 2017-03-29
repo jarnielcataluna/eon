@@ -19,7 +19,7 @@
 
 @media (max-width: 767px) { .p-cash-col-wrap { min-height: 320px !important; margin-bottom: 15px; } }
 
-.p-cash-col-wrap h3 { font-size: 20px; color: #562a8a; font-weight: 400; line-height: 24px; }
+.p-cash-col-wrap h3 { font-size: 20px; color: #562a8a; font-weight: bold; line-height: 24px; }
 
 @media (max-width: 767px) { .p-cash-col-wrap h3 { font-size: 18px; line-height: 22px; } }
 
@@ -35,9 +35,11 @@
 
 .p-cash-col-wrap ol li p { font-size: 14px; font-weight: 700; color: #333; font-family: 'Avenir'; font-weight: 500; }
 
-.p-cash-col-wrap ol li p span { color: #ff4053; }
+.p-cash-col-wrap ol li p span { color: #ff4053;  }
+.p-cash-col-wrap ol li p small { font-size: 12px; }
+.p-cash-col-wrap ol li p strong { font-size: 12px; }
 
-.p-cash-col-wrap .p-cashin-img { width: 65px; height: 65px; border-radius: 50%; position: absolute; left: 0; top: 0; overflow: hidden; box-shadow: -1px 0px 10px rgba(0, 0, 0, 0.1); }
+.p-cash-col-wrap .p-cashin-img { width: 65px; height: 65px; border-radius: 50%; position: absolute; left: 0; top: 0; overflow: hidden; box-shadow: -1px 0px 10px rgba(0, 0, 0, 0.1); border: 1px solid #562a8a;}
 
 @media (max-width: 767px) { .p-cash-col-wrap .p-cashin-img { width: 55px; height: 55px; } }
 
@@ -48,7 +50,7 @@
 .p-cashin-wrap { padding-top: 25px; }
 
 .paypal-list .seven-eleven-wrap { padding: 5px 1px; }
-.paypal-list .seven-eleven-wrap img { width: 65px; }
+.paypal-list .seven-eleven-wrap img { width: 60px; }
 
 .paypal-list ol:after { content: ''; display: block; float: none; clear: both; }
 
@@ -75,11 +77,11 @@
 
 @media (max-width: 480px) { .paypal-list ol .p-cashin-img { position: absolute; left: 0; } }
 
-.seven-eleven-wrap { background: #fff; padding: 5px; display: inline-block; vertical-align: middle; }
+.seven-eleven-wrap { margin-top:5px; padding: 5px; display: inline-block; vertical-align: middle; }
 
-.seven-eleven-wrap img { width: 120px; display: block; }
+.seven-eleven-wrap img { width: 60px; display: block; }
 
-@media (max-width: 767px) { .seven-eleven-wrap img { width: 70px; } }
+@media (max-width: 767px) { .seven-eleven-wrap img { width: 60px; padding-top: 10px } }
 
 .seven-eleven-wrap.cliqq-kiosk img { width: 75px; }
 
