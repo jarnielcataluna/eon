@@ -52,6 +52,9 @@
 .paypal-list .seven-eleven-wrap { padding: 5px 1px; }
 .paypal-list .seven-eleven-wrap img { width: 60px; }
 
+.paypal-list .paypal-wrap { padding: 5px 1px; }
+.paypal-list .paypal-wrap img { width: 150px; }
+
 .paypal-list ol:after { content: ''; display: block; float: none; clear: both; }
 
 .paypal-list ol li { width: 25%; float: left; padding-left: 0; text-align: center; padding: 0px 20px; }
@@ -79,9 +82,14 @@
 
 .seven-eleven-wrap { margin-top:5px; padding: 5px; display: inline-block; vertical-align: middle; }
 
-.seven-eleven-wrap img { width: 60px; display: block; }
+.seven-eleven-wrap img { width: 100px; display: block; }
+
+.paypal-wrap { padding: 5px; display: inline-block; vertical-align: middle; }
+
+.paypal-wrap img { width: 150px; display: block; }
 
 @media (max-width: 767px) { .seven-eleven-wrap img { width: 60px; padding-top: 10px } }
+@media (max-width: 767px) { .paypal-wrap img { width: 100px; padding-top: 0px } }
 
 .seven-eleven-wrap.cliqq-kiosk img { width: 75px; }
 
