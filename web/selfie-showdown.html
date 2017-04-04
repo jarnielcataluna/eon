@@ -5,7 +5,7 @@
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <title>Eon Campaign</title>
 <meta name="description" content="">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> -->
 
 <link rel="stylesheet" href="https://tools.propelrr.com/eoncampaign/css/style.css" media="all"/>
     <link  rel="stylesheet" type="text/css" href="https://tools.propelrr.com/eoncampaign/css/coppie.css">
@@ -223,6 +223,22 @@
    .fl-left.w50.w60 {
    		width: 60%;
    }
+
+   /*@media (max-width: 767px) {
+   	#upload-demo {
+   		width: 310px;
+    	height: 400px;
+    	top: 0;
+   	}
+
+   	.img-backdrop {
+   		height: 400px;
+   	}
+
+   	.croppie-container .cr-slider-wrap {
+   		top: -68px;
+   	}
+   }*/
 	/** mobile **/
 
 </style>
@@ -385,17 +401,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
      $('.popup-opt-in').remove();
   });
 
-  function detectmob() {
-	   if(window.innerWidth >= 800) {
-	     return true;
-	   } else {
-	     return false;
-	   }
+  if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+	 top.location.href="http://bit.ly/2nw1Acw";
 	}
 
-	if (detectmob()){
-		top.location.href="http://bit.ly/2nw1Acw";
-	}
+ //  function detectmob() {
+	//    if(window.innerWidth >= 800) {
+	//      return true;
+	//    } else {
+	//      return false;
+	//    }
+	// }
+
+	// if (detectmob()){
+		
+	// }
 </script>
 
 </body>
