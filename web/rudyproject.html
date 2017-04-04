@@ -23,6 +23,27 @@
       border-top: none !important;
       border-right: none !important;
    }
+
+   .btn-takepicture {
+   	display: none;
+   }
+
+   @media (max-width: 767px) {
+	  .btn-takepicture {
+	   	display: inline-block;
+	   	margin-bottom: 5px;
+	   }
+
+	   .screenshot-wrap.mobile {
+	   	overflow: hidden;
+	   }
+	}
+
+	.screenshot-wrap img {
+		background: #fff;
+	}
+
+
 </style>
 
 <script src="https://tools.propelrr.com/rudycampaign/js/html5.js"></script>
@@ -34,7 +55,7 @@
 			<div class="thankyou-page">
 				<h2>Are you sure you want to submit this entry?</h2>
 				<a href="#" class="btn form-submit">OK</a>
-				<a href="#" class="btn">Cancel</a>
+				<a href="#" class="btn btn-cancel-entry">Cancel</a>
 			</div>
 		</div>
 	</div>
@@ -99,13 +120,19 @@
 									<div class="input-wrap">
 										<label>Upload your photo.</label>
 										<div class="file-field input-field">
+											<div class="btn btn-takepicture">
+												<span>Take a Picture</span>
+												<input type="file" capture="camera" accept="image/*" id="imgInpMobile" onchange="this.setAttribute('value', this.value);">
+
+											</div>
 											<div class="btn">
 												<span>Choose File</span>
-												<input type="file" capture="camera" accept="image/*" id="imgInp" onchange="this.setAttribute('value', this.value);">
+												<input type="file" accept="image/*" id="imgInp" onchange="this.setAttribute('value', this.value);">
 											</div>
-												<div class="file-path-wrapper">
+											<div class="file-path-wrapper">
 												<input class="file-path validate" type="text">
 											</div>
+											
 										</div>
 
 										<div class="screenshot-wrap mobile">
@@ -203,6 +230,39 @@
         }
     }
 	
+	$("#imgInpMobile").change(function(){
+        readURL(this);
+    });
+
+	function readURLmobile(input) {
+	    if (input.files && input.files[0]) {
+	        var reader = new FileReader();
+	        reader.onload = function (e) {
+	            $('.screenshot-wrap.mobile img#sw-item').attr('src', e.target.result).css({'display' : 'block'});
+	            $('.form-wrapper textarea').focus();
+	        }
+	        reader.readAsDataURL(input.files[0]);
+	    }
+	}
+
+	function detectmob() {
+	   if(window.innerWidth >= 800) {
+	     return true;
+	   } else {
+	     return false;
+	   }
+	}
+
+	if (detectmob()){
+		top.location.href="http://bit.ly/2opf9wh";
+		
+	}
+
+	$('.btn-cancel-entry').click(function(e){
+		e.preventDefault();
+		$('.popup-opt-in').removeClass('active');
+		$('.form-wrapper').removeClass('preload-overlay');
+	});
 
 </script>
 </body>

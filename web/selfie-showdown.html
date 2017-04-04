@@ -1,0 +1,382 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>Eon Campaign</title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" href="https://tools.propelrr.com/eoncampaign/css/style.css" media="all"/>
+    <link  rel="stylesheet" type="text/css" href="https://tools.propelrr.com/eoncampaign/css/coppie.css">
+<style>
+   
+   .form-wrapper.preload-overlay .wavy-loader {
+      display: block !important;
+   }
+   
+   .limit-field input[type="text"] {
+      border-left: none !important;
+      border-top: none !important;
+      border-right: none !important;
+   }
+   .meme-text-desktop {
+		width: 100%;
+	    height: auto;
+	    display: block;
+	    position: absolute;
+	    top: 0;
+   }
+   textarea, input[type=text], input[type=tel], input[type=email] {
+   		border: 2px solid #f5cdd2 !important;
+   }
+   textarea:focus, input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus {
+   		border: 2px solid #ec8391 !important;
+   }
+   hr.coolhr {
+	   	height: 6px;
+		background: url(https://tools.propelrr.com/eoncampaign/img/hr-11.png) repeat-x 0 0;
+	    border: 0;
+	    margin: 0px auto 15px;
+   }
+
+   /** ////////// MEME ///////////////*/
+
+	img.meme-text-desktop {
+	  left: -10000px;
+	  top: -10000px;
+	  position: absolute;
+	}
+
+	/*.cr-boundary {
+		display:block;
+		top:140px;
+		left: 0px;
+	}*/
+	.cr-boundary {
+		border-radius: 50%;
+	}
+	.croppie-container .cr-slider-wrap {
+		top: -10px;
+	    position: relative;
+	    z-index: 1111;
+	}
+
+	.meme-text-circle {
+		position: absolute;
+        top: 82%;
+	    width: 100%;
+	    height: 100px;
+	    margin: 0 auto;
+	    padding: 0px 15px;
+	    /* background: #ccc; */
+	    text-align: center;
+	    color: #fff;
+	    font-size: 35px;
+	    text-shadow: 0px 0px 1px #333, 0px 0px 1px #333, 0px 0px 1px #333;
+	    text-wrap:normal;
+	    word-wrap: break-word;
+	}
+	.meme-text-circle span {
+		line-height: 12px;
+	}
+	.img-backdrop {
+		width: 100%; height: 712px; display:block; position: relative;
+	}
+	#upload-demo {
+		position: absolute; top: 165px;
+		width:100%;
+		height: 410px;
+	}
+
+	#renderedCanvas {
+		position: relative;
+		width: 100%;
+		height: 100%;
+	}
+	.image-result-section {
+		position: absolute; top: 0px;
+		width: 100%;
+		height: 377px;
+	}
+	.image-result-section div {
+		position: relative;
+		height: 377px;
+	}
+	.imag-croppie-result { 
+	    width: 83%;
+	    height: 377px;
+	    position: relative;
+	    top: 176px;
+	    margin-left: 42px;
+	    border-top-left-radius: 174px;
+		border-top-right-radius: 174px;
+		border-bottom-right-radius: 174px;
+		border-bottom-left-radius: 174px;
+	    border: 0px;
+	    margin: 0px auto;
+    	margin-left: 33px;
+    	display: none;
+	}
+	.cr-boundary, .cr-vp-circle {
+		width: 100%;
+		min-width: auto;
+		max-width: auto;
+	}
+	.croppie-container .cr-viewport {
+		border: 0px;
+		box-shadow: none;
+	}
+
+	.error-message {
+		color: red;
+		font-size: 14px;
+		margin-top: 5px;
+		display: none;
+	}
+
+	.input-wrap.error > label {
+		color: #333 !important;
+	}
+
+	.input-wrap.error .error-message {
+		display: block !important;
+	}
+
+	.input-wrap.error input[type="text"], .input-wrap.error input[type="email"], .input-wrap.error input[type="tel"], .input-wrap.error textarea {
+		border: 1px solid red !important;
+	}
+
+	.input-wrap .limit-field input[type="text"] {
+		border: none !important;
+		border-bottom: 2px solid #ffffff !important;
+	}
+
+	.gi-btn-wrapper {
+		position: absolute;
+	    bottom: 0;
+	    left: 0;
+	    padding:8px 10px 5px 10px;
+	    z-index: 99;
+	    width: 100%;
+	    background: rgba(0, 0, 0, 0.4);
+	}
+
+	.gi-btn-wrapper a {
+		display: inline-block;
+		color: #ccc;
+		margin-right: 15px;
+		font-weight: bold;
+	}
+
+	.gi-btn-wrapper a:hover {
+		text-decoration: underline;
+	}
+
+	.gi-btn-wrapper a:before {
+		content: '';
+		display: inline-block;
+		height: 14px;
+		margin: 0 6px -3px 0;
+		width: 14px;
+		vertical-align: top;
+	}
+
+	.gi-btn-wrapper a.gi-likes:before {
+		background-image: url('https://tools.propelrr.com/eoncampaign/img/ZM0cVKM3occ.png');
+	    background-repeat: no-repeat;
+	    background-size: auto;
+	    background-position: -47px -117px;
+	}
+
+	.gi-btn-wrapper a.gi-shares:before {
+		background-image: url('https://tools.propelrr.com/eoncampaign/img/ZM0cVKM3occ.png');
+		background-repeat: no-repeat;
+		background-size: auto;
+		background-position: -45px -134px;
+	}
+	
+	.gi-btn-wrapper a.gi-likes.active:before {
+		background-image: url('https://tools.propelrr.com/eoncampaign/img/ZM0cVKM3occ.png');
+	    background-repeat: no-repeat;
+	    background-size: auto;
+	        background-position: -15px -134px;
+	           
+	}
+	
+	.gi-btn-wrapper a.gi-likes.active {
+	    color: rgb(88, 144, 255);
+	}
+
+	.croppie-container {
+		padding: 20px;
+	}
+	
+	.popup-wrap .close-text {
+     color: #fff;
+   }
+	/** mobile **/
+
+</style>
+
+<link  rel="stylesheet" type="text/css" href="https://tools.propelrr.com/eoncampaign/css/mobile.css">
+<script src="https://tools.propelrr.com/eoncampaign/js/html5.js"></script>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-N33B6LK');</script>
+<!-- End Google Tag Manager -->
+</head>
+<body>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N33B6LK"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<section id="main-container">
+	<div class="popup-wrap popup-opt-in">
+		<div class="popup-content">
+			<div class="thankyou-page">
+				<h2>Are you sure you want to submit this entry?</h2>
+				<a href="#" class="btn form-submit" id="btn-confirm-submit">OK</a>
+				<a href="#" class="btn btn-ghost">Cancel</a>
+			</div>
+		</div>
+	</div>
+	<div class="popup-wrap popup-thankyou">
+		<div class="popup-content">
+			<a href="#" class="close-text"><i class="fa fa-times" aria-hidden="true"></i></a>
+			<div class="thankyou-page">
+				<h2>Thank you for uploading your entry! <br> <br> </h2>
+				<p>This is under our review. We’ll e-mail you the confirmation as soon as we can.</p>
+			</div>
+		</div>
+	</div>
+	<section id="main-wrapper">
+		<div class="container">
+		
+			<div class="tabs-menu">
+				<ul>
+					<li class="active"><a href="#formid">Entry</a></li>
+					<li><a href="#gallery" id="gallery-menu">Gallery</a></li>
+				</ul>
+			</div>
+		</div>
+		<div id="formid" class="tabs-item" style="display: block;">
+			<div class="container">
+				<div class="intro-mainwrapper">
+					<div class="banner-img"><img src="https://tools.propelrr.com/eoncampaign/img/wacky-contest.jpg" alt=""></div>
+					<div class="form-wrapper">
+						<div class="intro-text text-center">
+							<p style="margin-bottom:10px; "><h3 style="font-size: 30px !important;">Join us in our coolest contest this summer!</h3></p>
+						</div>
+						<div class="wavy-loader">
+							<span></span><span></span><span></span>
+						</div>
+						<form method="post" action="" class="contest-form">
+							
+							<div class="divider">
+								<div class="fl-left w50"  style="width: 40% !important;">
+									<h3 style="font-size: 20px !important; border: 0px;margin:0px;padding: 0px;">Don't miss out! Let us know how to get in touch with you when you win!</h3>
+									<hr class="coolhr">
+									<div class="divider">
+										<div class="input-wrap full">
+											<label>Name</label>
+											<input type="text" id="full-name" name="" onchange="this.setAttribute('value', this.value);">
+											<p class="error-message">Please input your Name</p>
+										</div>
+									</div>
+									
+									<div class="divider">
+										<div class="input-wrap full">
+											<label>E-mail Address</label>
+											<input type="email" id="account-email" name="" onchange="this.setAttribute('value', this.value);">
+											<p class="error-message">Please input your Email</p>
+
+										</div>
+										<div class="input-wrap full">
+											<label>Contact Number</label>
+											<input type="tel" id="contact-num" name="" placeholder="e.g 09171234567" minlength="11" maxlength="11" onchange="this.setAttribute('value', this.value);"/>
+											<p class="error-message">Please input your contact number.</p>
+										</div>
+									</div>
+									
+									<div class="input-wrap" style="margin-top: 25px;">
+										<!-- <label>Upload your photo.</label> -->
+										<div class="file-field input-field text-center">
+											<div class="btn text-center">
+												<span>Upload Photo</span>
+												<input type="file" id="imgInp" onchange="this.setAttribute('value', this.value);">
+											</div>
+											<div class="file-path-wrapper">
+												<p class="error-message"> Please upload your photo.</p>
+												<!-- <input class="file-path validate" type="text"> -->
+											</div>
+										</div>
+									</div>
+									
+									<div class="input-wrap captionfield">
+										<label>Add a short and clever caption! *</label>
+										<textarea colspan="6" rowspan="6" maxlength="200" name="topMemeText" id="topMemeText" onKeyDown="limitText(this.form.topMemeText,this.form.countdown,50);"  onKeyUp="limitText(this.form.topMemeText,this.form.countdown,50);"></textarea>
+										<p class="error-message"> This field is required*</p>
+										<p class="caption-info"> <span class="limit-field"><input readonly type="text" name="countdown" class="countdown topMemeText" size="3" value="33">characters left.</span></p><br>
+									</div>
+									
+									<div class="input-wrap text-center"> 
+										<input type="submit" class="btn" name="" value="SUBMIT" style="display:block;width:100%;">
+									</div>
+									
+								</div>
+								<div class="fl-right w50" style="width: 60% !important;">
+									<section id="renderedCanvas">
+										<img src="https://tools.propelrr.com/eoncampaign/img/selfie-screen.png" class="img-backdrop">
+										<!-- <div class="image-result-section">
+											<div><img class="imag-croppie-result"></div>
+										</div> -->
+										<span id="upload-demo"></span>
+										<div class="meme-text-circle">
+											<span></span>
+										</div>
+									</section>		
+								</div>
+							</div>							
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="gallery" class="tabs-item" >
+			<div class="wavy-loader">
+				<span></span><span></span><span></span>
+			</div>
+			<div class="flex-container">
+				<p style="margin-top:40px;" class="no-approved">No Approved Entries Yet.</p>
+			</div>
+			<div class="btn-wrap bp-center bp-rel load-more-cont">
+				<a href="#" class="load-more-btn"> Load More</a>
+			</div>
+			
+		</div>
+	</section>
+	<div id="renderHidden"></div>
+	<canvas id="canvas-hidden"></canvas>
+
+</section>
+<footer></footer>
+<script src="https://tools.propelrr.com/eoncampaign/js/lib/jquery.min.js"></script>
+<script src="https://tools.propelrr.com/eoncampaign/js/croppie.min.js"></script>
+<script src="https://tools.propelrr.com/eoncampaign/js/html2canvas.js"></script>
+<script src="https://foliotek.github.io/Croppie/bower_components/exif-js/exif.js"></script>
+<script src="https://tools.propelrr.com/eoncampaign/js/custom.js"></script>
+<script>
+  $('.form-submit').click(function(e){
+     e.preventDefault();
+     $('.popup-opt-in').remove();
+  });
+</script>
+
+</body>
+</html>
