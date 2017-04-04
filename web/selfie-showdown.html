@@ -5,7 +5,7 @@
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <title>Eon Campaign</title>
 <meta name="description" content="">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="viewport" content="width=device-width">
 
 <link rel="stylesheet" href="https://tools.propelrr.com/eoncampaign/css/style.css" media="all"/>
     <link  rel="stylesheet" type="text/css" href="https://tools.propelrr.com/eoncampaign/css/coppie.css">
@@ -376,6 +376,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
      e.preventDefault();
      $('.popup-opt-in').remove();
   });
+
+  function detectmob() {
+	   if(window.innerWidth >= 800) {
+	     return true;
+	   } else {
+	     return false;
+	   }
+	}
+
+	if (detectmob()){
+		top.location.href="http://bit.ly/2nw1Acw";
+		
+	}
 </script>
 
 </body>
