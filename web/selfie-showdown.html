@@ -353,7 +353,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 									
 									<div class="input-wrap captionfield">
 										<label>Add a short and clever caption! *</label>
-										<textarea colspan="6" rowspan="6" maxlength="50" name="topMemeText" id="topMemeText" onkeydown="this.value = removeEmojis(this.value); limitText(this.form.topMemeText,this.form.countdown,50);"  onkeyup="this.value = removeEmojis(this.value); limitText(this.form.topMemeText,this.form.countdown,50);"  onchange="this.value = removeEmojis(this.value); limitText(this.form.topMemeText,this.form.countdown,50);" onkeypress="this.value = removeEmojis(this.value); limitText(this.form.topMemeText,this.form.countdown,50);"></textarea>
+										<textarea colspan="6" rowspan="6" maxlength="50" name="topMemeText" id="topMemeText" onkeydown="this.value = removeEmojis(this.value); limitText(this.form.topMemeText,this.form.countdown,50);"  onkeyup="this.value = removeEmojis(this.value); limitText(this.form.topMemeText,this.form.countdown,50);"  onchange="this.value = removeEmojis(this.value); limitText(this.form.topMemeText,this.form.countdown,50);" onkeypress="this.value = removeEmojis(this.value); limitText(this.form.topMemeText,this.form.countdown,50); onpaste="this.value = removeEmojis(this.value); limitText(this.form.topMemeText,this.form.countdown,50);""></textarea>
 										<p class="error-message"> This field is required*</p>
 										<p class="error-message error-emoji"> Emojis are not allowed!</p>
 										<p class="caption-info"> <span class="limit-field"><input readonly type="text" name="countdown" class="countdown topMemeText" size="3" value="50">characters left.</span></p><br>
@@ -421,7 +421,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	//    if(window.innerWidth >= 800) {
 	//      return true;
 	//    } else {
-	//      return false;
+	//      return fals
 	//    }
 	// }
 
