@@ -50,7 +50,7 @@
 .p-cashin-wrap { padding-top: 25px; }
 
 .paypal-list .seven-eleven-wrap { padding: 5px 1px; }
-.paypal-list .seven-eleven-wrap img { width: 60px; }
+.paypal-list .seven-eleven-wrap img { width: 100px; }
 
 .paypal-list .paypal-wrap { padding: 5px 1px; }
 .paypal-list .paypal-wrap img { width: 150px; }
@@ -82,7 +82,7 @@
 
 .seven-eleven-wrap { margin-top:5px; padding: 5px; display: inline-block; vertical-align: middle; }
 
-.seven-eleven-wrap img { width: 100px; display: block; }
+.seven-eleven-wrap img { width: 50px; display: block; }
 
 .paypal-wrap { padding: 5px; display: inline-block; vertical-align: middle; }
 
