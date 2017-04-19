@@ -39,9 +39,9 @@
 .p-cash-col-wrap ol li p small { font-size: 12px; }
 .p-cash-col-wrap ol li p strong { font-size: 12px; }
 
-.p-cash-col-wrap .p-cashin-img { width: 105px; height: 105px; border-radius: 50%; position: absolute; left: 0; top: 0; overflow: hidden; box-shadow: -1px 0px 10px rgba(0, 0, 0, 0.1); border: 1px solid #562a8a;}
+.p-cash-col-wrap .p-cashin-img { width: 125px; height: 125px; border-radius: 50%; position: absolute; left: 0; top: 0; overflow: hidden; box-shadow: -1px 0px 10px rgba(0, 0, 0, 0.1); border: 1px solid #562a8a;}
 
-@media (max-width: 767px) { .p-cash-col-wrap .p-cashin-img { width: 75px; height: 75px; } }
+@media (max-width: 767px) { .p-cash-col-wrap .p-cashin-img { width: 125px; height: 125px; } }
 
 .p-cash-col-wrap .p-cashin-img img { width: 100%; height: auto; }
 
@@ -74,15 +74,15 @@
   .paypal-list ol li:nth-child(3n+ 1) { clear: none; }
   .paypal-list ol li:nth-child(2n+ 1) { clear: left; } }
 
-@media (max-width: 480px) { .paypal-list ol li { width: 100%; padding: 10px 0px 0px 85px; float: none; clear: both; margin-bottom: 10px; } }
+@media (max-width: 480px) { .paypal-list ol li { width: 100%; padding: 10px 0px 15px 0px; float: none; clear: both; margin-bottom: 10px; } }
 
 .paypal-list ol li p { text-align: center; }
 
-@media (max-width: 480px) { .paypal-list ol li p { text-align: left; } }
+@media (max-width: 480px) { .paypal-list ol li p { text-align: center; } }
 
 .paypal-list ol .p-cashin-img { display: block; float: none; clear: both; position: relative; margin: 0 auto 10px; }
 
-@media (max-width: 480px) { .paypal-list ol .p-cashin-img { position: absolute; left: 0; } }
+@media (max-width: 480px) { .paypal-list ol .p-cashin-img { position: relative; left: 0; } }
 
 .seven-eleven-wrap { margin-top:5px; padding: 5px; display: inline-block; vertical-align: middle; }
 
