@@ -31,7 +31,7 @@
 
 .p-cash-col-wrap ol li { padding-left: 75px; text-align: left; position: relative; min-height: 65px; margin-bottom: 15px; padding-top: 10px; }
 
-@media (max-width: 767px) { .p-cash-col-wrap ol li { margin-bottom: 10px; padding-left: 65px; min-height: 55px; } }
+@media (max-width: 767px) { .p-cash-col-wrap ol li { margin-bottom: 10px; padding-left: 65px; min-height: 75px; } }
 
 .p-cash-col-wrap ol li p { font-size: 14px; font-weight: 700; color: #333; font-family: 'Avenir'; font-weight: 500; }
 
@@ -39,9 +39,9 @@
 .p-cash-col-wrap ol li p small { font-size: 12px; }
 .p-cash-col-wrap ol li p strong { font-size: 12px; }
 
-.p-cash-col-wrap .p-cashin-img { width: 65px; height: 65px; border-radius: 50%; position: absolute; left: 0; top: 0; overflow: hidden; box-shadow: -1px 0px 10px rgba(0, 0, 0, 0.1); border: 1px solid #562a8a;}
+.p-cash-col-wrap .p-cashin-img { width: 105px; height: 105px; border-radius: 50%; position: absolute; left: 0; top: 0; overflow: hidden; box-shadow: -1px 0px 10px rgba(0, 0, 0, 0.1); border: 1px solid #562a8a;}
 
-@media (max-width: 767px) { .p-cash-col-wrap .p-cashin-img { width: 55px; height: 55px; } }
+@media (max-width: 767px) { .p-cash-col-wrap .p-cashin-img { width: 75px; height: 75px; } }
 
 .p-cash-col-wrap .p-cashin-img img { width: 100%; height: auto; }
 
@@ -59,6 +59,10 @@
 
 .paypal-list ol li { width: 25%; float: left; padding-left: 0; text-align: center; padding: 0px 20px; }
 
+@media (max-width: 991px) {
+	.paypal-list ol li {  padding: 0px 10px; }
+}
+
 .paypal-list ol li:nth-child(4n+ 1) { clear: left; }
 
 @media (max-width: 767px) { .paypal-list ol li { width: 33.33%; }
@@ -70,7 +74,7 @@
   .paypal-list ol li:nth-child(3n+ 1) { clear: none; }
   .paypal-list ol li:nth-child(2n+ 1) { clear: left; } }
 
-@media (max-width: 480px) { .paypal-list ol li { width: 100%; padding: 10px 0px 0px 65px; float: none; clear: both; margin-bottom: 10px; } }
+@media (max-width: 480px) { .paypal-list ol li { width: 100%; padding: 10px 0px 0px 85px; float: none; clear: both; margin-bottom: 10px; } }
 
 .paypal-list ol li p { text-align: center; }
 
