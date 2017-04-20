@@ -39,9 +39,11 @@
 .p-cash-col-wrap ol li p small { font-size: 12px; }
 .p-cash-col-wrap ol li p strong { font-size: 12px; }
 
-.p-cash-col-wrap .p-cashin-img { width: 125px; height: 125px; border-radius: 50%; position: absolute; left: 0; top: 0; overflow: hidden; box-shadow: -1px 0px 10px rgba(0, 0, 0, 0.1); border: 1px solid #562a8a;}
+.p-cash-col-wrap .p-cashin-img { width: 65px; height: 65px; border-radius: 50%; position: absolute; left: 0; top: 0; overflow: hidden; box-shadow: -1px 0px 10px rgba(0, 0, 0, 0.1); border: 1px solid #562a8a;}
+.p-cash-col-wrap.paypal-list .p-cashin-img { width: 125px; height: 125px; border-radius: 50%; position: relative; left: 0; top: 0; overflow: hidden; box-shadow: -1px 0px 10px rgba(0, 0, 0, 0.1); border: 1px solid #562a8a;}
 
-@media (max-width: 767px) { .p-cash-col-wrap .p-cashin-img { width: 125px; height: 125px; } }
+@media (max-width: 767px) { .p-cash-col-wrap .p-cashin-img { width: 55px; height: 55px; } }
+@media (max-width: 767px) { .p-cash-col-wrap.paypal-list .p-cashin-img { width: 125px; height: 125px; position: relative; } }
 
 .p-cash-col-wrap .p-cashin-img img { width: 100%; height: auto; }
 
