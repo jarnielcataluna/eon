@@ -241,6 +241,12 @@
    }*/
 	/** mobile **/
 
+	.gi-btn-wrapper {
+		display: none;
+		opacity: 0;
+		visibility: hidden;
+	}
+
 </style>
 
 <link  rel="stylesheet" type="text/css" href="https://tools.propelrr.com/eoncampaign/css/mobile.css">
@@ -293,12 +299,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		
 			<div class="tabs-menu">
 				<ul>
-					<li class="active"><a href="#formid">Entry</a></li>
-					<li><a href="#gallery" id="gallery-menu">Gallery</a></li>
+					<!-- <li ><a href="#formid">Entry</a></li> -->
+					<li class="active"><a href="#gallery" id="gallery-menu">Gallery</a></li>
 				</ul>
 			</div>
 		</div>
-		<div id="formid" class="tabs-item" style="display: block;">
+		<div id="formid" class="tabs-item" style="display: none;">
 			<div class="container">
 				<div class="intro-mainwrapper">
 					<div class="banner-img"><img src="https://tools.propelrr.com/eoncampaign/img/wacky-contest.jpg" alt=""></div>
@@ -382,7 +388,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				</div>
 			</div>
 		</div>
-		<div id="gallery" class="tabs-item" >
+		<div id="gallery" class="tabs-item" style="display: block">
 			<div class="wavy-loader">
 				<span></span><span></span><span></span>
 			</div>
@@ -411,11 +417,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
      $('.popup-opt-in').remove();
   });
 
-  if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+ //  if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
 	
-	} else {
-		top.location.href="http://bit.ly/2nw1Acw";
-	}
+	// } else {
+	// 	top.location.href="http://bit.ly/2nw1Acw";
+	// }
 
  //  function detectmob() {
 	//    if(window.innerWidth >= 800) {
