@@ -1,0 +1,932 @@
+.duo-logo-line {
+	position: absolute;
+    top: 0;
+    left: 70px;
+    width: 484px;
+    height: 100%;
+    background: url(../images/duo/duo-logo-line.png) no-repeat top left;
+    background-size: cover;
+}
+
+.experience-wrap .cc-digital-me.cc-duo-header .container {
+	padding-bottom: 50px;
+}
+
+.cc-dou-wrap h4 {
+	font-size: 36px;
+	font-weight: bold;
+	margin: 20px 0;
+}
+
+.experience-wrap .cc-d-card-wrap.cc-dou-wrap {
+	padding-top: 140px;
+}
+
+.duo-feature .store-item {
+	width: 100%;
+	border-radius: 0;
+	border: none;
+	height: auto;
+}
+
+.duo-feature:after {
+	content:'';
+	display: block;
+	float: none;
+	clear: both;
+}
+
+.duo-feature li {
+	width: 50%;
+	float: left;
+	margin-right: 0;
+	padding: 0px 30px;
+
+}
+
+.duo-feature-img {
+	width: 100%;
+	height: auto;
+	display: block;
+	border-radius: 34px;
+	position: relative;
+	overflow: hidden;
+	margin-bottom: 25px;
+}
+
+.duo-feature-img img {
+	width: 100%;
+	height: auto;
+	display: block
+}
+
+.duo-feature-text h5 {
+	color: #FF4053;
+	font-size: 24px;
+	margin-bottom: 15px;
+	text-align: center;
+}
+
+.duo-feature-text p {
+	line-height: 18px;
+	font-size: 15px;
+	font-weight: 300;
+	text-align: center;
+}
+
+
+.exp-duo-card-wrap {
+	padding-top: 0;
+}
+
+.exp-duo-card-wrap img {
+	display: block
+}
+
+.exp-dou-circle-first {
+	padding-bottom: 50px;
+	width: 300px;
+	margin-left: 0px;
+	position: relative
+}
+
+.exp-circle {
+	position: relative;
+	z-index: 2;
+}
+
+.first-c-line {
+	position: absolute;
+    bottom: 0;
+    right: 0px;
+    width: 128px;
+    height: 151px;
+    background: url(../images/duo/duo-first-circle-line.png) no-repeat top left;
+    background-size: contain;
+}
+
+.exp-dou-circle-second {
+	margin-top: -100px;
+	margin-bottom: 73px;
+	position: relative;;
+	margin-left: 40px;
+}
+
+.exp-dou-circle-second .first-c-line {
+	top: -110px;
+    left: -35px;
+    width: 156px;
+    height: 134px;
+    background: url(../images/duo/duo-second-circle-line.png) no-repeat top left;
+	background-size: contain;
+}
+
+.first-beating-line {
+	position: absolute;
+	top: 50%;
+    left: -420px;
+    width: 430px;
+    height: 283px;
+	margin-top: -50px;
+    background: url(../images/duo/duo-line-beat.png) no-repeat top left;
+	background-size: contain;
+}
+
+.duo-signup {
+    -moz-border-image: url(../images/duo/duo-signup-border.png) 0 round round;
+    -webkit-border-image: url(../images/duo/duo-signup-border.png) 0 round round;
+    padding: 50px 40px 50px;
+    position: relative;
+	max-width: 443px;	
+	margin: 0 auto;
+}
+
+.duo-signup p {
+	font-size: 14px;
+}
+
+.d-a-c-title {
+	font-size: 32px;
+
+}
+
+.duo-activating-acct .d-a-c-title {
+	padding: 0px 65px;
+	margin-bottom: 10px;
+}
+
+.duo-signup ul {
+	padding-bottom: 15px;
+}
+
+.duo-activating-acct ul {
+	padding: 12px 0;
+}
+
+.duo-signup .account-feature li {
+	margin-bottom: 18px;
+}
+
+.duo-signup .btn {
+	background: #DD2476;
+	display: inline-block;
+	padding: 12px 20px;
+	color: #fff;
+	font-size: 14px;
+	border-radius: 8px;
+	font-weight: bold;
+	margin-top: 15px;
+}
+
+.duo-signup .exp-account-table, .duo-activating-acct.exp-account-table  {
+	padding-bottom: 0;
+}
+
+.duo-activating-acct.exp-account-table .btn-default {
+	margin-top: 0;
+	display: inline-block;
+	padding: 0px 65px;
+	font-size: 17px;
+	border: 1px solid #ff4053;
+	line-height: 50px;
+	border-radius: 8px;
+	font-size: 16px;
+}
+
+.duo-activating-acct li {
+	padding-bottom: 10px;
+}
+
+.duo-activating-step {
+	padding: 12px 35px 15px 10px;
+	background: #562a80;
+	border-radius: 8px;
+	color: #fff;
+	position: relative
+}
+
+.duo-activating-step p {
+	padding-bottom: 0;
+	padding-left: 35px;
+	text-align: left;
+}
+
+.d-a-s-num {
+	width: 25px;
+	height: 25px;
+	float: left;
+	display: block;
+	position: relative;
+	overflow: hidden;
+	border-radius: 50%;
+	background: #DD2476;
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 25px;
+	position: absolute;
+    top: 50%;
+    margin-top: -14px;
+    left: 10px;
+}
+
+.exp-account-table .btn-default {
+	display: inline-block;
+	padding: 0px 65px;
+}
+
+
+/*** THIRD CIRCLE ***/
+.exp-dou-circle-third .exp-circle {
+	margin: 0 auto;
+}
+
+.exp-dou-circle-third {
+	padding-top: 110px;
+	position: relative;
+}
+
+.third-c-line {
+	position: absolute;
+    top: -10px;
+    left: 50%;
+	margin-left: -10px;
+    width: 20px;
+    height: 125px;
+    background: url(../images/duo/duo-third-circle-line.png) no-repeat top left;
+    background-size: contain;
+}
+
+.third-beating-line {
+	position: absolute;
+	bottom: -100px;
+    left: 53.5%;
+    width: 72%;
+    height: 138px;
+	margin-top: 0;
+    background: url(../images/duo/duo-line-beat-2.png) no-repeat top left;
+	background-size: contain;
+}
+
+.duo-download-border {
+	width: 417px;
+	height: 394px;
+	-moz-border-image: url(../images/duo/duo-download-border.png) 0 round round;
+    -webkit-border-image: url(../images/duo/duo-download-border.png) 0 round round;
+    padding: 30px 30px 30px;
+    position: relative;
+	max-width: 438px;	
+	float: right;
+	margin-top: 187px;
+}
+
+.duo-d-b-logo {
+	max-width: 228px;
+	margin: 0 auto;
+}
+
+.duo-d-b-logo img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+.duo-download-border a {
+	width: 48%;
+	display: inline-block;
+}
+
+.duo-download-border h5 {
+	margin-bottom: 20px;
+	font-size: 26px;
+}
+
+.duo-download-border a img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+.duo-download-app .line-lock {
+	width: 312px;
+	height: 174px;
+	background: url('../images/duo/duo-line-lock.png') no-repeat bottom left;
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	z-index: 99;
+	background-size: contain;
+}
+
+.duo-download-app .container {
+	position: relative;
+	padding-bottom: 170px;
+}
+
+.security-mind {
+	padding-bottom: 50px;
+}
+
+.security-mind-border {
+	margin: 0;
+	-moz-border-image: url(../images/duo/duo-security-border.png) 0 round round;
+	-webkit-border-image: url(../images/duo/duo-security-border.png) 0 round round;
+	padding: 80px 70px 30px;
+	position: relative;
+	min-height: 250px;
+	margin-top: -40px;
+	margin-bottom: 50px;
+	
+}
+
+.security-mind-border h2 {
+	font-size: 36px;
+	margin-bottom: 25px;
+}
+
+.security-mind .exp-featured-content {
+	padding-right: 450px;
+	padding-left: 0;
+}
+
+.security-mind-screen {
+	width: 414px;
+	float: right;
+	position: absolute;
+	height: 380px;
+	overflow: hidden;
+	bottom: 60px;
+	right: 60px;
+}
+
+.sms-border {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 414px;
+	height: 3px;
+	background:#fff url('../images/duo/security-screen-border.png') no-repeat bottom;
+	background-size: cover;
+	z-index: 999;
+}
+
+.sms-border-top {
+	width: 148px;
+	height: 159px;
+	background:#fff url('../images/duo/duo-screen-connector.png') no-repeat bottom;
+	background-size: contain;
+}
+
+.security-mind-wrapper {
+	padding: 0px 60px;
+	position: relative
+}
+
+.security-mind-wrapper .exp-featured-holder {
+	margin: 0 auto;
+	float: none;
+}
+
+.duo-a-d-content {
+	
+}
+
+.duo-a-d-top-line {
+	width: 649px;
+	height: 359px;
+	background: url('../images/duo/all-digital-top.png') no-repeat center center;
+	margin: -60px auto 0;
+}
+
+.duo-a-d-bottom-line {
+	width: 660px;
+	height: 142px;
+	background: url('../images/duo/all-digital-bot.png') no-repeat center center;
+	margin: -60px auto 0;
+}
+
+.duo-a-d-header {
+	max-width: 649px;
+	margin: -80px auto 0;
+	padding: 0px 30px;
+	text-align: center;
+}
+
+.duo-a-d-footer {
+	max-width: 649px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.duo-a-d-header h2 {
+	font-size: 36px;
+	margin-bottom: 25px;
+}
+
+.duo-a-d-carousel {
+	max-width: 726px;
+	margin: 30px auto;
+}
+
+.duo-a-d-carousel .owl-stage {
+	display: flex;
+}
+
+.duo-a-d-carousel .owl-stage .owl-item {
+	border: 1px solid #552A8A;
+	padding: 40px 20px;
+	border-radius: 8px;
+	text-align: center;
+}
+
+.duo-a-d-carousel .owl-carousel .owl-stage-outer {
+	padding: 0px 2px;
+}
+
+.duo-a-d-carousel .ed-f-text h4 {
+	font-size: 18px;
+	color: #ff4053;
+	margin-bottom: 15px;
+}
+
+.duo-a-d-carousel .ed-f-img {
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+.duo-a-d-carousel .ed-f-img img {
+	max-width: 100%;
+	display: inline-block;
+	height: auto;
+	width: auto;
+}
+
+.duo-a-d-footer.exp-account-table {
+	padding-bottom: 0;
+}
+
+.duo-a-d-footer {
+
+}
+
+.duo-last-sec {
+	max-width: 420px;
+	margin: 0 auto;
+	text-align: center;
+	padding: 50px 0;
+}
+
+.duo-last-sec h2 {
+	font-size: 26px;
+}
+
+.duo-last-sec a {
+	display: block;
+	margin-top: 25px;
+	
+}
+
+.duo-last-sec .btn-default.btn-ghost {
+	background: transparent;
+	border: 0.15vw solid #DD2476;
+	color: #DD2476;
+	position: relative;
+}
+
+.duo-last-sec .btn-default.btn-ghost:after {
+	content: "\e932";
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    position: relative;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 22px;
+    color: #DD2476;
+    position: absolute;
+    top: 12px;
+    right: 15px;
+}
+
+.duo-last-line {
+	position: absolute;
+	top: -81px;
+    right: 5px;
+    width: 210px;
+        height: calc(100% + 81px);
+	margin-top: 0;
+    background: url(../images/duo/duo-last-line.png) no-repeat top right;
+	background-size: cover;
+}
+
+.duo-last-wrap {
+	position: relative;
+}
+
+@media (max-width: 1050px) {
+	.exp-dou-circle-first .exp-circle {
+		 top: 0px; 
+	}
+
+
+	.experience-wrap .cc-d-card-wrap.cc-dou-wrap { padding-top: 80px; padding-bottom: 60px;}
+}
+
+@media (max-width: 1070px) {
+	.duo-last-line {
+		display: none;
+	}
+}
+
+@media (max-width: 1024px) {
+
+	.duo-logo-line { display: none; }
+
+	.third-beating-line {
+		width: 68%;
+	}
+
+	.security-mind-border {
+		margin-bottom: 30px;
+	}
+}
+
+
+@media (max-width: 992px) {
+	.first-beating-line {
+		left: -370px;
+		width: 390px;
+		height: 250px;
+	}
+
+	.duo-activating-acct .d-a-c-title {
+		padding: 0;
+	}
+
+	.duo-signup {
+		padding: 40px 25px 50px;
+	}
+
+	.third-beating-line {
+		display: none;
+	}
+
+	.security-mind-wrapper {
+		padding: 0;
+	}
+
+	.duo-last-line {
+		display: none;
+	}
+
+	.duo-download-app .line-lock {
+		width: 270px;
+		height: 145px;
+	}
+
+	.duo-download-app .container {
+		padding-bottom: 137px;
+	}
+
+	.duo-a-d-carousel .owl-stage .owl-item {
+		padding: 25px 20px;
+	}
+
+	.duo-a-d-carousel {
+		max-width: 800px;
+	}
+
+	.cc-duo-header .eon-dou img {
+		max-width: 280px !important;
+	}
+
+	.exp-dou-circle-first .exp-circle h4 {
+		font-size: 20px;
+	}
+
+	.duo-feature-img {
+		width: 70%;
+		margin: 0 auto 15px;
+	}
+
+	.exp-dou-circle-second {
+		margin-top: -15px;
+	}
+
+	.experience-wrap .cc-d-card-wrap.cc-dou-wrap {
+		padding-bottom: 0;
+	}
+
+	.duo-d-b-logo {
+		max-width: 160px;
+	}
+
+	.duo-download-border {
+		width: 340px;
+		height: 322px;
+	}
+
+	.duo-download-border h5 {
+		font-size: 22px;
+	}
+}
+
+@media (max-width: 890px) {
+	.sms-border { display: none;}
+
+	.security-mind-screen {
+		width: 250px;
+		right: 0;
+	}
+
+	.security-mind .exp-featured-content {
+		padding-right: 280px;
+	}
+}
+
+@media (max-width: 767px) {
+
+	.duo-getting-account .exp-circle {
+		margin-top: 0;
+	}
+
+	.experience-wrap .sec-pad.duo-getting-account {
+		padding: 0px 0;
+	}
+
+	.security-mind .exp-featured-content {
+		padding-right: 0;
+	}
+
+	.duo-a-d-top-line {
+		display: none;
+	}
+
+	
+
+	.duo-a-d-header {
+		margin-top: 40px;
+	}
+
+	.duo-download-border {
+		margin-top: 30px;
+		float: none;
+		clear: both;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.line-lock {
+		display: none;
+	}
+
+	.third-c-line {
+		display: none;
+	}
+
+	.security-mind-border {
+		margin-top: 0;
+		-webkit-border-image: none;
+		-moz-border-image: none;
+		border: 2px dashed #FF4053;
+		border-radius: 20px;
+		padding-top: 40px;
+	}
+
+	.duo-download-border {
+		-webkit-border-image: none;
+		-moz-border-image: none;
+		border: 2px dashed #FF4053;
+		border-radius: 20px;
+		width: 100%;
+		height: auto;
+		padding: 25px 15px;
+	}
+
+	.duo-signup {
+		-webkit-border-image: none;
+		-moz-border-image: none;
+		border: 2px dashed #FF4053;
+		border-radius: 20px;
+		margin-bottom: 50px;
+	}
+
+	.duo-download-app .container {
+		padding-bottom: 0px;
+	}
+
+	.first-beating-line {
+		display: none;
+	}
+
+	.first-c-line {
+		display: none;
+	}
+
+	.exp-dou-circle-second {
+		margin-top: 0;
+	}
+
+	.col-sm-5.col-md-5.fr {
+		float: none;
+		clear: both;
+	}
+
+	.exp-dou-circle-second {
+		margin-left: 0;
+		margin-bottom: 0;
+	}
+
+	.exp-dou-circle-first {
+		max-width: 300px;
+		margin: 0 auto;
+	}
+
+	.duo-a-d-bottom-line {
+		display: none;
+	}
+
+	.duo-a-d-header {
+		margin-top: 25px;
+	}
+
+	.duo-all-digital {
+		border-top: 2px dashed #ef0085;
+	}
+
+	.security-mind.sec-pad {
+		padding-bottom: 40px;
+	}
+
+	.exp-dou-circle-third {
+		border-top: 2px dashed #ef0085;
+		padding-top: 25px;
+		margin-top: 40px;
+		margin-left: -15px;
+		margin-right: -15px;
+	}
+
+	.duo-last-wrap {
+		border-top: 2px dashed #ef0085;
+		padding-top: 25px;
+		margin-top: 40px;
+		margin-left: -15px;
+		margin-right: -15px;
+	}
+
+	.experience-wrap .cc-d-card-wrap.cc-dou-wrap {
+		padding-top: 40px;
+	}
+
+	.duo-a-d-carousel .owl-carousel .owl-dots {
+		text-align: center;
+		margin: 10px 0;
+	}
+
+	.exp-account-table .btn-default:after {
+		top: 8px;
+	}
+
+	.cc-dou-wrap h4 br {
+		display: none;
+	}
+
+	.cc-duo-header.cc-digital-me .cc-d-mobile-card {
+		padding: 25px 15px;
+	}
+
+	.d-a-c-title {
+		font-size: 30px;
+	}
+
+	.security-mind-border {
+		padding: 25px 30px;
+	}
+
+	.security-mind-border h2 {
+		font-size: 30px;
+	}
+
+	.duo-a-d-footer.exp-account-table .btn-default {
+		margin-top: 0;
+	}
+
+	.cc-dou-wrap h4 {
+		font-size: 30px;
+	}
+
+	.exp-dou-circle-second .exp-circle {
+		margin: 50px auto;
+	}
+
+	.duo-download-border {
+		margin: 50px auto;
+		position: relative
+	}
+
+	.exp-dou-circle-second .exp-circle:before {
+		content: '';
+		height: 50px;
+		width: 2px;
+		border-left: 2px dashed #FF4053;
+		position: absolute;
+		bottom: 100%;
+		left: 50%;
+		margin-left: -1px;
+	}
+
+	.exp-dou-circle-second .exp-circle:after {
+		content: '';
+		height: 50px;
+		width: 2px;
+		border-left: 2px dashed #FF4053;
+		position: absolute;
+		top: 100%;
+		left: 50%;
+		margin-left: -1px;
+	}
+
+	.exp-dou-circle-first {
+		width: auto;
+	}
+
+	.duo-download-border:before {
+		content: '';
+		height: 50px;
+		width: 2px;
+		border-left: 2px dashed #FF4053;
+		position: absolute;
+		bottom: 100%;
+		left: 50%;
+		margin-left: -1px;
+	}
+
+	.duo-download-border:after {
+		content: '';
+		height: 50px;
+		width: 2px;
+		border-left: 2px dashed #FF4053;
+		position: absolute;
+		top: 100%;
+		left: 50%;
+		margin-left: -1px;
+	}
+}
+
+@media (max-width: 640px) {
+
+	.duo-feature {
+		margin: 0px -15px;
+	}
+
+	.duo-feature li {
+		padding: 0px 15px;
+	}
+
+	.duo-feature-text h5 {
+		font-size: 18px;
+	}
+
+	.duo-signup .account-feature li {
+		margin-bottom: 10px;
+	}
+
+	.security-mind-border {
+		padding: 25px 15px;
+	}
+
+	.duo-activating-step {
+		padding-right: 15px;
+	}
+
+	.experience-wrap p {
+		font-size: 14px;
+		line-height: 18px;
+	}
+
+	.duo-activating-step {
+		padding: 8px 35px 8px 15px;
+	}
+}
+
+@media (max-width: 480px) {
+
+	.duo-signup {
+		padding: 25px 15px;
+	}
+
+	.cc-duo-header .eon-dou img {
+		max-width: 220px !important;
+	}
+
+	.duo-feature li {
+		width: 100%;
+		float: none;
+		clear: both;
+		margin-bottom: 15px;
+	}
+	
+}
