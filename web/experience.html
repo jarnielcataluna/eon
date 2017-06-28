@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html class="no-js" lang="">
 <head>
 <meta charset="utf-8">
@@ -12,11 +12,12 @@
 <link rel="stylesheet" href="css/icofont.css" media="all"/>
 <link rel="stylesheet" href="css/owl.carousel.css" media="all"/>
 <link rel="stylesheet" href="css/style.css" media="all"/>
+<link rel="stylesheet" href="css/duo-style.css" media="all"/>
 
 <!--[if lt IE 9]> <script src="js/css3-mediaqueries.js"></script> <![endif]-->
 <script src="js/html5.js"></script>
 <script src="js/lib/modernizr-2.8.3.min.js"></script>
-<script src="js/pace.min.js"></script>
+<!-- <script src="js/pace.min.js"></script> -->
 </head>
 <body>
 <section id="main-container" class="inner-page">
@@ -184,6 +185,24 @@
 								</div>
 							</div>
 							<div class="exp-acct-top-border"></div>
+						</div>
+					</div>
+				</div>
+				<div class="exp-product-menu">
+					<a href="#" class="exp-product-btn">
+						<span><img src="images/duo/exp-menu-icon.png" alt=""><b>Shop EON</b></span>
+						
+					</a>
+
+					<div class="duo-menu-wrap">
+						<div class="d-m-item d-m-i-first"><a href=""><img src="images/duo/eon-duo.png" alt=""></a></div>
+						<div class="d-m-item d-m-i-second"><a href=""><img src="images/duo/eon-zero.png" alt=""></a></div>
+						<div class="d-m-item d-m-i-third"><a href=""><img src="images/duo/eon-zoom.png" alt=""></a></div>
+						<div class="d-m-item d-m-i-fourth"><a href=""><img src="images/duo/eon-duo.png" alt=""></a></div>
+						<div class="d-m-item d-m-i-close"><a href=""><span class="ico icon-close"></span></a></div>
+						<div class="duo-menu-mask">
+							<div class="left-side half-circle"></div>
+							<div class="right-side half-circle"></div>
 						</div>
 					</div>
 				</div>
@@ -786,6 +805,36 @@
 		}
 
 		
+	});
+
+	// Experience Circular Menu
+	$('.exp-product-btn').click(function(e){
+		e.preventDefault();
+
+		if($(this).hasClass('is-active')) {
+
+			$('.duo-menu-wrap').removeAttr('style').removeClass('is-on');
+			$('.duo-menu-wrap .half-circle').removeClass('active');
+			setTimeout(function(){
+				$('.duo-menu-wrap').removeClass('active');
+			}, 200);
+			$(this).removeClass('is-active');
+
+		} else {
+			$('.duo-menu-wrap').removeAttr('style').addClass('is-on');
+			$('.duo-menu-wrap .half-circle').addClass('active');
+			setTimeout(function(){
+				$('.duo-menu-wrap').addClass('active');
+			}, 200);
+			$(this).addClass('is-active');
+		}
+	});
+
+	// Experience Circular Close
+	$('.d-m-i-close a').click(function(e){
+		e.preventDefault();
+		$('.duo-menu-wrap').css({'opacity': '0'}).removeClass('is-on').removeClass('active');
+		$('.exp-product-btn').removeClass('is-active');
 	});
 </script>
 </body>
