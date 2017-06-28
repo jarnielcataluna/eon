@@ -683,25 +683,31 @@
 
 
 	// Experience Circular Menu
+	var circularMenuBusy = false;
 	$('.exp-product-btn').click(function(e){
 		e.preventDefault();
 
-		if($(this).hasClass('is-active')) {
+		if(circularMenuBusy == false) {
+			circularMenuBusy = true;
+			if($(this).hasClass('is-active')) {
 
-			$('.duo-menu-wrap').removeAttr('style').removeClass('is-on');
-			$('.duo-menu-wrap .half-circle').removeClass('active');
-			setTimeout(function(){
-				$('.duo-menu-wrap').removeClass('active');
-			}, 200);
-			$(this).removeClass('is-active');
+				$('.duo-menu-wrap').removeAttr('style').removeClass('is-on');
+				$('.duo-menu-wrap .half-circle').removeClass('active');
+				setTimeout(function(){
+					$('.duo-menu-wrap').removeClass('active');
+				}, 200);
+				$(this).removeClass('is-active');
+				circularMenuBusy = false;
 
-		} else {
-			$('.duo-menu-wrap').removeAttr('style').addClass('is-on');
-			$('.duo-menu-wrap .half-circle').addClass('active');
-			setTimeout(function(){
-				$('.duo-menu-wrap').addClass('active');
-			}, 200);
-			$(this).addClass('is-active');
+			} else {
+				$('.duo-menu-wrap').removeAttr('style').addClass('is-on');
+				$('.duo-menu-wrap .half-circle').addClass('active');
+				setTimeout(function(){
+					$('.duo-menu-wrap').addClass('active');
+				}, 200);
+				$(this).addClass('is-active');
+				circularMenuBusy = false;
+			}
 		}
 	});
 
