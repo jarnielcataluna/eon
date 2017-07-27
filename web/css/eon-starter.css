@@ -107,6 +107,10 @@
 	background: #7c3dc4;
 }
 
+.starter-options ul li a:hover {
+	background: #7c3dc4;
+}
+
 .eon-cyber-card {
 	float: right;
 }
