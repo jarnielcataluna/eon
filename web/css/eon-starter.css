@@ -1,0 +1,314 @@
+.exp-account-table-small {
+	width: 18%;
+	float: left;
+
+}
+
+.exp-account-table-large {
+	width: 64%;
+	float: left;
+	padding: 0px 15px;
+}
+
+.exp-account-table-small .btn-default {
+	line-height: 1.4;
+	padding-top: 8px !important;
+	padding-bottom: 8px !important;
+	display: inline-block;
+}
+
+.exp-account-table .btn-default {
+	margin-top: 0;
+}
+
+.exp-account-kit .btn-default {
+	padding: 0px 10px;
+	font-size: 12px;
+	display: block;
+	margin-top: 15px;
+}
+
+.exp-account-kit .btn-default:after {
+	display: none;
+}
+
+.exp-account-card .exp-price {
+	font-size: 24px;
+}
+
+.exp-account-card {
+	padding: 15px 10px;
+}
+
+.exp-account-table {
+	padding-bottom: 20px;
+}
+
+.start-journey {
+	padding: 80px 0 200px 0;
+	background: #fff;
+	position: relative;
+}
+
+.start-journey.starting .starting-line-active {
+	opacity: 1;
+	visibility: visible;
+}
+
+.sect-tagline p {
+	margin-top: 15px;
+}
+
+.starter-options ul {
+	text-align: center;
+	margin-top: 25px;
+}
+
+.starter-options ul li {
+	display: inline-block;
+	margin: 0px 10px;
+	text-align: center;
+}
+
+.exp-circle {
+	margin-left: 40px;
+}
+
+.starting-line {
+	position: absolute;
+	left: 50%;
+	top: 150px;
+	width: 410px;
+	height: 207px;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	transform: translateX(-50%);
+	background: url(../images/eon-starter/starting-line.png) no-repeat left bottom;
+    background-size: contain;
+}
+
+.starter-options ul li a {
+	max-width: 270px;
+	border-radius: 14px;
+	background: #562A8A;
+	display: block;
+	font-size: 40px;
+	color: #fff;
+	text-align: center;
+	padding: 25px 60px;
+	font-family: "Gotham", "Arial", "Helvetica", "sans-serif";
+	font-weight: 700;
+	-webkit-transition: opacity 0.4s ease;
+	-moz-transition: opacity 0.4s ease;
+	transition: opacity 0.4s ease;
+}
+
+.starter-options ul li a.active {
+	background: #7c3dc4;
+}
+
+.eon-cyber-card {
+	float: right;
+}
+
+.exp-account-line-right {
+	width: 181px;
+    position: absolute;
+    bottom: -210px;
+    right: 0px;
+	background: url(../images/eon-starter/exp-account-right.png) no-repeat top right;
+}
+
+
+.exp-eon-price p {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 145px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 0;
+}
+
+.store-list-new {
+	margin-bottom: 15px;
+}
+
+.store-list-new .col-sm-4.col-xs-6 {
+	padding-right: 0;
+}
+
+.exp-card-line {
+	bottom: -30px;
+}
+
+.exp-activated-img-wrap {
+	margin-top: -80px;
+}
+
+.null-lef-pad {
+	padding-left: 0;
+}
+
+.null-right-pad {
+	padding-right: 0;
+}
+
+.starting-line-active {
+	position: absolute;
+	width: 625px;
+	height: 139px;
+	margin-left: 5px;
+	left: 50%;
+	transform: translateX(-50%);
+	background: url(../images/eon-starter/starter-active.png) no-repeat bottom center;
+	bottom: 0;
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transition: opacity 0.4s ease;
+	-moz-transition: opacity 0.4s ease;
+	transition: opacity 0.4s ease;
+}
+
+.getting-account-text {
+	position: relative;
+	z-index: 10;
+}
+
+.store-list {
+	margin-bottom: 10px;
+}
+
+.exp-account-card .owl-carousel {
+	margin-bottom: 25px;
+}
+
+.wavy-loader.bg-white {
+	background: #fff !important;
+	position: absolute;
+	bottom: -80px;
+	left: 0;
+	width: 100%;
+}
+
+@media (max-width: 992px) {
+
+	.exp-account-table-small {
+		width: 50%;
+		padding: 0px 15px;
+	}
+
+	.exp-account-table-large {
+		width: 100%;
+		padding-top: 25px; 
+	}
+
+	.exp-circle {
+		margin-left: auto;
+	}
+
+	.starting-line, .exp-account-line-right, .starting-line-active {
+		display: none;
+	}
+
+	.exp-account-table .null-pad {
+		padding-left: 15px;
+		padding-right: 15px;
+		margin-top: 35px;
+	}
+
+	.exp-account-card {
+		margin: 0 auto;
+	}
+
+	.exp-activated-img-wrap {
+		margin-top: 0;
+	}
+
+	.store-list-new img {
+		max-width: 300px;
+		margin: 0 auto;
+	}
+}
+
+@media (max-width: 767px) {
+
+	.exp-account-table-small {
+		width: 100%;
+		padding: 25px 0 0;
+	}
+
+	.exp-account-table-large {
+		width: 100%;
+		padding-top: 25px; 
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.experience-wrap .sec-pad.exp-account {
+		border-top: none;
+	}
+
+	.store-list-new .null-right-pad {
+		padding-right: 15px;
+	}
+
+	.getting-account .null-lef-pad {
+		padding-left: 15px;
+	}
+
+	.starter-options ul li a {
+		
+
+		padding: 15px 30px;
+		font-size: 28px;
+	}
+
+	.starter-options ul li {
+		margin: 0px 5px;
+	}
+
+	.start-journey {
+		padding-bottom: 100px;
+	}
+
+	.exp-eon-price p {
+		font-size: 20px;
+		line-height: 28px;
+		padding-top: 20px;
+	}
+
+	.exp-funds-icon-mobile {
+		margin-top: 15px;
+	}
+
+	.eon-cyber-card {
+		float: none;
+		clear: both;
+	}
+
+	.exp-feature-mobile-wrap {
+		z-index: 3003;
+	}
+
+	.ci-convenience {
+		padding-right: 15px !important;
+	}
+
+	.experience-wrap .sec-pad.exp-funds {
+		border-top: none;
+	}
+}
+
+@media (max-width: 480px) {
+	.starter-options ul li a {
+		
+
+		padding: 15px 20px;
+		font-size: 24px;
+	}
+
+
+}
+
+
+
