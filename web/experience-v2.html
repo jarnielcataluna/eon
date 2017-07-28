@@ -14,6 +14,7 @@
 <link rel="stylesheet" href="css/style.css" media="all"/>
 <link rel="stylesheet" href="css/duo-style.css" media="all"/>
 <link rel="stylesheet" href="css/eon-starter.css" media="all"/>
+<link rel="stylesheet" href="css/eon-cyber.css" media="all"/>
 
 <!--[if lt IE 9]> <script src="js/css3-mediaqueries.js"></script> <![endif]-->
 <script src="js/html5.js"></script>
@@ -207,7 +208,7 @@
 							<div class="right-side half-circle"></div>
 						</div>
 					</div>
-				</div>t
+				</div>
 			</section>
 
 			<section class="exp-account sec-pad">
@@ -608,83 +609,90 @@
 
 	$('.starter-options ul li a').click(function(e){
 		e.preventDefault();
-		$('.wavy-loader').fadeIn(300);
+		
 		var _this = $(this);
-		$('.starter-options ul li a').removeClass('active');
-		_this.addClass('active');
+		
 		//$(this).css({'display' : 'none'});
 
 		var _thisPage = $(this).attr('href');
 
 
-        $.ajax({
-            url: _thisPage,
-            type: 'POST',
-            dataType: 'html',
-            cache: true
+        if(!$(this).hasClass('active')) {
+        	$('.wavy-loader').fadeIn(300);
+        	$.ajax({
+	            url: _thisPage,
+	            type: 'POST',
+	            dataType: 'html',
+	            cache: true
 
-        })
+	        })
 
-        .done(function( getContent) {                
-            $('#journey-container').html( getContent);
-            _this.closest('.start-journey').addClass('starting');
-            $('.wavy-loader').fadeOut(300);
-            // Recall carousel plugin to work inside ajax
-            $('.exp-devices-feature .owl-carousel').owlCarousel({
-			    loop:true,
-			    margin:15,
-			    responsiveClass:true,
-			    navigationText: false,
-			    lazyLoad: false,
-			    pullDrag: false,
-			    mouseDrag: false,
-			    responsive:{
-			        0:{
-			            items:2,
-			            nav:false
-			        },
-			        481:{
-			            items:2,
-			            nav:false
-			        },
-			        600:{
-			            items:3,
-			            nav:false
-			        },
-			        810:{
-			            items:3,
-			            nav:false,
-			        },
-			        992:{
-			            items:3,
-			            nav:false,
-			        }
-			    }
-			});
+	        .done(function( getContent) {                
+	            $('#journey-container').html( getContent);
+	            _this.closest('.start-journey').addClass('starting');
+	            $('.wavy-loader').fadeOut(300);
+	            // Recall carousel plugin to work inside ajax
+	            $('.starter-options ul li a').removeClass('active');
+				_this.addClass('active');
+	            $('.exp-devices-feature .owl-carousel').owlCarousel({
+				    loop:true,
+				    margin:15,
+				    responsiveClass:true,
+				    navigationText: false,
+				    lazyLoad: false,
+				    pullDrag: false,
+				    mouseDrag: false,
+				    responsive:{
+				        0:{
+				            items:2,
+				            nav:false
+				        },
+				        481:{
+				            items:2,
+				            nav:false
+				        },
+				        600:{
+				            items:3,
+				            nav:false
+				        },
+				        810:{
+				            items:3,
+				            nav:false,
+				        },
+				        992:{
+				            items:3,
+				            nav:false,
+				        }
+				    }
+				});
 
-            // Recall entrance animation plugin to work inside ajax
-			$('.animated').appear(function() {
-		        var element = $(this);
-		        var animation = element.data('animation');
-		        var animationDelay = element.data('delay');
-		        if(animationDelay) {
-		          setTimeout(function(){
-		              element.addClass( animation + " visible" );
-		              element.removeClass('hiding');
-		          }, animationDelay);
-		        } else {
-		          element.addClass( animation + " visible" );
-		          element.removeClass('hiding');
-		        }               
-		    }, {accY: -90});			
-        })
+	            // Recall entrance animation plugin to work inside ajax
+				$('.animated').appear(function() {
+			        var element = $(this);
+			        var animation = element.data('animation');
+			        var animationDelay = element.data('delay');
+			        if(animationDelay) {
+			          setTimeout(function(){
+			              element.addClass( animation + " visible" );
+			              element.removeClass('hiding');
+			          }, animationDelay);
+			        } else {
+			          element.addClass( animation + " visible" );
+			          element.removeClass('hiding');
+			        }               
+			    }, {accY: -90});			
+	        })
 
-        .fail(function(request, status, error) {
-            
-            for(var key in request) {
-                var value = request[key];
-            }
-        });
+	        .fail(function(request, status, error) {
+	            
+	            for(var key in request) {
+	                var value = request[key];
+	            }
+	        });
+
+        } else {
+        	
+        }
 	});
 
 </script>

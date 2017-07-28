@@ -1,0 +1,186 @@
+.getting-account-text h4 {
+	margin-bottom: 15px;
+	margin-top: 15px;
+}
+
+.exp-funds-wrap .exp-featured-content {
+	display: block;
+	padding-left: 0;
+}
+
+.exp-funds-wrap .exp-featured-content ul li {
+	padding-bottom: 5px;
+}
+
+.exp-funds-wrap .exp-featured-content ul {
+	padding-top: 10px;
+}
+
+.cyber-features .exp-featured-content {
+	padding-left: 450px;
+}
+
+.cyber-features .security-mind-screen {
+	left: 60px;
+	float: left;
+}
+
+.cyber-anytime {
+
+}
+
+.cyber-anytime .exp-platform:after {
+	display: none;
+}
+
+.cyber-anytime .exp-platform {
+	margin-bottom: 80px;
+}
+
+.cyber-account .exp-activated-img-wrap {
+	margin-top: -100px;
+}
+
+.cyber-account .exp-activated-content {
+	padding-top: 150px;
+}
+
+.cyber-account .exp-activated-img-wrap h5 {
+	margin-bottom: 15px;
+}
+
+.cyber-account .exp-activated-img-wrap p {
+	margin-top: 15px;
+	margin-bottom: 20px;
+}
+
+.eon-cyber-form {
+	background: #562A8A;
+	width: 100%;
+	border-radius: 12px;
+	color: #fff;
+	margin-bottom: 15px;
+	position: relative;
+}
+
+.eon-cyber-form p {
+	padding: 20px 25px;
+}
+
+.eon-cyber-form img {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+.cyber-funds .exp-funds-icons:before {
+	right: 120px;
+}
+
+.exp-feature-nolink {
+	position: relative;
+	padding-left: 40px;
+}
+
+.exp-funds-icon-exchange {
+	left: 50%;
+	top: 605px;
+}
+
+.exp-funds-icon-cart {
+	left: 50%;
+	top: 805px;
+	margin-left: 21px;
+}
+
+.exp-funds-icon-item img {
+	width: 100%;
+	height: auto;
+	display: block;
+	line-height: 142px;
+}
+
+.exp-funds-icon-mobile .exp-funds-icon-item {
+	margin-right: 10px;
+}
+
+.btn-view-icon {
+	position: relative;
+}
+
+.btn-view-icon:before {
+	content: "\e932";
+	font-family: 'icomoon' !important;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	position: relative;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-size: 22px;
+	color: #ffffff;
+	position: absolute;
+	top: 12px;
+	right: 15px;
+}
+
+.cyber-anytime .platform-line {
+	position: absolute;
+	top: 100%;
+	width: 269px;
+	height: 131px;
+	margin-top: -2px;
+	background: url('../images/eon-cyber/platform-line.png') no-repeat;
+	left: 50%;
+	margin-left: -135px;
+
+}
+
+@media (max-width: 991px) {
+	.cyber-features .exp-featured-content {
+		padding-left: 380px;
+	}
+}
+
+@media (max-width: 767px) {
+	.cyber-account .exp-activated-content {
+		padding-top: 0;
+	}
+
+	.btn-view-icon:before {
+		top: 8px;
+	}
+
+	.cyber-account .exp-activated-img-wrap {
+		margin-top: 0;
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	.cyber-account .exp-activated-img-wrap a {
+
+	}
+
+	.cyber-features .exp-featured-content {
+		padding-left: 0;
+	}
+
+	.cyber-anytime .exp-platform {
+		margin-bottom: 140px;
+	}
+}
+
+@media (max-width: 640px) {
+	.cyber-account .exp-activated-img-wrap a {
+		width: 46%;
+		display: inline-block;
+	}
+
+	.cyber-account .exp-activated-img-wrap {
+		padding-bottom: 15px;
+	}
+}
+
